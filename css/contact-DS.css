@@ -1,0 +1,420 @@
+body{
+    background:#f7f7f7;
+}
+.header .navUl li:nth-child(6){
+    border-bottom:4px solid #0097de;
+}
+
+.contact-banner{
+    width: 100%;
+    height: 400px;
+    /*background: url("../img/contact_ds/ds4.jpg")no-repeat scroll 0 0 rgba(0, 0, 0, 0);*/
+    background-image:url("../img/contact_ds/ds4.jpg");
+    background-size: 100% 100%;
+    background-attachment:scroll;
+    background-repeat:no-repeat;
+    background-position-x:0%;
+    background-position-y:0%;
+    background-color:transparent;
+
+    position: relative;
+}
+.ds{
+    width: 325px;
+    padding: 20px;
+    background: white;
+    opacity: .8 !important;
+    position: absolute;
+    right: 8%;
+    top: 15px;
+}
+
+.company_title h2{
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    color: #0097de;
+    display: inline-block;
+    width: 65%;
+    margin-left: 10px;
+    line-height: 15px;
+}
+.look_more{
+    display: inline-block;
+    width:90px;
+    text-align: right;
+    color: red;
+    font-size: 14px;
+}
+.look_more:hover{
+    text-decoration: underline;
+}
+.company_item {
+    border-bottom: 2px dashed gainsboro;
+}
+.company_item h3 {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 10px;
+    padding: 10px 0px;
+}
+
+/*得实集团各分公司*/
+.company_item {
+    background-color: #fff;
+    margin-left: 10px;
+    margin-bottom: 8px;
+}
+.company_item:hover{
+    border: 1px solid #009de7;
+}
+.company_item li {
+    line-height: 30px;
+}
+
+.company_item li em {
+    font-size: 13px;
+    color: #454545;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.company_item li span {
+    padding-left: 6px;
+    color: #787878;
+    font-size: 13px;
+}
+
+.btn_group{
+    width: 65px;
+    height: 30px;
+    background:red;
+    position: absolute;
+    top: 5px;
+    left: 400px;
+}
+
+/*在线客服、预约客服等区域样式*/
+.contact-ds{
+    width: 1200px;
+    margin: 20px auto;
+    padding-top: 20px;
+    text-align: center;
+}
+.contact{
+    padding-bottom: 20px;
+    border-bottom: 1px solid gainsboro;
+}
+.cont-h2{
+    margin-bottom: 5px;
+    font-size: 28px;
+    color: darkslategrey;
+    font-weight: bold;
+    padding-left: 20px;
+}
+.cont-span{
+    font-size: 15px;
+    color: darkgray;
+    font-weight: 100;
+}
+
+.cont-middle{
+    width: 100%;
+    height: 160px;
+    text-align: center;
+    margin-top:25px;
+}
+.cont-middle .online{
+    font-size: 18px;
+    font-weight: bold;
+}
+.cont-middle .online-p{
+    font-size: 14px;
+}
+.cont-middle .online-btn{
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: bold;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+.online-btn a{
+    color: #FFFFFF;
+}
+.cont-middle button{
+    width: 100px;
+    height: 35px;
+    border: none;
+    background: #0097de;
+}
+
+.cont-middle .cont-mid-left{
+    width: 272px;
+    height: 152px;
+    float: left;
+    padding-top: 25px;
+    box-sizing: border-box;
+    margin-left:22px;
+    background: white;
+    -webkit-box-shadow: 0 0 22px 2px #ccc;
+    -moz-box-shadow: 0 0 22px 2px #ccc;
+    -ms-box-shadow: 0 0 22px 2px #ccc;
+    box-shadow: 0 0 22px 2px #ccc
+}
+.cont-middle .cont-mid-left:hover{
+    -webkit-transform: scale(1.1);
+    -mox-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.cont-mid-left:hover {
+    -webkit-transform: translateY(-2px);
+    -moz-transform: translateY(-2px);
+     transform: translateY(-2px);
+    -webkit-box-shadow: 0 26px 40px -24px rgba(0, 36, 100, .5);
+    -moz-box-shadow: 0 26px 40px -24px rgba(0, 36, 100, .5);
+    -ms-box-shadow: 0 26px 40px -24px rgba(0, 36, 100, .5);
+     box-shadow: 0 26px 40px -24px rgba(0, 36, 100, .5);
+     border-color: #ff1d31;
+}
+
+.email{
+    color: red;
+    font-size: 18px;
+}
+
+.ft_item {
+    position: relative;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+
+
+
+/*合作伙伴区域部分*/
+.ds_clamp {
+    width: 1200px;
+    margin:35px auto;
+    padding-bottom: 20px;
+
+}
+
+.ds_clamp h2 {
+    font-size: 24px;
+    color: #fff;
+    line-height: 36px;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 90px
+}
+
+.ds_clamp .clamp_wrap {
+    width: 1181px;
+    height: 420px;
+    margin: 0 auto;
+
+}
+
+.clamp_wrap .clamp_box{
+    position: relative;
+    z-index: 0;
+    float: left;
+    width: 390px;
+    height: 375px;
+    overflow: hidden;
+}
+
+
+.clamp-cont{
+    width: 390px;
+    height: 375px;
+    background-color: #fff;
+    border: 1px solid #f0f0f0;
+    overflow: hidden;
+    -webkit-transition: margin .5s ease-in-out;
+    -moz-transition: margin .5s ease-in-out;
+     transition: margin .5s ease-in-out;
+}
+
+.clamp-conttwo{
+    width: 342px;
+    height: 375px;
+    margin: 0 auto;
+    color: white;
+    padding: 0 25px;
+    background-image: url(../img/contact_ds/ds7.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% 100%;
+    border: 1px solid #fff;
+    overflow: hidden;
+}
+
+.clamp_box:hover .clamp-cont{
+    margin-top:-375px
+}
+
+
+/*合作伙伴标题*/
+.clamp_box .clamp-cont .clamp_title {
+    width: 100%;
+    height: 45px;
+    background-color: #0097de;
+    text-align: center;
+    -webkit-transition: .3s all;
+    -moz-transition: .3s all;
+    transition: .3s all;
+    position: relative
+}
+
+.clamp-cont .clamp_title .clamp_text {
+    font-size: 18px;
+    color: white;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%)
+
+}
+
+.clamp_box .clamp-cont .clamp_content {
+    width: 240px;
+    margin: 14px auto 0;
+    transition: .3s all
+}
+
+.clamp_box .clamp_content p {
+    width: 240px;
+    height: 225px;
+    text-align: left;
+    overflow: hidden;
+    font-size: 14px;
+    color: #373d41;
+    line-height: 25px;
+    margin-bottom: 15px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 9;
+    text-overflow: ellipsis;
+}
+
+.clamp_box .clamp-cont img{
+    width: 48px;
+    height: 48px;
+}
+.clamp-conttwo .button {
+    padding-bottom: 15px;
+    border-bottom: 1px #f2f2f2 solid;
+    margin-top: 30px
+}
+
+ .button .detail_btn {
+    float: left;
+    width: 100px;
+    height: 35px;
+    margin-left: 55px;
+    background-color: #00C1DE;
+    text-align: center;
+    margin-right: 12px;
+    transition: .3s all
+}
+
+.button .detail_btn a {
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+    line-height: 35px
+}
+
+.button .detail_btn:hover {
+    background-color: #11defd
+}
+
+ .button .login_btn {
+    float: left;
+    width: 108px;
+    height: 33px;
+    border: 1px solid #00C1DE;
+    text-align: center;
+    transition: .3s all;
+    font-size: 14px;
+    color: #00C1DE;
+    line-height: 32px;
+    cursor: pointer
+}
+.button .login_btn a{
+    color:white;
+}
+.button .login_btn:hover {
+    background-color: #00C1DE;
+    color: #fff
+}
+
+/*关于合作伙伴*/
+
+.clamp-conttwo .content_title {
+    font-size: 20px;
+    line-height: 65px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.clamp-conttwo ul {
+    margin-bottom: 18px
+}
+
+.clamp-conttwo ul li {
+    float: left;
+    width: 45%;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    margin-right: 10px;
+    margin-bottom: 12px;
+
+}
+
+.clamp-conttwo ul li a {
+    font-size: 16px;
+    line-height: 20px;
+    color: white;
+}
+.clamp-conttwo ul li a:hover, .clamp_content .total_btn a:hover{
+    color: #7a1810;
+}
+.clamp-conttwo .total_btn {
+    width: 242px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    margin: auto;
+    background:#00C1DE;
+}
+
+.clamp-conttwo .total_btn a {
+    font-size: 16px;
+    line-height: 20px;
+    color: white;
+}
+
+
+.join{
+    text-align: center;
+}
+.join a{
+    font-size:24px;
+    color: #00c1e0;
+
+}
+.join a:hover{
+    text-decoration:underline;
+    color: red;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../../css/video-js.css"/>
+    <script src="../../js/asset/videojs-ie8.min.js"></script>
+    <style>
+        .m{
+            width:640px;
+            height:264px;
+            margin:0 auto;
+            margin-top:100px;
+        }
+    </style>
+</head>
+<body>
+<div class="m">
+    <video id="my-video" class="video-js" controls preload="auto" width="640" height="264"
+           poster="" data-setup="{}">
+        <source src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
+        <source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm">
+        <source src="http://vjs.zencdn.net/v/oceans.ogv" type="video/ogg">
+        <p class="vjs-no-js">
+            To view this video please enable JavaScript, and consider upgrading to a web browser that
+            <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+        </p>
+    </video>
+</div>
+
+</body>
+<script src="../../js/asset/video.min.js"></script>
+<script>
+    var myPlayer = videojs('my-video');
+    videojs("my-video").ready(function(){
+        var myPlayer = this;
+        myPlayer.play();
+    });
+</script>
+</html>

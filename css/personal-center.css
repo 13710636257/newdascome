@@ -1,0 +1,256 @@
+html,body{
+	width: 100%;
+	height: 100%;
+}
+body{
+	background: gainsboro;
+}
+
+.personal-header{
+	width: 100%;
+	height: 55px;
+	background:#09C;
+	color: white;
+	box-shadow: 0 0 5px #888;
+}
+
+.head-maddle{
+	width: 50%;
+	height: 55px;
+	margin: auto;
+}
+
+.head-left{
+	line-height: 55px;
+	font-size: 24px;
+	float: left;
+}
+.head-right{
+	height: 100%;
+	float: right;
+}
+
+.head-right ul li{
+	float: left;
+	padding: 20px;
+	font-size: 14px;
+}
+
+.head-right ul li a{
+	color: white;
+}
+
+.personal-center{
+	width: 55%;
+	margin: auto;
+}
+
+.profile{
+	width:1047px;
+	height:575px;
+	background: white;
+	margin-top: 100px;
+}
+.profile-left,.profile-right{
+	float: left;
+}
+/*左边部分内容*/
+.profile-left{
+	width: 200px;
+	height: 100%;
+    padding: 27px 0 0 0;
+ 	text-align: center;
+    border: 1px solid #ddd;
+}
+.profile-img{
+	width: 80%;
+	height: 145px;
+	/*background: paleturquoise;*/
+	line-height: 25px;
+	color: #999 !important;
+	font-size: 14px;
+	margin: auto;
+	border-bottom: 1px dashed gainsboro;
+}
+.profile-img img{
+	width: 85px;
+	height: 75px;
+	margin-bottom: 5px;
+}
+.active-profile .ps{
+	width: 56px;
+	color: #999;
+
+}
+.auth{
+	width: 100%;
+	padding-top: 10px;
+	color: gainsboro;
+}
+.auth img{
+	width: 20px;
+	height: 20px;
+}
+.post-center{
+	width: 100%;
+	line-height: 45px;
+	margin-top: 30px;
+}
+.post-center a{
+	margin-left: 10px;
+}
+
+.post-center a:hover{
+	text-decoration:underline;
+	color: red;
+} 
+
+.profile-right{
+	width: 842px;
+	height: 100%;
+}
+
+/*右边个人资料和帖子内容*/
+.profile-top{
+	width: 100%;
+	height: 46px;
+	/*box-shadow: 0 0 5px #888;*/
+	border-bottom: 1px solid gainsboro;
+}
+
+.profile-top .profile-classify li{
+	float: left;
+	width: 95px;
+	height: 46px;
+	line-height: 50px;
+	text-align: center;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+.profile-centent{
+	width: 95%;
+	height: 482px;
+	padding: 15px;
+	display: none;
+}
+
+.active{
+    background: #09C;
+    color: white;
+	border-bottom: none;
+}
+
+/*帖子*/
+.post-top{
+	font-size: 14px;
+}
+
+.post-top a{
+	display: inline-block;
+	padding:0px 10px 0px 10px;
+	border-right: 1px solid gray;
+}
+
+.profile-centent .post-classify{
+	width: 100%;
+	height: 465px;
+	margin-top: 10px;
+	overflow: hidden;
+	overflow-y: scroll;
+	border-bottom: 1px dashed darkgrey;
+	display: none;
+}
+
+.show{
+	font-size: 16px;
+	font-weight: 600;
+} 
+.my-post table {
+    width: 100%;
+    font-size: 14px;
+ }
+
+.my-post .th {
+    margin-top: 1px;
+    border-bottom: 1px solid #CDCDCD;
+    background: #F2F2F2;
+}
+.my-post .thall {
+	margin-top: 10px;
+    padding: 0 10px;
+    border-bottom: 1px solid #CDCDCD;
+}
+
+.my-post .th td,.my-post .thall td{
+    height: 40px;
+    padding-top: 10px;
+	line-height: 18px;
+	text-indent: 10px;
+}
+
+.my-post .frm { /*主题*/
+    width: 150px;
+	overflow: hidden;
+}
+.my-post .num {
+    width: 100px;
+}
+
+.my-post .headimg img{
+	width: 55px;
+	height: 45px;
+}
+
+.my-post .time{
+	width: 170px;
+}
+.my-post .by {
+    width: 65px;
+	cursor: pointer;
+	text-align: center;
+	color: red;
+}
+.my-post .usename{
+	width: 90px;
+}
+.my-post .headimg{
+	width: 85px;
+}
+.myreply-table .reply-content{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+
+.personal dl dd{
+	width: 100%;
+	padding: 10px ;
+	border-bottom: 1px solid gainsboro;
+	/*margin-top: 10px;*/
+	font-size: 14px;
+}
+
+.personal .static span{
+	display:inline-block;
+	padding: 0px 10px 0px 10px;
+	border-right: 1px solid gainsboro;
+	font-size: 14px;
+	color: #999 !important;
+}
+.personal .static i{
+	color: red;
+}
+
+.personal .active-profile p{
+	width: 100%;
+	height: 25px;
+
+}
+.personal .active-profile span{
+	display: inline-block;
+	padding: 0px 10px 0px 10px;
+	font-size: 14px;
+	color: #999 !important;
+}

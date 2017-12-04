@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="description" content="得实客户支持">
+    <title>得实客户支持</title>
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/product.css"/>
+    <script src="../js/asset/jquery-1.7.2.min.js"></script>
+
+    <!--  Internet Explorer 8 需要 Respond.js 配合才能实现对媒体查询（media query）的支持-->
+    <!--[if lt IE 9]>
+    <script src="../js/asset/html5shiv.min.js"></script>
+    <script src="../js/asset/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<object id="WDevObj" style="display:none" CLASSID="CLSID:4B9A6841-8720-40F8-9BC6-71A0D65441EA"></object>
+
+<header class="public-header"></header>
+
+<!--------------banner背景搜索图部分------------------->
+<div class="banner"></div>
+
+<div class="search-box">
+    <div class="search">
+        <span class="search_icon"></span>
+        <input type="text" class="search_input" placeholder="搜索支持"/>
+        <input type="submit" class="search_btn" value="搜索"/>
+    </div>
+
+    <div class="detection_auto">
+        <span class="detection_btn">立即检测</span>
+
+        <div class="detection_autoo">
+            <span class="close_autoo">x</span>
+
+            <h3>识别到的产品</h3>
+
+            <div class="detection_list"></div>
+            <a href="detectionauto.html" class="config_btn">查看配置</a>
+        </div>
+        <div class="download_tip">
+            <span class="dclose_btn">x</span>
+            <p>您的机器未下载安装该自动检测的插件，请点击进行下载并安装</p>
+            <p class="error_tip">注：<span>1.该插件暂时只在ie浏览器下能运行。</span><br/><span>2.下载并安装完之后请重启浏览器</span></p>
+            <a href="../video/WDevObj.exe" class="component_download">下载</a>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="pro-content">
+    <div class="pro-center">
+        <h2 class="pro-h2">产品分类</h2>
+        <span class="pro-span">Products</span>
+    </div>
+    <div class="pro-nav clearfix">
+
+        <ul>
+            <li>
+                <img src="../img/product/p1.jpg" alt="证卡打印机"/>
+                <h3>证卡打印机</h3>
+                <p>企业优选</p>
+                <a href="productList.html">查看更多</a>
+            </li>
+            <li>
+                <img src="../img/product/p3.png" alt="证卡打印机"/>
+                <h3>标签打印机</h3>
+                <p>企业优选</p>
+                <a href="productList.html">查看更多</a>
+            </li>
+            <li>
+                <img src="../img/product/p2.png" alt="证卡打印机"/>
+                <h3>针式打印机</h3>
+                <p>企业优选</p>
+                <a href="productList.html">查看更多</a>
+            </li>
+            <li>
+                <img src="../img/product/p4.png" alt="证卡打印机"/>
+                <h3>报表打印机</h3>
+                <p>企业优选</p>
+                <a href="productList.html">查看更多</a>
+            </li>
+        </ul>
+
+        <ul class="second-ul">
+            <li>
+                <img src="../img/product/p1.jpg" alt="证卡打印机"/>
+                <h3>证卡打印机</h3>
+                <p>企业优选</p>
+                <a href="productList.html">查看更多</a>
+            </li>
+            <li>
+                <img src="../img/product/p1.jpg" alt="证卡打印机"/>
+                <h3>标签打印机</h3>
+                <p>企业优选</p>
+                <a href="productList.html">查看更多</a>
+            </li>
+            <li>
+                <img src="../img/product/p1.jpg" alt="证卡打印机"/>
+                <h3>针式打印机</h3>
+                <p>企业优选</p>
+                <a href="productList.html">查看更多</a>
+            </li>
+            <li>
+                <img src="../img/product/p1.jpg" alt="证卡打印机"/>
+                <h3>报表打印机</h3>
+                <p>企业优选</p>
+                <a href="productList.html">查看更多</a>
+            </li>
+        </ul>
+
+    </div>
+    <div class="check-more">
+        <button class="check-btn">点击查看全部</button>
+    </div>
+
+</div>
+
+
+<!---------底部----------->
+<footer class="public-footer"></footer>
+<script src="../js/public.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/new-home.js"></script>
+<script type="text/javascript">
+      $(document).ready(function(){
+          var secondUl=$('.second-ul')
+          $('.check-btn').on('click',function(){
+              if($(this).text().indexOf('查看全部')!=-1){
+                  $(this).text("收起")
+              }else{
+                  $(this).text("查看全部")
+              };
+              secondUl.toggle()
+          })
+
+      })
+</script>
+</body>
+
+
+</html>

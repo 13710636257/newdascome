@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="description" content="得实客户支持">
+    <title>销售维修网点</title>
+    <link rel="stylesheet" href="../css/base.css"/>
+    <link rel="stylesheet" href="../css/repaireservice.css"/>
+    <!--[if lt IE 9]>
+    <script>alert("请使用ie8及以上版本的浏览器")</script>
+    <![endif]-->
+    <script src="../asset/lib/jquery-3.1.1.js"></script>
+    <script src="../asset/jquery.cityselect.js"></script>
+</head>
+<body>
+<h3 class="page_title">得实售后维修点</h3>
+<div class="banner">.
+    <img src="../img/servicebanner.png" alt="售后维修点"/>
+</div>
+<div class="select_content">
+    <div class="select_city">
+        <div id="city">
+            <select class="prov"></select>
+            <select class="city" disabled="disabled"></select>
+        </div>
+        <input type="submit" class="submitBtn" value="搜索"/>
+    </div>
+    <div class="select_result">
+        <ul>
+            <li>
+                <span class="city_left">广州</span>
+                <div class="city_info">
+                    <p class="address">江门</p>
+                    <p class="code">江门市江海区金星路399号得实工业园区</p>
+                    <p class="phone">0750-3868008</p>
+                </div>
+            </li>
+            <li>
+                <span class="city_left">广州</span>
+                <div class="city_info">
+                    <p class="address">江门</p>
+                    <p class="code">江门市江海区金星路399号得实工业园区</p>
+                    <p class="phone">0750-3868008</p>
+                </div>
+            </li>
+            <li>
+                <span class="city_left">广州</span>
+                <div class="city_info">
+                    <p class="address">江门</p>
+                    <p class="code">江门市江海区金星路399号得实工业园区</p>
+                    <p class="phone">0750-3868008</p>
+                </div>
+            </li>
+            <li>
+                <span class="city_left">广州</span>
+                <div class="city_info">
+                    <p class="address">江门</p>
+                    <p class="code">江门市江海区金星路399号得实工业园区</p>
+                    <p class="phone">0750-3868008</p>
+                </div>
+            </li>
+            <li>
+                <span class="city_left">广州</span>
+                <div class="city_info">
+                    <p class="address">江门</p>
+                    <p class="code">江门市江海区金星路399号得实工业园区</p>
+                    <p class="phone">0750-3868008</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+<script>
+    $("#city").citySelect({
+        url:"../asset/city.min.js",
+        prov:"湖南", //省份
+        city:"长沙", //城市
+        nodata:"none" //当子集无数据时，隐藏select
+    });
+</script>
+</html>

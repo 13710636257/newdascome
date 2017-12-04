@@ -1,0 +1,256 @@
+body {
+    background: #f7f7f7;
+}
+.public-footer {
+    margin-top: 0px;
+
+}
+/*118 Dense Water*/
+.dense_water{
+    /*background-image: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);*/
+}
+.manage-wrap {
+    display: none;
+}
+
+.manage-main-container {
+    width: 1200px;
+    margin:20px auto;
+
+ // background: url(../img/public/banner_2-37b0e7.jpg) repeat;
+
+}
+.printer_h2 {
+    width: 1183px;
+    line-height: 48px;
+    border-bottom: 1px solid gainsboro;
+    margin-bottom: 20px;
+
+}
+.printer_h2 h2 {
+    font-size: 30px;
+}
+.printers-left {
+    float: left;
+    border: 1px solid gainsboro;
+    border-right: none;
+    width: 220px;
+    height:482px;
+    min-height: 482px;
+
+}
+/* tab 在线 离线 切换*/
+.manage-main-tab {
+    font-size: 0;
+    overflow: hidden;
+    margin: 0 auto;
+
+
+    padding: 0px 0;
+    /*color: #E0E0E0;*/
+}
+
+.manage-main-tab dt {
+    font-size: 20px;
+    line-height: 50px;
+    font-weight: 700;
+    clear: both;
+}
+
+.manage-main-tab dd {
+    font-size: 16px;
+    width: 100%;
+    height:52px;
+    line-height: 52px;
+    border-bottom: 1px solid gainsboro;
+    text-align: center;
+    cursor: pointer;
+    background-color: white;
+    color: #009de7;
+    /*transition: background-color .2s ease-in-out;*/
+}
+.manage-main-tab .tab-active{
+    background-color: #009de7;
+    color: white;
+}
+.manage-main-tab .first {
+    margin-right: 2px;
+}
+.manage-main-tab dd span{
+    padding-right: 10px;
+}
+
+
+
+.printers-right {
+    float: left;
+    width:962px;
+    min-height: 482px;
+    height:482px;
+    background: white;
+    overflow: hidden;
+    border: 1px solid gainsboro;
+}
+
+/* 激活状态的 打印列表*/
+.manage-wrap.active-wrap{
+    display: block;
+}
+/* 打印机列表 dl*/
+.printers-list {
+    overflow: hidden;
+}
+
+/* 标题*/
+.printers-title {
+    width: 98%;
+    padding-left: 20px;
+    border-bottom: 1px dashed gainsboro;
+    font-size: 14px;
+    line-height: 35px;
+}
+
+.online-printers {
+    font-weight: 700;
+    font-size: 20px;
+    color: #ff4a60;
+}
+
+.printers-item {
+    width: 22.25%;
+    margin-left: 2.2%;
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    cursor: pointer;
+
+}
+
+/* IE 不兼容C3新伪类*/
+.printers-item:nth-of-type(5n) {
+    margin-right: 0;
+}
+
+.printers-item ul {
+    padding: 12px 0;
+    border: 1px solid #E0E0E0;
+    background-color: #333;
+    color: #17ff0b;
+    border-radius: 4px;
+}
+
+.printers-item ul li {
+    line-height: 30px;
+}
+
+.printers-item ul li span {
+    display: inline-block;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.printers-item ul li span:first-child {
+    width: 45px;
+    text-align: right;
+    margin-left: 0;
+    font-weight: 600;
+    color: #E0E0E0;
+
+}
+
+/*编辑别名*/
+.edit-alias-box {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+}
+
+.edit-alias-box input {
+    width: 134px;
+    text-indent: 5px;
+    overflow: hidden;
+    background-color: #333;
+    color: #17ff0b;
+    font-size: 12px;
+    height: 16px;
+    padding: 2px 0;
+}
+
+.edit-alias-box .fa-pencil-square-o {
+    color: #ffbabf;
+    float: right;
+    margin-top: 8px;
+    font-size: 18px;
+    margin-left: 10px;
+
+}
+
+.fa-pencil-square-o:hover {
+    color: #ff081b;
+}
+
+/* 修改提示*/
+.edit-note-text {
+    width: 125px;
+    position: absolute;
+    top: 50%;
+    left: 166px;
+    font-size: 12px;
+    margin-top: -7px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 9;
+    padding: 0 5px;
+    line-height: 16px;
+    border-radius: 4px;
+}
+/* 区分离线的背景色*/
+.offline-list .printers-item ul{
+    background-color: #616161;
+    border: 1px solid #a6a6a6;
+}
+.offline-list  .edit-alias-box input{
+    background-color: #616161;
+}
+
+
+
+/*----页数-----*/
+.printers-page {
+    width: 1182px;
+    height: 65px;
+}
+.page{
+    width: 100%;
+    height: 45px;
+    margin-top: 20px;
+    text-align: right;
+}
+.page span{
+    display: inline-block;
+    width: 65px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border: #CCC solid 1px;
+}
+
+.pageNum{
+    display: inline-block;
+}
+
+.pageNum a {
+    display: inline-block;
+    line-height:28px;
+    width: 40px;
+    text-align: center;
+    border: #CCC solid 1px;
+    font: 18px/35px Verdana;
+    text-decoration: none;
+    margin-left: 8px;
+    background: #FFF
+}
+.pageNum .onepage {
+    background: #0097de;
+}

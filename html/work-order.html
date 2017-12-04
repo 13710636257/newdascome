@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="description" content="得实工单">
+    <title>得实工单</title>
+    <link rel="stylesheet" href="../css/work-order.css"/>
+    <script src="../js/asset/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+    <div class="head">
+        <!--头部-->
+        <div class="headbox">
+            <img src="../img/home/ds-log3.png" alt="div">
+            <ul>
+                <li><a href="login.html">登录</a></li>
+                <li class="last"><a href="home.html">返回首页</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <div class="cont-top ">
+            <h2>得实工单</h2>
+            <form style="position:relative;">
+                <input name="key_word" type="text" class="form-input"  value="请输入你的问题" style="width:340px;">
+                <input type="submit" class="src-btn" id="" value="搜索">
+            </form>
+        </div>
+        <div class="cont-information">
+            <ul class="information_list">
+                <li>
+                    <p class="tip">由于你是新客户，请完善个人信息</p>
+                </li>
+                <li class="user_information">
+                    <label>电子邮箱<span>*</span></label>
+                    <input type="text"/>
+                </li>
+                <li class="user_information">
+                    <label>联系人姓名<span>*</span></label>
+                    <input type="text" />
+                </li>
+                <li class="user_information">
+                    <label>公司名称<span>*</span></label>
+                    <input type="text" />
+                </li>
+                <li class="user_information">
+                    <label>手机号码<span>*</span></label>
+                    <input type="text" />
+                </li>
+
+                <li class="user_information">
+                    <label>产品型号<span>*</span></label>
+                    <select style="margin-top: 0px; width: 145px;height: 35px;">
+                        <option selected="selected" value="">Select</option>
+                        <option value="11763">请选择</option>
+                        <option value="9518">Dr</option>
+                    </select>
+                    <select style="margin-top: 0px; width: 115px;height: 35px;">
+                        <option selected="selected" value="">Select</option>
+                        <option value="11763">请选择</option>
+                        <option value="9518">Dr</option>
+                    </select>
+                    <select style="margin-top: 0px; width: 85px;height: 35px;">
+                        <option selected="selected" value="">Select</option>
+                        <option value="11763">请选择</option>
+                        <option value="9518">Dr</option>
+                    </select>
+                </li>
+                <li class="user_information">
+                    <label>问题主题<span>*</span></label>
+                    <input type="text" />
+                </li>
+                <li class="user_information">
+                    <label>购买日期<span>*</span></label>
+                    <input type="text" />
+                </li>
+                <li class="user_information">
+                    <label>问题内容<span>*</span></label>
+                    <textarea></textarea>
+                </li>
+            </ul>
+            <!--文件上传-->
+            <div class="files">
+                <label>
+                    <input type="file" name="files" class="upload" id="file" value=""/>
+                    <span style="color: red">点击上传附件</span>
+                </label>
+                <div id="upfile"></div>
+            </div>
+
+            <!--安全检查-->
+            <div class="safe_inspection">
+                <div class="safe_left">
+                    <label>安全检查<span>*</span></label>
+                </div>
+                <div class="safe_right">
+                    <div class="code_top">
+                        <div class="code_pic">
+                            <img src="../img/order/index.jpg" />
+                        </div>
+                        <input type="button" name="" class="tab" value="点击切换" />
+                    </div>
+                    <div class="nub">
+                        <label>(必需的)输入验证码</label>
+                        <input type="text" style="width: 195px;margin-top: 5px" />
+                    </div>
+                </div>
+            </div>
+            <!--提交按钮-->
+            <div class="submit">
+                <input name="submit_btn" type="button" id="submit_btn" class="btn" value="提交问题">
+            </div>
+
+        </div>
+    </div>
+    <script>
+//       文件上传
+        $('#file').change(function(){
+            console.log($('#file').val())
+            $('#upfile').html($('#file').val())
+        })
+    </script>
+</body>
+</html>

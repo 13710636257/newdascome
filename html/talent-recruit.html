@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=10,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="description" content="人才招聘">
+    <title>人才招聘</title>
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/talent-recruit.css"/>
+    <script src="../js/asset/jquery-1.11.0.min.js"></script>
+
+    <!--  Internet Explorer 8 需要 Respond.js 配合才能实现对媒体查询（media query）的支持-->
+    <!--[if lt IE 9]>
+    <script src="../js/asset/html5shiv.min.js"></script>
+    <script src="../js/asset/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--新的特殊内容元素，比如 article、footer、header、nav、section-->
+<!--新的表单控件，比如 calendar、date、time、email、url、search-->
+<!--<video width="320" height="240" controls>-->
+    <!--<source src="../video/cars.mp4" type="video/mp4">-->
+<!--</video>-->
+
+<!--<details>-->
+<!--<summary>Copyright 1999-2011.</summary>-->
+<!--<p> - by Refsnes Data. All Rights Reserved.</p>-->
+<!--<p>All content and graphics on this web site are the property of the company Refsnes Data.</p>-->
+<!--</details>-->
+<!--<meter value="2" min="0" max="10">2 out of 10</meter><br>-->
+<!--<meter value="0.6">60%</meter>-->
+<!--<p><ruby> 标签定义 ruby 注释（中文注音或字符）。</p>-->
+<!--<ruby>-->
+<!--漢 <rp>(</rp><rt>Kan</rt><rp>)</rp>-->
+<!--字 <rp>(</rp><rt>ji</rt><rp>)</rp>-->
+<!--</ruby>-->
+<header class="public-header"></header>
+<div class="banner-img">
+    <!--<p>加入我们</p>-->
+</div>  <!--规定独立的流内容（图像、图表、照片、代码等等）。-->
+<article class="clearfix">
+   <aside class="left-side">
+       <section class="recruit">
+           <h3>人才招聘</h3>
+           <span>Recruitment</span>
+       </section>
+        <ol>
+            <li>社会招聘</li>
+            <li>薪酬与福利</li>
+            <li>人才培训</li>
+            <li>公司环境</li>
+        </ol>
+   </aside> <!-- 页面的侧边栏内容-->
+    <section class="right-message" style="display: block">
+        <p class="message-top">职位详细</p>
+        <div class="recruit-job">
+            <!--<div class="recruit-one">-->
+                <!-- -->
+            <!--</div>-->
+            <p>职位名称：</p>
+            <h2>软件开发工程师</h2>
+            <p class="sale">薪资：<mark>面议</mark></p>
+            <div class="massage">
+                <ul>
+                    <li>
+                        <span>工作地点：</span><i>广州萝岗区</i>
+                    </li>
+                    <li>
+                        <span>招聘人数：</span><i>3人</i>
+                    </li>
+                    <li>
+                        <span>工作性质：</span><i>全职</i>
+                    </li>
+                    <li>
+                        <span>工作年限：</span><i>1年以上</i>
+                    </li>
+                    <li>
+                        <span>最低学历：</span><i>大专</i>
+                    </li>
+                    <li>
+                        <span>发布时间：</span><i>2017-10-20</i>
+                    </li>
+                </ul>
+            </div>
+            <div class="job-decript">
+                <p>职位描述：</p>
+                <div class="decript-content"></div>
+                <h3>职位要求：</h3>
+                <div class="job-requir"></div>
+            </div>
+        </div>
+    </section>
+    <section class="right-message">
+        薪资与待遇
+    </section>
+</article>
+<footer class="public-footer"></footer>
+<script src="../js/public.js"></script>
+<script src="../js/common.js"></script>
+<script type="text/javascript">
+    $(".left-side ol li").click(function () {
+        $(this).addClass("show").siblings().removeClass("show")
+//      var index = $(".pro-nav ul li").index($(this)); //获取li的当前下标
+        var index = $(this).index(); //获取li的当前下标
+        $('.right-message').eq(index).show().siblings('.right-message').hide();
+    })
+</script>
+</body>
+
+</html>

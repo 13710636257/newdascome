@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+
+	<head lang="en">
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+
+		<meta name="renderer" content="webkit">
+		<meta name="描述" content="得实客户支持">
+		<title>得实客户支持</title>
+		<link rel="stylesheet" href="../css/base.css" />
+		<link rel="stylesheet" href="../css/forum.css" />
+		<link rel="stylesheet" href="../css/public-style.css" />
+		<script src="../js/asset/jquery-1.11.0.min.js"></script>
+		<script src="../ckeditor/ckeditor.js"></script>
+		<!--  Internet Explorer 8 需要 Respond.js 配合才能实现对媒体查询（media query）的支持-->
+		<!--[if lt IE 9]>
+		<script src="../js/asset/html5shiv.min.js"></script>
+		<script src="../js/asset/respond.min.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<!-------------------头部----------------->
+		<header>
+			<div class="header">
+				<div class="head_logo">
+					<img src="../img/home/logo2.png" alt="div" />
+				</div>
+				<div class="searchAll">
+					<p class="sch">
+						<input type="text" class="inputleft"  placeholder="请输入搜索内容" />
+						<input type="submit" class="rightbtn" value="搜索" />
+					</p>
+				</div>
+				<div class="nav">
+					<ul class="navUl">
+						<li>
+							<a href="home.html" class="taba">首页</a>
+						</li>
+						<li>
+							<a href="product.html" class="taba">产品</a>
+						</li>
+						<li>
+							<a href="application-Solution.html" class="taba">应用与解决方案</a>
+						</li>
+						<li class="community">
+							<a href="forum.html" class="taba">社区论坛</a>
+						</li>
+						<li>
+							<a href="javascript:;" class="taba">联系得实</a>
+						</li>
+					</ul>
+					<div class="login_register">
+						<ul>
+							<li class="loginLi">
+								<a class="login" href="loginff.html">登录</a>
+								<div class="account-setting">
+									<dl>
+										<dd><a href="personal-center.html">个人中心</a></dd>
+										<dd><a href="userProfile.html">账号设置</a></dd>
+										<dd><a href="moderator-application.html">申请版主</a></dd>
+										<dd><a href="expert-application.html">专家申请</a></dd>
+										<dd><a href="">退出登录</a></dd>
+									</dl>
+								</div>
+							</li>
+							<li><a class="register" href="registerFF.html">注册</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="return-top"></div> <!-- 回到顶部按钮-->
+
+		<div class="forum_head">
+			<div class="search">
+				<input type="text" class="search_input" value="" placeholder="请输入搜索内容"  autocomplete="on"/>
+				<input type="submit" class="search_btn" value="搜索" />
+			</div>
+			<div class="hot_search">
+				<span>热搜板块：</span>
+				<span class="keyword"><a href="javascript:void(0);">标签打印机</a></span>
+				<span class="keyword"><a href="javascript:void(0);">针式打印机</a></span>
+				<span class="keyword"><a href="javascript:void(0);">证卡打印机</a></span>
+				<span class="keyword"><a href="javascript:void(0);">应用软件</a></span>
+				<span class="keyword"><a href="javascript:void(0);">常见问题</a></span>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<!------------论坛内容-------------->
+		<div class="bodyBgd">
+			<div class="note_section">
+				<!-------------左边发帖区域---------------->
+				<div class="note_content">
+					<!-----------图标数据区域--------------->
+					<div class="note_top">
+						<ul>
+							<li>
+								<p class="tubiao icon1"></p>
+								<p class="today_number">今日：0</p>
+							</li>
+							<li>
+								<p class="tubiao icon2"></p>
+								<p class="yesterday_number">昨日：0</p>
+							</li>
+							<li>
+								<p class="tubiao icon3"></p>
+								<p class="all_number">帖子：0</p>
+							</li>
+							<li>
+								<p class="tubiao icon3"></p>
+								<p class="boutique-post">帖子：0</p>
+							</li>
+						</ul>
+						<!--<p class="recommend_right">-->
+							<!--<a href="loginff.html" style="color: white;">发表新主题</a>-->
+						<!--</p>-->
+					</div>
+
+					<!---------帖子区域----------------->
+					<div class="note_recommend  classifyTitle">
+						<!--<ul class="recommend_left">
+							<li class="show current">全部</li>
+							<!--<li>精选版块</li>-->
+						<!--</ul>-->
+						<div class="bigNote">
+							<div class="note_list">
+								<!--<div class="comment">-->
+									<!--<div class="liLeft">-->
+										<!--<p class="head_portrait"><img src="../img/forumf/head2.png" /></p>-->
+										<!--<p>得实虾子</p>-->
+									<!--</div>-->
+									<!--<div class="liRight">-->
+										<!--<p>-->
+												<!--<img src="../img/forumf/top.png">-->
+											<!--<a class="title" href="forumDetail.html">证卡打印机如何更换色带盒</a>-->
+												<!--<img src="../img/forumf/choice.png">-->
+										<!--</p>-->
+										<!--<div class="commentTime">-->
+											<!--<p class="nlinfo">-->
+												<!--<span class="nltime">2017-6-7 9:54:12</span>-->
+												<!--<span class="nltype">证卡打印机</span>-->
+											<!--</p>-->
+											<!--<p class="nlcomment">-->
+												<!--<span class="nlcomment_btn">20</span>-->
+												<!--<span class="nlsee_btn">245</span>-->
+												<!--<span class="dle">删除</span>-->
+											<!--</p>-->
+										<!--</div>-->
+									<!--</div>-->
+								<!--</div>-->
+							</div>
+						</div>
+						<!-------分页------->
+						<div class="ppage">
+								<span class="homePage">首页</span>
+								<span>上一页</span>
+								<div class="pageNum"></div>
+								<span>下一页</span>
+								<span>尾页</span>
+						</div>
+						<!----------发帖------->
+						<div class="send_note">
+							<h3 class="send_title">
+		        				<span>快速发帖</span>
+		   					</h3>
+							<select class="select_type">
+								<option value="0">选择标题分类</option>
+							</select>
+							<input type="text" class="ntitle" placeholder="请输入标题" />
+							<br/>
+							<textarea cols="100" rows="10" name="description" class="ckeditor" ></textarea>
+							<input type="submit" class="submit" id="btn1" value="发表新帖"/>
+							<div class="reply-hint">
+								<span>您需要登录后才可以发帖 </span>
+								<a href="loginff.html">登录</a>|
+								<a href="registerFF.html">注册</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="clearfix"></div>
+		</div>
+			<!--底部-->
+			<footer>
+				<div class="service_info">
+					<div class="info_content clearfix">
+						<div class="footnav">
+							<h3>产品系列</h3>
+							<ul>
+								<li><a href="javascript:;">家用系列</a></li>
+								<li><a href="javascript:;">商用系列</a></li>
+							</ul>
+						</div>
+						<div class="footnav">
+							<h3>服务支持</h3>
+							<ul>
+								<li><a href="javascript:;">驱动、固件下载</a></li>
+								<li><a href="javascript:;">服务机构查询</a></li>
+								<li><a href="javascript:;">常见问题</a></li>
+							</ul>
+						</div>
+						<div class="footnav">
+							<h3>购买指南</h3>
+							<ul>
+								<li><a href="javascript:;">经销商查询</a></li>
+								<li><a href="javascript:;">专卖店</a></li>
+							</ul>
+						</div>
+						<div class="footnav">
+							<h3>关于得实</h3>
+							<ul>
+								<li><a href="javascript:;">公司简介</a></li>
+								<li><a href="javascript:;">新闻资讯</a></li>
+								<li><a href="javascript:;">中国业务网络</a></li>
+							</ul>
+						</div>
+						<div class="footnav">
+							<h3>关联网站</h3>
+							<ul>
+								<li><a href="javascript:;">得实中国合作伙伴门户</a></li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+				<div class="service_copyright">
+					<div class="copyright_content">
+						<div class="aboutus">
+							<a href="javascript:;">网站地图</a>
+							<a href="javascript:;">联系我们</a>
+							<a href="javscript;;">加入我们</a>
+							<a href="javascript:;">使用声明</a>
+							<a href="javascript:;">隐私政策</a>
+						</div>
+						<p>© 2013 版权所有 得实集团 京ICP备10012480号 <span></span>粤公网安备 44070402440764号</p>
+					</div>
+				</div>
+			</footer>
+
+		<script src="../js/forum_bbs.js"></script>
+		<script src="../js/login_publicstyle.js"></script>
+		<script type="text/javascript">
+			$(".technical_support .download li").click(function() {
+				var index = $(this).index();
+				$('.technical_support dd').eq(index).show().siblings().hide();
+			})
+			//------------帖子区域切换------------
+			$(".note_recommend .recommend_left li").click(function() {
+				$(this).addClass("show").siblings().removeClass("show")
+				var index = $(this).index(); //获取li的当前下标
+				$('.note_list').eq(index).show().siblings().hide();
+			})
+		</script>
+	</body>
+
+</html>

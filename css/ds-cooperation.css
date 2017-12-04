@@ -1,0 +1,378 @@
+body{
+    background: #f5f5f6;
+}
+
+.cooperative_banner{
+    width: 100%;
+    height: 408px;
+    text-align: center;
+    line-height: 58px;
+    color: white;
+    /*background: url("../img/cooperativePartner/cooperapic.jpg") no-repeat center center;*/
+    background-image: url("../img/cooperativePartner/cooperapic.jpg");
+    background-size: 100% 100%;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x:0%;
+    background-position-y:0%;
+    background-color: transparent;
+
+}
+.cooperative_banner h2{
+    font-size: 42px;
+    font-weight: 700;
+    padding-top: 120px;
+
+}
+.cooperative_banner p{
+    font-size: 24px;
+}
+/* 内容 头部*/
+
+.join-cooperat {
+    width: 100%;
+    background: white;
+}
+
+.cooperation_hd {
+    margin: auto;
+    width: 1000px;
+    height: 255px;
+}
+
+/* 内容 头部标题*/
+.cooperation_hd h1 {
+    padding-top: 20px;
+    line-height: 50px;
+    font-size: 26px;
+    /*font-weight: 600;*/
+    text-align: center;
+}
+
+/* 内容 头部描述*/
+.cooperation_hd p {
+    padding: 20px 30px;
+    line-height: 22px;
+    margin-bottom:20px;
+}
+
+/* 内容 头部 按钮*/
+.hd_btn {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fff;
+}
+
+.hd_btn a {
+    display: inline-block;
+    width: 130px;
+    line-height: 16px;
+    padding: 10px 6px;
+    margin-right: 20px;
+    color: white;
+    border: 1px solid #e7e7e7;
+    background-color: #009de7;
+    transition:all 1s;
+
+}
+.hd_btn a:hover{
+    background: #e7e7e7;
+    color: black;
+}
+
+
+.cooperation_main {
+    width: 1000px;
+    height: 170px;
+    padding: 30px 0px 20px 0px;
+    margin: auto;
+}
+.cooperation_main .support li{
+    width:228px;
+    float: left;
+    margin-left: 20px;
+    background: white;
+    cursor: pointer;
+    padding-top: 18px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    transition: all .3s ease;
+    border: 1px solid transparent; /*边框为透明*/
+
+}
+.cooperation_main .support li:hover{
+    /*box-shadow: 0 0 10px 1px #ccc;*/
+    border: 1px solid #ccc;
+}
+
+.name{
+    width:100%;
+    height: 28px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+}
+.txt{
+    height: 86px;
+    line-height: 25px;
+    font-size: 14px;
+    width: 208px;
+    padding: 10px;
+    color: #73777a;
+
+}
+/*--合作伙伴标题---*/
+.cooperate-fr{
+    width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid gainsboro;
+}
+.cont-h2{
+    margin-bottom: 12px;
+    font-size: 26px;
+    padding-left: 20px;
+}
+.cont-span{
+    font-size: 15px;
+    color: darkgray;
+    font-weight: 100;
+}
+
+/*经销商与合作伙伴*/
+.cooperation_ft {
+    width: 1350px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.cooperation_type {
+    width: 23.3%;
+    float: left;
+    height: 405px;
+    margin-top: 20px;
+    background: white;
+    padding-bottom: 10px;
+    border: 1px solid gainsboro;
+
+    transition: all .3s ease;
+    box-sizing: border-box;
+}
+.typeone,.typetwo{
+    margin-left: 18px;
+}
+
+/* 标题*/
+.cooperation_type h3 {
+    width: 100%;
+    background: #ebebec;
+    font-size: 18px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 60px;
+    /*color: #009de7;*/
+}
+
+.cooperation_type:hover h3{
+    color: white;
+    background: #009de7;
+    border: 1px solid #0097de;
+}
+.cooperation_type:hover{
+    box-shadow: 0 0 12px  #009de7;
+    cursor: pointer;
+}
+
+
+/* 内容简介*/
+.cooperation_brief {
+    width: 89.2%;
+    height: 230px;
+    padding: 0px 10px 12px 20px;
+    overflow-y: scroll;
+    color: #73777a;
+}
+
+.cooperation_brief p {
+    line-height: 22px;
+    margin-top: 10px;
+    text-align: justify;
+    font-size: 14px;
+    /*color: #73777a;*/
+}
+
+/* 链接*/
+.cooperation_link {
+    margin-top: 10px;
+    padding: 0px 20px;
+}
+
+.cooperation_link a {
+    display: block;
+    width: 100%;
+    height: 24px;
+    line-height: 22px;
+    font-size: 15px;
+    margin-top: 5px;
+    overflow: hidden;
+}
+.cooperation_link a:hover{
+    color:#009de7;
+}
+
+
+/*为何与得实合作*/
+.cooperate-foot{
+    width: 100%;
+    background: white;
+}
+.foot{
+    width: 1220px;
+    height: 334px;
+    margin-top: 60px;
+    margin: auto;
+}
+.whyh2{
+    width: 100%;
+    line-height: 57px;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px 0px 30px 0px;
+}
+.foot .footul li{
+    width: 255px;
+    height: 214px;
+    float: left;
+    margin-left: 28px;
+}
+.foot .footul li p{
+    width: 85%;
+    line-height: 22px;
+}
+.footh4{
+    line-height: 45px;
+    font-weight: 600;
+}
+
+
+/*联系得实*/
+.cooperation_slider {
+    position: fixed;
+    top:208px;
+    right: 35px;
+}
+
+.cooperation_slider > div {
+    margin-bottom: 15px;
+    height: 40px;
+    padding: 10px;
+    background-color: #ededed;
+    border: 1px solid gainsboro;
+    opacity: .8;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius:4px;
+     border-radius: 4px;
+}
+.cooperation_slider > div:nth-of-type(2){
+    height: 40px;
+    padding-top: 0px;
+    background:url("../img/cooperativePartner/righta_img.png");
+    background-size: 100% 100%;
+}
+.apply_btnone{
+    color: white;
+}
+
+.cooperation_slider > div > a {
+    line-height: 45px;
+    display: block;
+    height: 45px;
+    position: relative;
+    padding-left: 55px;
+}
+
+
+.cooperation_slider > div > a:before {
+    content: "";
+    width: 25px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    left: 18px;
+    background-size:100% 100%;
+
+}
+
+.apply_btn:before{
+    background-image: url("../img/cooperativePartner/righta1.png")
+}
+
+.doc_btn:before{
+    background-image: url("../img/cooperativePartner/righta5.png")
+}
+
+.share_btn:before{
+    background-image: url("../img/cooperativePartner/righta6.png")
+}
+
+
+/* 联系我们*/
+.cooperation_slider .slider_contactUS {
+    height: 240px;
+
+}
+
+.slider_contactUS dl {
+    padding: 10px;
+}
+
+.slider_contactUS dt {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    margin: 5px 0;
+
+}
+
+.slider_contactUS dd {
+    line-height: 30px;
+    margin-bottom: 15px;
+
+    background-color: #fff;
+    font-size: 14px;
+
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+}
+.slider_contactUS dd a{
+    padding-left: 10px;
+
+
+}
+
+/* 问题反馈*/
+.slider_appointment p {
+    line-height: 18px;
+    padding-left: 55px;
+}
+.cooperation_slider .slider_appointment a{
+    height: 40px;
+    line-height: 40px;
+    color:#e93223;
+    text-decoration:underline;
+
+    /*background-color: #d9a5ff;*/
+}
+.cooperation_slider .slider_appointment a:before{
+    top: -5px;
+}

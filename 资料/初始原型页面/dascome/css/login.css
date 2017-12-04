@@ -1,0 +1,89 @@
+body{
+    width:976px;
+    margin:0 auto;
+    padding-top:30px;
+}
+.content>img{
+    width:660px;
+}
+.content .content_login{
+    position:relative;
+    float:right;
+    width:316px;
+    height:382px;
+    background:#ebebeb;
+    padding:20px;
+    padding-top:30px;
+    box-sizing:border-box;
+}
+
+.content .content_login .suggest_info{
+    height:30px;
+    color:#ff0000;
+}
+.content_login .login_title{
+    height:66px;
+    font-size:30px;
+}
+.content .content_login .user_name{
+    text-indent: 8px;
+}
+.content .content_login .user_password{
+    text-indent: 8px;
+}
+.content_login input{
+    height:30px;
+    width:100%;
+    margin-bottom:30px;
+}
+
+.content_login .submit_content{
+    width:100px;
+    margin:0 auto;
+}
+.content_login .submit{
+    /*position:absolute;*/
+    width:100px;
+    height:40px;
+    line-height: 40px;
+    text-align: center;
+    font-size:18px;
+    background:#0096d6;
+    border:none;
+    color:#fff;
+    border-radius: 8px;
+    outline:none;
+}
+
+.content_login .login_link{
+       text-align: right;
+}
+.content_login .login_link a{
+    display:inline-block;
+    padding:10px;
+    padding-right:0;
+    font-size:14px;
+    color:#6c6c6c;
+}
+
+.other_link{
+    margin-top:20px;
+    text-align: right;
+}
+.other_link .partner:before{
+    display:inline-block;
+    content:"";
+    width:34px;
+    height:24px;
+    background:url("../img/loginpartner.png") no-repeat;
+    vertical-align: middle;
+}
+.other_link span{
+    display: inline-block;
+    padding:0 0 20px 20px;
+    padding-top:0;
+    color:#666;
+    font-weight: 700;
+    font-size:14px
+}
+

@@ -1,0 +1,100 @@
+@media (min-height: 1080px) {
+    .edit-template-main {
+        height: 1040px;
+    }
+}
+
+@media (min-height: 1050px) {
+    .edit-template-main {
+        height: 1010px;
+    }
+}
+
+@media (max-height: 960px) {
+    .edit-template-main {
+        height: 920px;
+    }
+
+    /* 单面居中容器*/
+    .canvas_wrapper .only_one {
+        width: 760px;
+        height: 484px;
+        top: 30px;
+        left: 80px;
+    }
+}
+
+/*20.1寸：1600X900*/
+@media (max-height: 900px) {
+    .edit-template-main {
+        height: 860px;
+    }
+
+    .canvas_wrapper .only_one {
+        width: 760px;
+        height: 484px;
+        top: 30px;
+        left: 80px;
+    }
+}
+
+/* 1366*768   笔记本14 */
+@media (max-height: 768px) {
+    .edit-template-main {
+        height: 728px;
+    }
+
+    .canvas_wrapper .only_one {
+        /*width: 540px;*/
+        /*height: 340px;*/
+        top: 12px;
+        left: 70px;
+    }
+
+    /*左侧边栏*/
+    .tool_slider_nav {
+        width: 50px;
+    }
+
+    .tool_slider_nav li, .tool_top_nav li {
+        width: 48px;
+        height: 48px;
+    }
+
+    .tool_slider_nav li {
+        margin-top: 15px;
+    }
+
+    .tool_top_nav li {
+        margin-left: 15px;
+    }
+
+    .tool_slider_nav .fa, .tool_top_nav .fa, .icon {
+        font-size: 2.1em;
+        line-height: 48px;
+    }
+
+    /*顶部通栏*/
+    .tool_top_nav {
+        height: 70px;
+        margin-left: 70px;
+    }
+
+    /*显示坐标*/
+    .fixed .showPosition {
+        left: 70px;
+    }
+
+    /* 登录注册 右边*/
+    .drawing_board_box .tool_top_nav .navbar-right {
+        height: 50px;
+    }
+
+    .navbar-right .login-box {
+        line-height: 50px;
+    }
+
+    .tool_top_nav .printer-info {
+        top: 5px;
+    }
+}

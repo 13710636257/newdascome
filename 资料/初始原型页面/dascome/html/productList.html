@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta name="description" content="得实客户支持">
+    <title>得实客户支持-产品</title>
+    <link rel="stylesheet" href="../css/base.css"/>
+    <link rel="stylesheet" href="../css/productList.css"/>
+    <!--[if lt IE 9]>
+    <script>alert("请使用ie8及以上版本的浏览器")</script>
+    <![endif]-->
+    <script src="../asset/lib/jquery-3.1.1.js"></script>
+</head>
+<body>
+<!--头部-->
+<header>
+    <h2>得实客户支持-产品</h2>
+</header>
+<!--导航-->
+<nav>
+    <ul class="clearfix">
+        <li><a href="home.html" class="taba">支持主页</a></li>
+        <li><a href="product.html" class="taba">产品</a></li>
+        <li><a href="solvescheme.html" class="taba">应用与解决方案</a></li>
+        <li><a href="dascomforum.html" class="taba">社区论坛</a></li>
+        <li><a href="connectus.html" class="taba">联系得实</a></li>
+    </ul>
+    <a href="login.html" class="login_account">登录我的账户</a>
+</nav>
+<!--搜索-->
+<div class="search">
+    <span class="search_title">搜索所有支持</span>
+    <input type="text" placeholder="输入您的产品序列号或者关键字" class="search_text"/>
+    <input type="submit" class="submit_btn" value=""/>
+</div>
+<!--检测-->
+<div class="detection clearfix">
+    <a href="identifyproduct.html">立即检测</a>
+    <span>自动检测您的得实产品</span>
+</div>
+<!--产品列表-->
+<div class="product_content">
+    <h3>证卡打印机</h3>
+    <div class="propagation">
+        <div class="propagation_page">
+            <span class="pagination_startval">1</span>
+            <span>-</span>
+            <span class="pagination_endval">1</span>
+            <span>/</span>
+            <span class="pagination_totalval">8</span>
+            <span>个结果</span>
+        </div>
+        <div class="change_page">
+            <span class="arr_left current">&lt; 上一页</span>
+            <span class="arr_right">下一页 &gt;</span>
+        </div>
+    </div>
+    <div class="product_list">
+        <ul>
+            <li>
+                <a href="../html/productDetail.html">
+                    <img src="../img/u26.jpg" />
+                    <p>DC-1300证卡打印机</p>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <img src="../img/u20.png"/>
+                    <p>DC-7600证卡打印机</p>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <img src="../img/u20.png" alt=""/>
+                    <p>DC-7600证卡打印机</p>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <img src="../img/u20.png" alt=""/>
+                    <p>DC-7600证卡打印机</p>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <img src="../img/u20.png" alt=""/>
+                    <p>DC-7600证卡打印机</p>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <img src="../img/u20.png" alt=""/>
+                    <p>DC-7600证卡打印机</p>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <img src="../img/u20.png" alt=""/>
+                    <p>DC-7600证卡打印机</p>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <img src="../img/u20.png" alt=""/>
+                    <p>DC-7600证卡打印机</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+<script>
+    addCurrent();
+    function addCurrent(){
+        var lis=$(".taba");
+        lis.removeClass("current");
+        $(lis[1]).addClass("current");
+    }
+</script>
+</html>

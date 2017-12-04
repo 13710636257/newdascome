@@ -1,0 +1,252 @@
+﻿body{
+    width:760px;
+    margin:0 auto;
+    padding-top:10px;
+
+
+}
+/*头部*/
+
+header h2{
+    height:70px;
+    line-height: 70px;
+    font-size:30px;
+    font-family: "宋体 Bold";
+    font-weight:bold;
+}
+
+/*导航*/
+nav{
+    position:relative;
+}
+nav ul{
+    border-bottom:1px solid #666;
+    width:612px;
+
+}
+nav ul li{
+    float:left;
+    padding:11px 20px;
+    border:1px solid #666;
+    border-bottom:none;
+    text-align: center;
+    margin-right:6px;
+}
+nav ul li:nth-child(1) a{
+    color:#42ABDD;
+}
+
+nav ul li:last-of-type{
+    margin-right:0;
+}
+nav ul li a{
+    font-family: '微软雅黑 Bold', '微软雅黑';
+    font-weight:bold;
+    color:#666;
+    font-size:18px;
+}
+nav ul li a.current{
+    color:#42ABDD;
+}
+nav .login_account{
+    position:absolute;
+    color:#42ABDD;
+    font-size:14px;
+    right:0;
+    top:10px;
+}
+
+
+/*搜索*/
+.search{
+    position: relative;
+    padding:20px 0;
+    font-size: 0;
+    -webkit-text-size-adjust:none;
+}
+.search .search_title{
+    display:inline-block;
+    width:184px;
+    height:40px;
+    line-height: 40px;
+    font-size:16px;
+    text-align: center;
+    background:#2f99cc;
+    color:#fff;
+    vertical-align: middle;
+}
+.search .search_text{
+    width:532px;
+    height:34px;
+    line-height: 34px;
+    text-indent:8px;
+    font-size:14px;
+    vertical-align:middle;
+}
+.search .submit_btn{
+    width:40px;
+    height:40px;
+    line-height: 40px;
+    background: url("../img/search.png") no-repeat;
+    background-size:40px 40px;
+    border:none;
+    vertical-align: middle;
+    padding:0;
+}
+
+
+/*欢迎*/
+.welcome p{
+    font-size:44px;
+    height:80px;
+    line-height:80px;
+    color:#42ABDD;
+    font-family:  '华文中宋 Bold', '华文中宋';
+    font-weight:bold;
+}
+
+.content{
+    position: relative;
+    /*width:95%;*/
+    margin-top:30px;
+    border:1px solid #B3B3B3;
+    border-bottom:none;
+
+}
+.content .content_top{
+    height:80px;
+    border-bottom:1px solid #B3B3B3 ;
+}
+.content .content_top span{
+    display:inline-block;
+    height:50px;
+    line-height: 50px;
+    font-size:20px;
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    font-family: "宋体 Bold", 宋体;
+    margin-left:20px;
+}
+.content .content_top img{
+    float:right;
+    height:80px;
+    margin-right:140px;
+
+}
+.content .content_top:hover .top_mask{
+    display:block;
+}
+.content .content_top .top_mask{
+    position:absolute;
+    padding:10px 20px;
+    top:0;
+    left:0;
+    height:80px;
+    width:100%;
+    background-color:#42ABDD;
+    box-sizing: border-box;
+    display:none;
+}
+.top_mask h3{
+    height:26px;
+    line-height: 26px;
+    font-size:20px;
+    color:#fff;
+    font-weight:400;
+}
+.top_mask p{
+    height:30px;
+    line-height: 30px;
+    font-size:16px;
+    color:#fff;
+}
+/*主要内容列表*/
+.content_center{
+    width:100%;
+}
+.content_center ul li{
+    float:left;
+    position: relative;
+    width:33.33%;
+    height:150px;
+    text-align: center;
+    padding-top:18px;
+    border-right:1px solid #B3B3B3;
+    border-bottom: 1px solid #B3B3B3;
+    box-sizing: border-box;
+}
+.content_center ul li:nth-child(3n){
+    border-right:none;
+}
+.content_center ul li a h3{
+    height:40px;
+    line-height:40px;
+    font-size:20px;
+    color:rgb(51, 51, 51);
+    text-align: left;
+    text-indent:16px;
+    font-family: '宋体 Regular', '宋体';
+}
+.content_center ul li a img{
+   margin: 0 auto;
+    height:80px;
+}
+.content_center ul li a div{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#42ABDD;
+    color:#fff;
+    padding-left:16px;
+    box-sizing: border-box;
+    display:none;
+}
+.content_center ul li a:hover div{
+    display:block;
+}
+.content_center ul li a div h3{
+    height:70px;
+    line-height:70px;
+    color:#fff;
+    text-indent: 0;
+
+}
+.content_center ul li a div p{
+    font-family: '宋体 Bold', '宋体';
+    height:20px;
+    line-height: 20px;
+    font-size: 16px;
+    text-align: left;
+}
+.footer{
+    margin-top:18px;
+    background: url("../img/footer.png") no-repeat;
+    background-size:100% 137px;
+    color:#fff;
+    padding: 20px;
+    border-right:1px solid #ccc;
+    margin-bottom:20px;
+
+}
+.footer h3{
+    font-size:22px;
+}
+.footer p{
+    height:50px;
+    line-height: 50px;
+    font-size: 16px;
+    font-family: '宋体 Regular', '宋体';
+}
+.footer a{
+    display:inline-block;
+    width:90px;
+    height:30px;
+    line-height: 30px;
+    text-align: center;
+    color:#fff;
+    background: #ff0000;
+    font-size:12px;
+    margin-top:-10px;
+}

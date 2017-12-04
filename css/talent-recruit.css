@@ -1,0 +1,136 @@
+body{
+    background: #f7f7f7;
+}
+
+.banner-img{
+    width: 100%;
+    height: 328px;
+    background: url(../img/contact_ds/home-bn.jpg) no-repeat;
+    background-size: 100% 100%;
+
+}
+
+
+article{
+    width: 1200px;
+    margin: 10px auto;
+    /*background: paleturquoise;*/
+}
+
+.left-side{
+    float: left;
+    width: 200px;
+    height: 400px;
+}
+.left-side .recruit{
+    width: 100%;
+    height:82px;
+    background: #0097de;
+    color: white;
+}
+.left-side .recruit h3{
+    padding:20px 0px 10px 30px;
+    font-size: 24px;
+}
+.left-side .recruit span{
+    margin-left: 30px;
+}
+.left-side ol .show {
+    background: #0097de;
+    color: white;
+}
+.left-side ol li{
+    width: 100%;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    background: gainsboro;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.right-message{
+    float: right;
+    width: 978px;
+    display: none;
+    /*background: plum;*/
+}
+.right-message .message-top{
+    width: 95%;
+    padding: 15px 0px 15px 20px;
+
+    font-size: 18px;
+}
+.right-message .recruit-job{
+    width: 95%;
+    /*height: 631px;*/
+    background:white;
+    padding: 20px;
+    border: 1px solid gainsboro;
+}
+.right-message .recruit-job h2{
+    font-size: 28px;
+    padding: 10px 0px 10px 0px;
+}
+
+.right-message .recruit-job .sale{
+    width: 100%;
+    line-height: 31px;
+    padding-top: 10px;
+    color: #707070;
+}
+.right-message .recruit-job .sale mark{
+    font-size: 20px;
+}
+.recruit-one{
+    padding: 15px 20px 0 20px;
+    height: auto;
+    width: auto;
+    overflow: hidden;
+    border-bottom: 1px solid #e4e4e4
+}
+.massage{
+    width: 890px;
+    height: 80px;
+    margin-top: 20px;
+    padding: 20px 20px 10px 20px;
+    background-color: #f2f2f2;
+}
+
+.massage ul li{
+    width: 294px;
+    float: left;
+
+    /*font-size: 14px;*/
+    padding-bottom: 20px;
+}
+.massage ul li span{
+    color: #707070;
+}
+
+.job-decript{
+    width: 100%;
+    /*height: 361px;*/
+    margin-top: 20px;
+    /*padding: 20px;*/
+    /*background-color: #f2f2f2;*/
+}
+
+.job-decript .decript-content{
+    width: 100%;
+    height: 145px;
+    /*border: 1px solid grey;*/
+    margin-top: 15px;
+    background-color: #f2f2f2;
+}
+.job-decript h3{
+    padding: 15px 0px 15px 0px;
+    font-size:16px;
+    font-weight: 600;
+}
+.job-decript .job-requir{
+    width: 100%;
+    height: 165px;
+    /*border: 1px solid grey;*/
+    background-color: #f2f2f2;
+}

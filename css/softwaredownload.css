@@ -1,0 +1,268 @@
+body{
+    background:#f7f7f7;
+}
+@font-face {
+    font-family: 'iconfont';
+    src: url('../font/iconfont.eot');
+    src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../font/iconfont.woff') format('woff'),
+    url('../font/iconfont.ttf') format('truetype'),
+    url('../font/iconfont.svg#iconfont') format('svg');
+}
+
+
+/*搜索功能*/
+.detection_input{
+    width:1200px;
+    margin:0 auto;
+    text-align: center;
+    margin-top:30px;
+    background:#fff;
+    padding:30px 0;
+    /*box-shadow: 0 0 24px 4px #ccc;*/
+    z-index:50;
+}
+.detection_input h3{
+    font-size:28px;
+    padding-bottom: 10px;
+}
+.detection_input .search{
+    position:relative;
+    font-size:0;
+    margin-top:20px;
+}
+.detection_input .search .search_input{
+    width:620px;
+    height:50px;
+    padding-left:50px;
+    text-indent: 10px;
+    font-size:20px;
+    border-radius: 4px 0 0 4px;
+    border:none;
+    border:1px solid #ccc;
+}
+.detection_input .search .search_icon:before{
+    position: absolute;
+    content:"\e601";
+    font-family: iconfont;
+    width:50px;
+    height:50px;
+    line-height: 54px;
+    font-size:24px;
+    color:#6d6565;
+}
+.detection_input .search .search_btn{
+    display: inline-block;
+    width:60px;
+    height:54px;
+    line-height: 54px;
+    font-size:18px;
+    background: #0097de;
+    color:#fff;
+    border-radius: 0 4px 4px 0;
+    vertical-align: top;
+    border:1px solid #ccc;
+    border-left:none;
+    cursor: pointer;
+}
+
+/*驱动、固件下载*/
+.software_download{
+    width:1200px;
+    margin:0 auto;
+    margin-top:20px;
+    background: #fff;
+    overflow: hidden;
+    padding:20px;
+    box-sizing: border-box;
+    min-width:540px;
+
+}
+.title{
+    position: relative;
+    z-index: 1;
+}
+.title .title_text{
+    width:330px;
+    padding:20px;
+    font-size:26px;
+    text-align: center;
+    background: #fff;
+    margin:0 auto;
+}
+.title:before{
+    position: absolute;
+    content:"";
+    width:1000px;
+    left:50%;
+    margin-left:-500px;
+    box-sizing: border-box;
+    border-top:1px solid #ccc;
+    top:50px;
+    margin-top:-15px;
+    z-index:-1;
+}
+.software_download .download_tab{
+    width:100%;
+    margin-top:30px;
+
+}
+.software_download .download_tab ul{
+    width:100%;
+}
+.software_download .download_tab li{
+    float:left;
+    width:25%;
+    box-sizing: border-box;
+    padding:15px;
+    text-align: center;
+    font-size:20px;
+    background: #ccc;
+    border-right:10px solid #fff;
+    cursor: pointer;
+}
+.software_download .download_tab li:last-of-type{
+    border-right:none;
+}
+.software_download .download_tab li.active{
+
+    background-color: #009de7;
+    color:#fff;
+}
+
+/*无搜索结果*/
+.noresult{
+    width:100%;
+    height:400px;
+    line-height: 400px;
+    text-align: center;
+    font-size:30px;
+    color:red;
+    display: none;
+}
+
+
+/*驱动、软件、固件下载主要内容*/
+.software_download .download_content{
+
+}
+.software_download .download_content>div{
+    display: none;
+    padding:30px 0;
+}
+.software_download .download_content .download_cdrive{
+    display: block;
+}
+
+.software_download .dcommon .cdrive_top{
+    width:100%;
+    border-bottom:2px solid #999;
+}
+.dcommon .cdrive_top span{
+    display: inline-block;
+    height:60px;
+    line-height: 60px;
+    font-size:20px;
+    /*text-align: center;*/
+    font-weight:bold;
+}
+.dcommon .cdrive_top span:nth-child(1){
+    width:751px;
+}
+.dcommon .cdrive_top span:nth-child(2){
+    width:200px;
+    text-align: center;
+}
+.dcommon .cdrive_top span:nth-child(3){
+    width:200px;
+    text-align: center;
+}
+.dcommon .cdrive_content li{
+    padding:6px 0;
+    height:50px;
+    line-height: 50px;
+
+    border-bottom:1px dashed #999;
+}
+.dcommon .cdrive_content li span{
+    display: inline-block;
+    font-size:20px;
+    /*text-align: center;*/
+}
+.dcommon .cdrive_content li:hover{
+    color:#1b8be9;
+}
+.dcommon .cdrive_content li span:nth-child(1){
+    width:751px;
+}
+.dcommon .cdrive_content li span:nth-child(2){
+    width:200px;
+    text-align: center;
+}
+.dcommon .cdrive_content li span:nth-child(3){
+    width:200px;
+    text-align: center;
+}
+.dcommon .cdrive_content li .download{
+    width:100px;
+    height:40px;
+    line-height: 40px;
+    display: inline-block;
+    font-size:20px;
+    text-align: center;
+    font-size:16px;
+    background-color: #009de7;
+    color:#fff;
+    margin-left:28px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+/*分页*/
+
+.software_download .ppage .ascheme_propagation{
+    text-align: center;
+    margin-top:40px;
+}
+
+.software_download .ppage .ascheme_propagation span{
+    padding:10px 18px;
+    border:1px solid #ccc;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.software_download .ppage .ascheme_propagation span.active{
+    color:#ccc;
+}
+
+.software_download .ppage .ascheme_propagation .page_change{
+    height:33px;
+    width:42px;
+    text-align: center;
+    font-size:16px;
+    border:1px solid #df5000;
+}
+
+.software_download .ppage .ascheme_propagation .change_btn{
+    height:36px;
+    width:58px;
+    text-align: center;
+    background-color: #009de7;
+    color:#fff;
+    font-size:16px;
+    outline: none;
+    border: none;
+    margin-left:10px;
+    border-radius:6px;
+    cursor: pointer;
+}
+
+
+
+/*页数信息*/
+.software_download  .ppage .page_result{
+    margin-top:20px;
+}
+
+

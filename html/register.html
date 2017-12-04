@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=8,chrome=1">-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1, IE=EmulateIE7, IE=EmulateIE9, IE=EmulateIE8"/>
+    <meta name="renderer" content="webkit">
+    <meta name="description" content="得实客户支持">
+    <title>注册账号</title>
+    <link rel="icon" href="../img/common/favicon.ico"  type="image/x-icon">
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/register.css"/>
+    <link rel="stylesheet" href="../font/font-awesome-4.7.0/css/font-awesome.css"/>
+    <script src="../js/asset/script.js/src/script.js"></script>
+    <script>
+        $script(['../js/asset/jquery-1.9.1.min.js',
+                    '../js/public.js'
+                ],
+                function () {
+                    $script(['../js/common.js',
+                                '../js/register.js'
+                            ],
+                            function () {
+                                console.log('依赖异步加载！')
+                            })
+                })
+    </script>
+    <!--  Internet Explorer 8 需要 Respond.js 配合才能实现对媒体查询（media query）的支持-->
+    <!--[if lt IE 9]>
+    <script src="../js/asset/html5shiv.min.js"></script>
+    <script src="../js/asset/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+<header class="register-header">
+    <div class="headbox">
+        <img src="../img/home/ds-log3.png" alt="div">
+        <ul>
+            <li><a href="login.html">登录</a></li>
+            <li class="last"><a href="home.html">返回首页</a></li>
+        </ul>
+    </div>
+</header>
+<main class="register-main">
+    <form class="register-container">
+        <dl>
+            <dt>注册得实账号</dt>
+            <dd class="username-dd">
+                <label for="register-username">用户名</label>
+                <input id="register-username" type="text" placeholder="请输入用户名">
+
+                <ul class="register-tip first">
+                    <li>
+                        <i class="fa fa-times" aria-hidden="true" data-pass="no"></i>
+                        <span>长度为6~14个字符</span>
+                    </li>
+                    <li>
+                        <i class="fa fa-times" aria-hidden="true" data-pass="no"></i>
+                        <span>支持匹配除了换行符以外的任意一个字符</span>
+                    </li>
+                </ul>
+            </dd>
+            <dd class="pwd-dd">
+                <label for="register-password">密码</label>
+                <input id="register-password" type="password" placeholder="请输入密码">
+                <ul class="register-tip">
+                    <li>
+                        <i class="fa fa-times" aria-hidden="true" data-pass="no"></i>
+                        <span>长度为8~20个字符</span>
+                    </li>
+                    <li>
+                        <i class="fa fa-times" aria-hidden="true" data-pass="no"></i>
+                        <span>支持数字、大小写字母和 * .  + - _ </span>
+                    </li>
+                    <li>
+                        <i class="fa fa-times" aria-hidden="true" data-pass="no"></i>
+                        <span>不允许有空格</span>
+                    </li>
+                </ul>
+            </dd>
+            <dd class="again-pwd">
+                <label for="confirm-password">确认密码</label>
+                <input id="confirm-password" type="password" placeholder="请再次输入密码">
+                <ul class="register-tip">
+                    <li>
+                        <i class="fa fa-times" aria-hidden="true" data-pass="no"></i>
+                        <span>上面的密码输入合法</span>
+                    </li>
+                    <li>
+                        <i class="fa fa-times" aria-hidden="true" data-pass="no"></i>
+                        <span>输入的密码与上面的相同</span>
+                    </li>
+                </ul>
+            </dd>
+            <dd class="email-dd">
+                <label for="register-email">邮箱</label>
+                <input id="register-email" type="text" placeholder="请输入邮箱">
+                <ul class="register-tip">
+                    <li>
+                        <i class="fa fa-times" aria-hidden="true" data-pass="no"></i>
+                        <span>是否允许该邮箱注册</span>
+                    </li>
+                    <li>
+                        <i class="fa fa-times" aria-hidden="true" data-pass="no"></i>
+                        <span>邮箱的格式是否正确</span>
+                    </li>
+                </ul>
+            </dd>
+            <dd class="mobile-dd">
+                <label for="register-mobile">手机号码</label>
+                <input id="register-mobile" type="text" placeholder="请输入手机号码">
+                <ul class="register-tip">
+                    <li>
+                        <i class="fa fa-times" aria-hidden="true" data-pass="no"></i>
+                        <span>是否允许该手机注册</span>
+                    </li>
+                    <li>
+                        <i class="fa fa-times" aria-hidden="true" data-pass="no"></i>
+                        <span>手机的格式是否正确</span>
+                    </li>
+                </ul>
+            </dd>
+            <dd class="code-dd">
+                <label for="verify-number">验证码</label>
+                <input id="verify-number" type="text" placeholder="请输入验证码">
+
+                <div class="verify-box">
+                    <img src="../img/login/checkCode.jpg" alt="验证码" class="verify-picture">
+                    <button class="change-btn">换一张</button>
+                </div>
+
+                <ul class="register-tip">
+                    <li>
+                        <i class="fa fa-times" aria-hidden="true" data-pass="no"></i>
+                        <span>验证是否正确</span>
+                    </li>
+                </ul>
+            </dd>
+
+            <dd>
+                <button id="register-btn">立即注册</button>
+            </dd>
+            <dd class="last">
+                <input id="protocol" type="checkbox">
+                <a href="javascript:(0);">
+                    <label for="protocol"> 点击'立即注册',即表示您同意并愿意遵守得实用户协议《得实用户协议》</label>
+                </a>
+            </dd>
+        </dl>
+    </form>
+</main>
+
+<!--<script src="../js/register.js"></script>-->
+</body>
+</html>

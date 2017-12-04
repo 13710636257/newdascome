@@ -1,0 +1,281 @@
+.head{
+	width: 100%;
+	height: 45px;
+	background: gainsboro;
+}
+.head p{
+	width: 1000px;
+	line-height: 45px;
+	margin: 0 auto;
+	font-size: 18px;
+}
+
+.new_partner{
+	width: 1000px;
+	margin: 10px auto;
+	padding-bottom: 20px;
+}
+
+.page_title{
+	width: 100%;
+	font-size: 28px;
+	color: #0096d6;
+	line-height: 32px;
+	padding: 10px 0px 10px 0px;
+}
+
+.information{
+	width: 100%;
+	padding: 10px 0px 10px 0px;
+	/*height: 45px;*/
+}
+.information span{
+	display: inline-block;
+	width: 20px;
+	height:  20px;
+	line-height: 20px;
+	text-align: center;
+	color: #767676;
+	border-radius: 50%;
+	background: #e5e8e8;
+	margin-right: 10px;
+	margin-left: 10px ;
+}
+.information span:nth-of-type(2){
+	background: #0096d6;
+	color: white;
+	font-weight: 600;
+}
+
+.corporate_search{
+	width: 100%;
+	
+}
+
+.user{
+	width: 489px;
+	height: 40px;
+	font-size: 18px;
+	font-weight: 600;
+}
+.prompt{
+	padding-bottom: 15px;
+}
+
+
+.corporate_search ul li{
+	width: 100%;
+	height: 55px;
+}
+.user_information label {
+    display: inline-block;
+    width: 135px;
+    line-height: 20px;
+    color: #37474F;
+    font-size: 16px;
+    text-align:left;
+}
+.user_information span{
+	color: red;
+}
+
+input[type="text"] {
+    display: inline-block;
+    width: 300px;
+    padding: 6px 8px;
+    height: 20px;
+    line-height: 20px;
+	border: 1px solid gray;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.ProvinceSelect{
+	width: 320px;
+	height: 35PX;
+}
+
+.safe_inspection{
+	width: 100%;
+	height: 139px;
+}
+.safe_left{
+	width: 169px;
+	height: 54px;
+	font-size: 18px;
+	float: left;
+}
+.safe_left span{
+	color: red;
+}
+
+.safe_right{
+	width: 280px;
+	height: 130px;
+	float: left;
+}
+
+.code_top{
+	width: 280px;
+	height: 50px;
+	padding-bottom: 20px;
+}
+.code_pic{
+	width: 150px;
+	height: 50px;
+	float: left;
+}
+
+.code_pic img{
+	width: 150px;
+	height: 50px;
+}
+
+.tab{
+	margin-left: 10px;
+	margin-top: 10px;
+	width: 85px;
+	height: 30px;
+	border: none;
+	background:paleturquoise ;
+	border-radius: 10px;
+	font-size: 16px;
+	color: red;
+}
+.seach_btn{
+	width: 65px;
+	height: 34px;
+	font-size: 18px;
+	background: #0096d6;
+	border: none;
+	color: white;
+}
+
+ .company_information{
+ 	width: 1000px;
+ 	height: 685px;
+ 	margin: 0 auto;
+ 	padding-bottom: 20px;
+ 	
+ }
+.title{
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.warning{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	background: #ffdddd;
+	border: 1px solid red;
+	margin-top: 20px;
+	font-weight: 600;
+}
+.warning img{
+	width:22px;
+	height: 22px;
+	margin-top: -2px;
+	margin-left: 5px;
+}
+
+.xin{
+	width: 100%;
+	margin-top: 15px;
+}
+.requriedField{
+	color: red;
+}
+
+.company_information .information_content{
+	width: 1000px;
+ 	margin: 0 auto;
+ 	padding-top: 30px;
+}
+.information_content li{
+	width:465px;
+	height: 55px;
+	float: left;
+}
+.second{
+	margin-left:60px;
+} 
+
+
+.leading_official{
+	width: 1000px;
+	/*height: 500px;*/
+	/*background: palegreen;*/
+	margin: 0 auto;
+}
+.lead_name{
+	font-size: 16px;
+	line-height: 30px;
+	font-weight: 600;
+}
+
+.leading_official table{
+	width: 100%;
+	/*height: 80px;*/
+}
+.information_list tr{
+	width: 998px
+	height: 40px;
+	/*background: #0096d6;*/
+}
+.firsttr th{
+	background: #0096d6;
+	height: 40px;
+	line-height: 40px;
+	text-align: left;
+	color: white;
+	padding-left: 10px;
+	border: 1px solid gainsboro;
+}
+.name{
+	width:220px;
+}
+.firsttr td{
+	height: 45px;
+	line-height: 40px;
+	text-align: left;
+	color: white;
+	padding-left: 10px;
+	border: 1px solid gainsboro;
+}
+.add{
+	color:#0096d6 ;
+	padding-top: 20px;
+	padding-bottom:10px;
+}
+
+.representative{
+	width: 100%;
+	height: 500px;
+}
+
+.next_page{
+	width:230px;
+	height: 80px;
+	padding-left:750px;
+	margin-top: 50px;
+	
+}
+
+.next_page input{
+	width: 102px;
+	height: 40px;
+	font-size: 18px;
+	border: none;
+	color: white;
+	font-weight: 600;
+}
+
+.cancel{
+	background: gray;
+}
+.next{
+	background: #0096d6;
+	margin-left: 10px;
+}

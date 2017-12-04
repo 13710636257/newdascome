@@ -1,0 +1,126 @@
+body{
+    width:760px;
+    margin:0 auto;
+    padding-top:10px;
+}
+.header{
+    width:100%;
+}
+
+.header li{
+    float:left;
+    margin:20px 0;
+    font-size:26px;
+    color:#999999;
+    font-weight: 700;
+    cursor:pointer;
+}
+.header li.current{
+    color:#0096D6;
+}
+.header li:first-of-type{
+    padding-right:20px;
+    border-right:4px solid #999999;
+}
+.header li:last-of-type{
+    padding:0 20px;
+}
+
+.content>ul>li{
+    display:none;
+
+}
+/*解决方案*/
+.content .solve_scheme{
+    display:block;
+
+}
+.content .solve_scheme div{
+    margin-bottom:10px;
+}
+
+.content .csolve img{
+    width:100%;
+}
+.content .cdeposit img{
+    width:372px;
+}
+.content .cdeposit img:first-of-type{
+    margin-right:10px;
+}
+
+.content .cother img{
+    width:243px;
+    margin-right:10px;
+}
+.content .cother img:last-of-type{
+    margin-right:0;
+}
+
+.content .customization img{
+    width:100%;
+
+}
+/*应用软件*/
+.softwaredownload{
+   border:1px solid #999;
+    border-bottom:none;
+}
+.application_software>img{
+    width:100%;
+    margin-bottom:20px;
+}
+.application_software .softwaredownload li{
+    position:relative;
+    padding:10px 0 10px 10px;
+    border-bottom:1px solid #999;
+
+}
+.application_software .softwaredownload li img{
+    width:70px;
+    height:70px;
+    vertical-align: top;
+}
+
+.softwaredownload li .software_text{
+    display: inline-block;
+    height:50px;
+    line-height: 50px;
+    font-size:24px;
+    margin-left:10px;
+    color:#999999;
+    font-weight:bold;
+
+}
+.softwaredownload li .download_text{
+    position:absolute;
+    right:26px;
+    top:18px;
+    padding:8px;
+    background:#0096D6;
+    color:#fff;
+    border-radius:8px;
+}
+
+.softwaredownload li  .download_detail{
+    position:absolute;
+    font-size:12px;
+    color:#999;
+    bottom:14px;
+    right:26px;
+}
+
+
+/*返回*/
+.back{
+    height:40px;
+    line-height: 40px;
+    text-align: right;
+}
+.back a{
+    display: inline-block;
+    height:100%;
+    padding:0 10px;
+    font-size:14px;
+    font-weight: bold;
+}

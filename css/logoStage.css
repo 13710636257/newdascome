@@ -1,0 +1,529 @@
+
+.logoStage {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.login_caption {
+
+    /*padding: 30px 50px;*/
+}
+
+.login_caption h1 {
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 30px;
+    padding: 10px 0;
+    text-align: center;
+    color: #0000cc;
+
+    text-shadow: 1px -1px 5px rgba(0, 0, 224, .7), 1px -3px 10px rgba(0, 0, 224, .3);
+}
+
+/* 左边*/
+.stage_slider {
+    width: 290px;
+    float: left;
+}
+.stage_slider >div{
+    box-shadow: 0px 1px 4px rgba(0,0,0,.7),0px 1px 6px rgba(0,0,0,.2);
+}
+/* 账户信息*/
+.stage_account {
+    padding: 15px 10px 30px 15px;
+    position: relative;
+    height: 240px;
+    background-color: #cbcbcb;
+}
+
+/* 头像*/
+.account_logo {
+    width: 90px;
+    height: 90px;
+    overflow: hidden;
+
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+
+
+    background: url("../img/logoStage/cp_logo.png") no-repeat center center;
+    background-size: contain;
+
+}
+
+/* 基本信息*/
+.account_base {
+    width: 182px;
+    height: 60px;
+    padding-top: 30px;
+
+    position: absolute;
+    right: 0;
+    top: 15px;
+
+}
+
+.account_base p {
+    margin-top: 10px;
+    padding: 0 10px;
+    font-size: 13px;
+
+}
+
+/* 代号*/
+.account_code span:nth-of-type(2) {
+    font-weight: 600;
+}
+
+.account_base p span:first-child,
+.account_more p span:first-child {
+    display: inline-block;
+
+    width: 70px;
+    text-align: right;
+}
+
+/* 更多账户信息*/
+.account_more {
+    height: 100px;
+    margin-top: 10px;
+}
+
+.account_more p {
+    line-height: 30px;
+    margin-top: 5px;
+    padding-left: 5px;
+    font-size: 13px;
+}
+
+.account_more p span:first-child {
+    display: inline-block;
+    width: 70px;
+    text-align: right;
+}
+
+.account_more p span:last-child {
+    padding-left: 8px;
+}
+
+/* 系统信息*/
+.account_inform {
+    max-height: 200px;
+    padding-bottom: 30px;
+    margin-top: 10px;
+    background-color: #cbcbcb;
+}
+
+/* 公共样式*/
+.slider_type dl {
+    overflow: hidden;
+    padding-top: 10px;
+}
+
+.slider_type dt {
+    line-height: 24px;
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 15px;
+    margin-bottom: 10px;
+
+}
+
+.slider_type dd {
+    line-height: 17px;
+    font-size: 14px;
+    width: 95%;
+    margin-top: 5px;
+
+    position: relative;
+}
+
+.slider_type dd a {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+
+    display: inline-block;
+    font-size: 13px;
+
+    padding-right: 10px;
+    margin-left: 10px;
+}
+
+.account_inform dl {
+    max-height: 180px;
+    height: 180px;
+
+}
+
+.account_inform dd a {
+    width: 210px;
+    padding-left: 4px;
+}
+.account_inform dd a:hover{
+    color:#e93223;
+}
+    /* 未读取信息提示*/
+.account_inform dd .unread {
+    display: block;
+    width: 10px;
+    height: 10px;
+
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+
+    background-color: #1f75e9;
+    position: absolute;
+    left: 2px;
+    top: 3px;
+
+}
+
+/* 通知日期*/
+.account_inform dd span:last-child {
+    display: block;
+    width: 65px;
+    line-height: 17px;
+    padding-right: 6px;
+    text-align: right;
+    font-size: 12px;
+
+    position: absolute;
+    right: -15px;
+    top: 0;
+}
+
+/* 查看更多消息*/
+.type_more {
+    width: 100%;
+    margin-top: 12px;
+}
+
+.more_link_btn {
+    padding: 2px 6px;
+    font-size: 13px;
+    margin-left: 15px;
+
+    background-color: #00c1de;
+    color:#fff;
+
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+}
+.more_link_btn:hover{
+    background-color: #0f92de;
+    color:#f0f0f0;
+}
+/* 进度查询*/
+.query_progress {
+    height: 200px;
+    margin-top: 10px;
+
+    background-color: #CBCBCB;
+}
+
+.query_progress dl {
+    padding-top: 10px;
+    overflow: hidden;
+}
+.query_progress dd{
+    padding-left: 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 90%;
+}
+    /* 最新动态*/
+
+.updata_dynammic{
+    padding-bottom: 12px;
+    margin-top: 10px;
+
+    background-color: #CBCBCB;
+}
+.updata_dynammic dl{
+
+
+}
+.updata_dynammic dd {
+    height: 32px;
+    margin-left: 10px;
+    margin-top: 0;
+}
+/* :hover 样式*/
+.updata_dynammic dd:hover{
+    background-color: #fff;
+}
+.updata_dynammic dd:hover .icon_news{
+    display: block;
+}
+
+.updata_dynammic dd a {
+    width: 245px;
+    height: 18px;
+    margin-left: 0;
+    margin-top: 6px;
+    padding-left: 8px;
+}
+
+
+.updata_dynammic .icon_news {
+    display: block;
+    width: 12px;
+    height: 12px;
+
+    background-color: #6c4bff;
+
+    position: absolute;
+    right: 1px;
+    top: 10px;
+
+    background: url("../img/logoStage/icon_news.png") no-repeat right center;
+    background-size: contain;
+
+    display: none;
+}
+/* 查看更多动态*/
+.updata_dynammic .type_more{
+    margin-top: 5px;
+}
+
+
+
+
+/* 主体*/
+.stage_main {
+    width: 900px;
+    float: right;
+}
+
+/* 搜索框*/
+.search_wrap {
+
+    height: 34px;
+    padding: 15px 10px;
+    overflow: hidden;
+    width: 780px;
+    margin-left: 50px;
+
+    background-color: #9cb4b4;
+}
+
+.search_box {
+    float: left;
+    height: 100%;
+    width: 500px;
+    line-height: 34px;
+    position: relative;
+
+}
+
+#search {
+    display: block;
+    height: 20px;
+    width: 460px;
+    padding: 7px 10px 7px 35px;
+
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+
+    -webkit-transition: box-shadow .4s ease-in;
+    -moz-transition: box-shadow .4s ease-in;
+    -ms-transition: box-shadow .4s ease-in;
+    -o-transition: box-shadow .4s ease-in;
+    transition: box-shadow .4s ease-in;
+
+    box-shadow:inset 0px 1px 4px rgba(0,0,0,.7),0px 1px 6px rgba(0,0,0,.2);
+}
+#search:hover{
+    box-shadow:none;
+}
+
+.icon_search {
+    display: block;
+    width: 20px;
+    height: 20px;
+
+    position: absolute;
+    left: 8px;
+    top: 7px;
+
+    background: url("../img/logoStage/search_btn.png") no-repeat 0 center;
+    background-size: contain;
+}
+
+/* 搜索按钮*/
+.confirm_box {
+    float: left;
+    height: 100%;
+    width: 80px;
+    margin-left: 20px;
+    line-height: 34px;
+}
+
+.search_btn {
+    display: block;
+    text-align: center;
+
+    -webkit-border-radius: 17px;
+    -moz-border-radius: 17px;
+    border-radius: 17px;
+
+    background-color: #078e17;
+    color:#fff;
+}
+
+/* 分享资源*/
+.share_resource {
+    height: 470px;
+    margin-top: 10px;
+
+}
+
+.share_resource_caption {
+    padding: 15px 50px;
+    color:#454545;
+}
+
+.share_resource_caption h2 {
+    line-height: 36px;
+    font-size: 26px;
+    font-weight: 700;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #B0B0B0;
+
+    text-shadow: 1px -3px 10px rgba(0, 0, 0, 0.7), -1px -3px 4px rgba(0, 0, 0, 0.3);
+}
+
+.share_resource_item {
+    width: 450px;
+    height: 180px;
+    float: left;
+    margin-top: 10px;
+}
+
+.share_resource_item a:hover {
+    color: #00c1de;
+}
+
+.share_resource_item a {
+    display: block;
+    width: 200px;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.share_resource_item h3 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 36px;
+    padding-top: 20px;
+    color: #707070;
+
+    -webkit-transition: color .5s linear, transform .5s linear;
+    -moz-transition: color .5s linear, transform .5s linear;
+    -ms-transition: color .5s linear, transform .5s linear;
+    -o-transition: color .5s linear, transform .5s linear;
+    transition: color .5s linear, transform .5s linear;
+}
+
+.share_resource_item a:hover h3 {
+    color: #00c1de;
+    -webkit-transform: scale(1.05) translateY(-5px);
+    -moz-transform: scale(1.05) translateY(-5px);
+    -ms-transform: scale(1.05) translateY(-5px);
+    transform: scale(1.05) translateY(-5px);
+}
+
+.share_resource_item a:hover .icon_resource {
+    transform: scale(1.2);
+}
+
+/* 图标*/
+.icon_resource {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin-top: 20px;
+    background: no-repeat 0 center;
+    background-size: contain;
+    -webkit-transition: transform .5s linear;
+    -moz-transition: transform .5s linear;
+    -ms-transition: transform .5s linear;
+    -o-transition: transform .5s linear;
+    transition: transform .5s linear;
+}
+
+.icon_product {
+    background-image: url("../img/logoStage/icon_product.png");
+}
+
+.icon_document {
+    background-image: url("../img/logoStage/icon_document.png");
+}
+
+.icon_tool {
+    background-image: url("../img/logoStage/icon_tool.png");
+}
+
+.icon_plan {
+    background-image: url("../img/logoStage/icon_method.png");
+}
+
+/*需求申请*/
+.icon_sale {
+    background-image: url("../img/logoStage/icon_sale.png");
+}
+
+.icon_support {
+    background-image: url("../img/logoStage/icon_support.png");
+}
+
+.icon_oem {
+    background-image: url("../img/logoStage/icon_oem.png");
+}
+
+.icon_other {
+    background-image: url("../img/logoStage/icon_other.png");
+}
+
+/* 问题与意见*/
+.msg_board{
+    height: 330px;
+}
+.msg_area {
+    padding: 10px 50px;
+    overflow: hidden;
+}
+.leave_msg{
+    width: 780px;
+    height: 160px;
+    padding: 10px;
+    box-shadow:inset -1px -1px 6px rgba(0,0,0,.3),inset 1px -1px 6px rgba(0,0,0,.2);
+}
+/* 发送按钮*/
+.sent_msg_btn{
+    width: 80px;
+    line-height: 14px;
+    padding: 8px 10px;
+    margin-right: 50px;
+    text-align: center;
+
+    background-color: #078e17;
+    color:#fff;
+    float: right;
+
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6), 1px 1px 6px rgba(0, 0, 0, 0.2);
+
+}

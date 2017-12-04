@@ -1,0 +1,211 @@
+@charset "utf-8";
+/*@charset "gb2312";*/
+
+body {
+    background: #f7f7f7;
+}
+/*标题图*/
+.appointment_banner{
+	width: 1200px;
+	height: 195px;
+	margin: auto;
+    /*background: paleturquoise;*/
+	background:url("../img/contact_ds/appointment.jpg") no-repeat;
+
+
+}
+
+.appointment_contianer {
+    width: 1200px;
+    margin:0px auto ;
+    background: white;
+    border: 1px solid #ccc;
+    /*box-shadow: 0 0 4px 1px #ccc;*/
+}
+
+
+.appointment_left {
+    float: left;
+    width: 211px;
+    height: 451px;
+    border-right: 1px solid #ccc;
+}
+
+.appointment_left dl {
+	
+    text-align: center;
+    color:#f0f0f0;
+}
+
+.appointment_left dt {
+    line-height: 51px;
+    font-weight: 600;
+    background-color: #263238;
+  
+}
+
+.appointment_left dd {
+    line-height: 87px;
+    background-color: #55b2fa;
+    margin-top:8px;
+    font-size:22px;
+    cursor:pointer;
+}
+
+
+.appointment_right {
+    float: right;
+    width: 980px;
+    padding-bottom:36px;
+}
+
+.caption {
+    height: 50px;
+    margin-bottom:20px;
+    border-bottom: 1px dashed #B0B0B0;
+}
+
+
+.title {
+    float: left;
+    width: 43%;
+}
+
+.title h3 {
+    line-height: 50px;
+    font-size: 28px;
+    padding-left: 65px;
+    color:#787878;
+}
+
+.wait {
+    float: right;
+    width: 50%;
+    padding: 0 30px;
+    line-height: 50px;
+    text-align: right;
+}
+
+.wait span {
+    padding-left: 2px;
+}
+
+
+.number, .time {
+    padding-right: 6px;
+    padding-left: 2px;
+    color: #e93223;
+}
+
+
+.content_list {
+
+}
+
+.fill_item {
+    height: 40px;
+    margin-top: 10px;
+    padding-left: 20px;
+    float: left;
+}
+
+.fill_item label {
+    display: inline-block;
+    width: 100px;
+    padding: 6px 10px;
+    text-align: right;
+    line-height: 20px;
+    color: #37474F;
+    font-size: 13px;
+}
+
+input[type="text"] {
+    display: inline-block;
+    width: 300px;
+    padding: 6px 8px;
+    height: 20px;
+    line-height: 20px;
+    border: 1px solid transparent;
+    background: #f5f5f5;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+     border-radius: 2px;
+
+}
+input[type="text"]:hover,.inquiry_area:hover{
+    border-color: #009de7;
+
+
+}
+input[type="text"],.inquiry_area{
+    -webkit-transition: border-color .2s ease-in;
+    -moz-transition:  border-color .2s ease-in;
+    -ms-transition:  border-color .2s ease-in;
+    -o-transition:  border-color .2s ease-in;
+    transition:  border-color .2s ease-in;
+}
+
+.inquiry {
+    margin-top: 20px;
+    padding-left: 20px;
+    clear: both;
+}
+
+.inquiry_title {
+    display: inline-block;
+    width: 100px;
+    padding: 2px 10px 18px 10px;
+    text-align: right;
+    vertical-align: top;
+    float: left;
+    color: #37474F;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+
+.inquiry_area {
+	margin-top: 10px;
+    float: left;
+    height: 120px;
+    width: 746px;
+    padding: 10px 15px;
+    margin-left: 4px;
+    border: 1px solid transparent;
+    background: #f5f5f5;
+}
+
+.confirm {
+    line-height: 20px;
+    margin-top: 10px;
+    margin-left: 142px;
+    overflow: hidden;
+}
+
+
+input[type="checkbox"] {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin-right: 5px;
+    cursor:pointer;
+}
+
+
+.agree_link {
+    color: #454545;
+    font-size: 12px;
+    border-bottom: 1px solid #454545;
+
+    -webkit-transition: color .4s;
+    -moz-transition: color .4s;
+    -ms-transition: color .4s;
+    -o-transition: color .4s;
+    transition: color .4s;
+}
+
+.agree_link:hover {
+    color: #E92322;
+    border-bottom: 1px solid #E92322;
+}

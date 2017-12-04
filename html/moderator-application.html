@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="description" content="得实客户支持">
+    <title>得实客户支持</title>
+    <link rel="stylesheet" href="../css/base.css"/>
+    <link rel="stylesheet" href="../css/moderator.css"/>
+    <script src="../js/asset/jquery-3.1.1.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<div class="moderator-side">
+    <h2 class="moderator-apt">版主申请</h2>
+    <ul class="moderator">
+
+        <li>
+            <label>在线时段</label>
+            <em>&nbsp;</em>
+            <input type="text" name="" class="timeinp " value="" placeholder="如：上午12:30-下午2:00"/>
+            <span class="tip " data-tip="show">请输入在线时间段</span>
+        </li>
+        <li>
+            <label>个人简介</label>
+            <em>*</em>
+            <textarea class="text profile text-area"></textarea>
+            <span class="tip " data-tip="show">请输入内容</span>
+        </li>
+
+
+        <li>
+            <label>专长或优势</label>
+            <em>*</em>
+            <textarea class="text advantage text-area"></textarea>
+            <span class="tip " data-tip="show">请输入内容</span>
+        </li>
+
+        <li>
+            <label>面对网友的投诉或指责，如何处理</label>
+            <em>*</em>
+            <textarea class="achievetext dispose text-area"></textarea>
+            <span class="tip" data-tip="show">请输入内容</span>
+        </li>
+
+        <li>
+            <label>改善建议</label>
+            <em>*</em>
+            <textarea class="achievetext advise text-area"></textarea>
+            <span class="tip" data-tip="show">请提出您的建议</span>
+        </li>
+
+
+        <li>
+            <label>管理原则</label>
+            <em>&nbsp;</em>
+            <textarea class="text manage text-area"></textarea>
+            <span class="tip" data-tip="show">请输入内容</span>
+        </li>
+        <li>
+            <label></label>
+            <input type="submit" name="" class="btn submit" value="提交"/>
+        </li>
+
+
+    </ul>
+</div>
+</body>
+
+<script>
+    //    var Limit = {
+    //        profile:50,
+    //        advantage:50,
+    //        dispose:20,
+    //        advise:41,
+    //        manage:20,
+    //    }
+    var limit = [ 15, 15, 15, 15]
+    $('.text-area').each(function (i, item) {
+
+        $(this).attr('data-length', limit[i])
+    })
+
+    $('.moderator').on('input', '.text-area', function () {
+        var $tip = $(this).siblings('.tip');
+        var len = $(this).val().length;
+        var limitLength = 1*$(this).data('length');//乘以1是将字符串转化为数字
+        console.log($(this).val())
+        if(len< limitLength){
+            $tip.show().html('请输入大于' + limitLength + '长度的内容')
+        }else{
+            $tip.hide()
+        }
+
+        console.log(len)
+    })
+
+    $('.btn').on('click', function () {
+        var onoff = true;
+        $('.tip').each(function () {
+            if ($(this).data('tip') == 'show') {
+                $(this).show();
+                onoff = false;
+            }
+        })
+        if (onoff) {
+            $.ajax({
+                type: "post",
+                url: "http://192.168.11.111/Apply/bbs/User/applyData",
+                data: {
+                    //必选参数
+                    periods: '',   // 期数
+                    intro: $('.profile').val(),    //个人简介
+                    mode: $('.manage').val(),    //管理原则
+                    speciality: $('.advantage').val(),  //专长或优势
+                    censure: $('.dispose').val(),   //面对网友的投诉或指责，如何处理
+                    improve: $('.advice').val(),   //改善建议
+                    oltime: $('.timeinp').val() //在线时段
+                },
+                success: function (data) {
+                    var code = data.code
+                    if (code == 1000) {
+                        alert('提交成功')
+
+                    }
+                    onoff = true;
+                }
+
+            })
+        }
+
+    })
+
+</script>
+</html>

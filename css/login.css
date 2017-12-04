@@ -1,0 +1,179 @@
+body {
+    min-width: 600px;
+    overflow: hidden;
+    /*background-color: #8281a5;*/
+    background: #f7f7f7;
+}
+
+/*头部*/
+.login-header {
+    position: static;
+    height: 70px;
+}
+.headbox {
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+}
+
+/* 标题*/
+.login-header img {
+  margin-top: 8px;
+}
+
+.login-header h1 {
+    display: inline-block;
+    font-size: 18px;
+    text-align: right;
+    line-height: 70px;
+    font-weight: 700;
+    float: right;
+}
+
+.login-header a {
+    color: #E0E0E0;
+}
+
+/* 返回主页*/
+.return:hover {
+    color: #e00b33;
+    text-shadow: -20px -8px rgba(233, 39, 15, 0.2);
+}
+
+.login-main {
+    position: relative;
+    height: 600px;
+    padding: 165px 0 50px 60px;
+
+}
+
+/* 账号登录
+**********************************/
+.login-modal-container {
+    width: 525px;
+    padding: 20px 0;
+    height: 323px;
+    margin: 0 auto;
+    background: white;
+    /*background-color: #f0f0f0;*/
+    border: 1px solid gainsboro;
+    /*box-shadow: 2px 2px 20px rgba(88, 195, 255, 0.8), 0 -2px 20px rgba(0, 0, 0, .5);*/
+}
+
+.login-form dl {
+    padding: 0 20px;
+    text-align: center;
+    line-height: 55px;
+}
+
+.login-form dt {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    font-weight: 600;
+    font-size: 28px;
+    color: #333;
+}
+
+/*关闭图标*/
+.login-form .fa-times {
+    color: #B7B7B7;
+    transition: color .2s ease-in;
+    position: absolute;
+    right: 25px;
+    top: 12px;
+}
+
+.login-form .fa-times:hover {
+    color: #ff0b32;
+}
+
+.login-form dd {
+    height: 40px;
+    margin-top: 10px;
+    line-height: 40px;
+    position: relative;
+}
+
+.login-form label {
+    width: 50px;
+    display: inline-block;
+}
+
+.login-form input {
+    /*float: right;*/
+    width: 270px;
+    padding: 8px 20px 8px 10px;
+    line-height: 24px;
+    font-size: 12px;
+    border: 1px solid gainsboro;
+    display: inline-block;
+    transition: border-color .1s ease-in;
+}
+
+.login-form .focus {
+    border-color: #9195ff;
+}
+
+.login-form .login-item {
+    margin-top: 30px;
+}
+
+/*登陆按钮*/
+#login_btn {
+    width: 325px;
+    text-align: center;
+    background-color: #009de7;
+    color: white;
+    font-size: 18px;
+    transition: background-color .2s ease-in, border-radius .2s ease-in;
+}
+
+#login_btn:hover {
+    /*background-color: #181eff;*/
+    border-radius: 2px;
+}
+
+/*立即注册*/
+.register-item {
+    clear: both;
+    text-align: right;
+}
+
+.register-item a {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #919191;
+    padding: 4px;
+
+    transition: color .2s ease-in;
+}
+
+.register-item a:hover {
+    color: #e00b33;
+    text-decoration: underline;
+}
+
+/*信息提示*/
+.note-text {
+    width: 300px;
+    padding-top: 15px;
+    text-align: center;
+    line-height: 14px;
+
+    position: absolute;
+    top: 40px;
+    right: 0;
+    font-size: 12px;
+    color: #ff0b32;
+
+    display: none;
+}
+@media (max-width:800px) {
+    .login-header h1{
+        padding-right: 10px;
+    }
+}
+
+/* 账号登录
+end **********************************/

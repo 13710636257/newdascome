@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=8,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="description" content="得实客户支持">
+    <title>打印管理</title>
+    <link rel="icon" href="../img/common/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/manage-printers.css"/>
+    <link rel="stylesheet" href="../font/font-awesome-4.7.0/css/font-awesome.css"/>
+    <script data-main="../js/manage-printers.js" src="../js/asset/requirejs/require.js" defer async></script>
+
+    <!--  Internet Explorer 8 需要 Respond.js 配合才能实现对媒体查询（media query）的支持-->
+    <!--[if lt IE 9]>
+    <script src="../js/asset/html5shiv.min.js"></script>
+    <script src="../js/asset/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<!-- 头部-->
+<header class="public-header"></header>
+<!-- /头部-->
+<!-- 主体-->
+<main class="manage-main-container dense_water ">
+    <div class="printer_h2"><h2>打印机列表</h2></div>
+    <section class="printers-left">
+        <dl class="manage-main-tab">
+            <!--<dt>打印机列表</dt>-->
+            <dd class="tab-item first tab-active">
+                <span>在线列表 :</span>
+                <b class="online-printers amount">0</b>
+            </dd>
+            <dd class="tab-item" style="">
+                <span>离线列表:</span>
+                <b class="offline-printers amount">0</b>
+            </dd>
+        </dl>
+    </section>
+
+    <section class="printers-right">
+        <!-- 在线-->
+        <div class="manage-wrap online-wrap active-wrap">
+            <dl class="printers-list online-list"></dl>
+            <!--<dt class="printers-title">在线列表</dt>-->
+           <dd class="printers-item">
+                <ul>
+                    <li><span>序列号:</span><span class="unique"></span></li>
+                    <li><span>型号:</span><span class="model"></span></li>
+                    <li>
+                        <span>别名:</span>
+                        <div class="edit-alias-box">
+                            <input class="alias" type="text"  disabled="disabled"/>
+                            <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                        </div>
+                    </li>
+                    <li><span>主状态:</span> <span class="alive"></span></li>
+                    <li><span>子状态:</span> <span class="alive"></span></li>
+                </ul>
+            </dd>
+        </div>
+
+        <!-- 离线-->
+        <div class="manage-wrap offline-wrap">
+            <dl class="printers-list offline-list"></dl>
+        </div>
+
+    </section>
+    <div class="clearfix"></div>
+
+
+    <section class="printers-page">
+        <div class="page">
+            <span>上一页</span>
+            <div class="pageNum">
+                <a href="" class="onepage">1</a>
+                <a href="">2</a>
+            </div>
+            <span>下一页</span>
+        </div>
+    </section>
+
+
+</main>
+<!-- /主体-->
+
+<!--尾部-->
+<footer class="public-footer"></footer>
+<!--/尾部-->
+</body>
+</html>

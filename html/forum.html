@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="description" content="得实客户支持">
+    <title>得实客户支持</title>
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/new-forum.css"/>
+    <script src="../ckeditor/ckeditor.js"></script>
+    <script src="../js/asset/jquery-3.1.1.js" type="text/javascript" charset="utf-8"></script>
+    <!--  Internet Explorer 8 需要 Respond.js 配合才能实现对媒体查询（media query）的支持-->
+    <!--[if lt IE 9]>
+    <![endif]-->
+    <script src="../js/asset/html5shiv.min.js"></script>
+    <script src="../js/asset/respond.min.js"></script>
+</head>
+
+<body>
+<!--头部-->
+<header class="public-header"></header>
+<!--得实社区论坛-->
+<div class="forum-head">
+    <div class="forum-logo">
+        <p>得实社区论坛</p>
+    </div>
+    <div class="forum-search">
+        <div class="search">
+            <input type="text" class="search_input" placeholder="请输入搜索内容"/>
+            <input type="submit" class="search_btn" value="搜索"/>
+        </div>
+        <!--<a href="">版主管理</a>-->
+    </div>
+</div>
+<div class="forum-nav">
+    <div class="forum-middle">
+        <ul>
+            <li><a href="forum.html" class="taba">论坛首页</a></li>
+            <li><a href="forum-detail.html" class="taba">社区论坛</a></li>
+            <li><a href="http://192.168.11.111/Apply/bbs/Adminphp/index" class="taba">版主管理</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-----论坛内容------>
+<div class="forum-content clearfix">
+
+    <div class="content-top clearfix">
+        <!--最新主题部分-->
+        <div class="content-left">
+            <div class="top-title"><p>最新主题</p></div>
+            <div class="hot-post new-hotpost">
+                <ul class="hotul newhotUl">
+                    <!--<li>-->
+                    <!--<a href="forum-content.html">为什么 提示SC681? why不看！ 能解决？？？...</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href="forum-content.html" target="_blank" title="你认为发达城市宜居还是三线城市宜居？">你认为发达城市宜居还是三线城市宜居？</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href="forum-content.html"> 如你所愿！38如你所愿！388A超大容量该如你所愿！388A超大容量该8A超大容量该打多少 ...</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href="forum-content.html"> 如你所愿！388A超大容量该打多少 ...</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href="forum-content.html"> 如你所愿！388A超大容量该打多少 ...</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href="forum-content.html">为什么 提示SC681? why不看！ 能解决？？？...</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href="forum-content.html" target="_blank" title="你认为发达城市宜居还是三线城市宜居？">你认为发达城市宜居还是三线城市宜居？</a>-->
+                    <!--</li>-->
+                </ul>
+            </div>
+        </div>
+        <!--图片轮播部分-->
+        <div class="content-image">
+            <ul class="newul newpic">
+                <li>
+                    <img src="../img/forumf/f7.png">
+                    <p>关于打印机的那些事</p>
+                </li>
+                <li>
+                    <img src="../img/forumf/timg55.jpg">
+                    <p>得实打印机专注研发29年</p>
+                </li>
+                <li>
+                    <img src="../img/forumf/ds.jpg">
+                    <p>得实打印机专注研发29年</p>
+                </li>
+            </ul>
+            <p class="small_yuan">
+                <a href="###">1</a>
+                <a href="###">2</a>
+                <a href="###">3</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="hot-content">
+        <!--热门帖子部分-->
+        <div class="hot-left">
+            <div class="top-title">
+                <p>热门帖子</p>
+            </div>
+
+            <div class="hot-post hothost">
+                <ul class="hotul hotpostUl">
+                    <!--<li>-->
+                    <!--<a href="forum-content.html">为什么 提示SC681? why不看！ 能解决？？？...</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href="forum-content.html" target="_blank" title="你认为发达城市宜居还是三线城市宜居？">你认为发达城市宜居还是三线城市宜居？</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href="forum-content.html"> 如你所愿！388A超大容量该打多少 ...</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href="forum-content.html"> 如你所愿！388A超大容量该打多少 ...</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href="forum-content.html"> 如你所愿！388A超大容量该打多少 ...</a>-->
+                    <!--</li>-->
+                </ul>
+            </div>
+        </div>
+
+        <!--公司活动部分-->
+        <div class="hot-right">
+            <div class="top-title">
+                <p>公司活动</p>
+            </div>
+            <div class="active">
+                <div class="active-left">
+                    <img src="../img/forumf/5950ae2ac090f.png"/>
+                </div>
+                <div class="active-right">
+                    <ul class="activeul">
+                        <li>
+                            <a href="javascript:void(0);" target="_blank">万步有约，健康相伴——南昌市西湖区开展实地健走活动</a>
+                        </li>
+
+                        <li>
+                            <a href="javascript:void(0);" target="_blank">万步有约，健康相伴——南昌市西湖区开展实地健走活动</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" target="_blank">万步有约，健康相伴——南昌市西湖区开展实地健走活动</a>
+                        </li>
+
+                        <li>
+                            <a href="javascript:void(0);" target="_blank">玉溪市易门县举行“万步有约”实地健走活动</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" target="_blank">玉溪市易门县举行“万步有约”实地健走活动</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------发帖部分-------------->
+    <div class="send_content clearfix">
+        <div class="information">
+            <div class="information_left clearfix">
+
+                <!-------产品分类区域-------->
+                <div class="note_content">
+                    <div class="problem-title"><p class="comment">社区</p></div>
+                    <ul class="note_title">
+                        <li class="show">产品分类</li>
+                        <li>技术开发</li>
+                        <li>解决方案</li>
+                        <a href="forum-detail.html" class="checkAll2">查看全部</a>
+                    </ul>
+                    <div class="bigNote">
+                        <!----产品分类----->
+                        <div class="note_list product_classify clearfix">
+                            <ul class="printer-zoner">
+                                <!--<li>-->
+                                <!--<p class="product_icon">-->
+                                <!--<img src="../img/forumf/product1.png" />-->
+                                <!--</p>-->
+                                <!--<div class="product_content">-->
+                                <!--<a class="title" href="forum-detail.html">证卡打印机专区</a>-->
+                                <!--&lt;!&ndash;帖子题目&ndash;&gt;-->
+                                <!--<div class="commentTime">-->
+                                <!--<span class="xs1 xw0 i">今日: <strong class="xi1">1</strong><b class="ico_fall">&nbsp;</b><span class="pipe">| </span>主题: <strong class="xi1">12591</strong>-->
+                                <!--<span class="pipe"> | </span>排名: <strong class="xi1" title="上次排名:3">9</strong><b class="ico_fall">&nbsp;</b></span>-->
+                                <!--</div>-->
+                                <!--<p style="font-size: 14px; line-height: 20px;">AR-550采用优化升级的新一代打印头，打印寿命高达4亿次/针1＋6联高清晰拷贝能力，并秉承了得实系列打印机的高性能高兼容性....</p>-->
+                                <!--</div>-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                <!--<p class="product_icon">-->
+                                <!--<img src="../img/forumf/product1.png" />-->
+                                <!--</p>-->
+                                <!--<div class="product_content">-->
+                                <!--<a class="title" href="forum-detail.html">报表打印机专区</a>-->
+                                <!--&lt;!&ndash;帖子题目&ndash;&gt;-->
+                                <!--<div class="commentTime">-->
+                                <!--<span class="xs1 xw0 i">今日:-->
+                                <!--<strong class="xi1">1</strong>-->
+                                <!--<b class="ico_fall">&nbsp;</b>-->
+                                <!--<span class="pipe">| </span>主题:-->
+                                <!--<strong class="xi1">12591</strong>-->
+                                <!--<span class="pipe"> | </span>排名:-->
+                                <!--<strong class="xi1" title="上次排名:3">9</strong>-->
+                                <!--<b class="ico_fall">&nbsp;</b>-->
+                                <!--</span>-->
+                                <!--</div>-->
+                                <!--<p style="font-size: 14px; line-height: 20px;">AR-550采用优化升级的新一代打印头，打印寿命高达4亿次/针1＋6联高清晰拷贝能力，并秉承了得实系列打印机的高性能高兼容性....</p>-->
+                                <!--</div>-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                <!--<p class="product_icon">-->
+                                <!--<img src="../img/forumf/product1.png" />-->
+                                <!--</p>-->
+                                <!--<div class="product_content">-->
+                                <!--<a class="title" href="forum-detail.html">标签打印机专区</a>-->
+                                <!--&lt;!&ndash;帖子题目&ndash;&gt;-->
+                                <!--<div class="commentTime">-->
+                                <!--<span class="xs1 xw0 i">今日: <strong class="xi1">1</strong><b class="ico_fall">&nbsp;</b><span class="pipe">| </span>主题: <strong class="xi1">12591</strong>-->
+                                <!--<span class="pipe"> | </span>排名: <strong class="xi1" title="上次排名:3">9</strong><b class="ico_fall">&nbsp;</b></span>-->
+                                <!--</div>-->
+                                <!--<p style="font-size: 14px; line-height: 20px;">AR-550采用优化升级的新一代打印头，打印寿命高达4亿次/针1＋6联高清晰拷贝能力，并秉承了得实系列打印机的高性能高兼容性....</p>-->
+                                <!--</div>-->
+                                <!--</li>-->
+                                <!--<li>-->
+                                <!--<p class="product_icon">-->
+                                <!--<img src="../img/forumf/product1.png" />-->
+                                <!--</p>-->
+                                <!--<div class="product_content">-->
+                                <!--<a class="title" href="forum-detail.html">针式打印机专区</a>-->
+                                <!--&lt;!&ndash;帖子题目&ndash;&gt;-->
+                                <!--<div class="commentTime">-->
+                                <!--<span class="xs1 xw0 i">今日: <strong class="xi1">1</strong><b class="ico_fall">&nbsp;</b><span class="pipe">| </span>主题: <strong class="xi1">12591</strong>-->
+                                <!--<span class="pipe"> | </span>排名: <strong class="xi1" title="上次排名:3">9</strong><b class="ico_fall">&nbsp;</b></span>-->
+                                <!--</div>-->
+                                <!--<p style="font-size: 14px; line-height: 20px;">AR-550采用优化升级的新一代打印头，打印寿命高达4亿次/针1＋6联高清晰拷贝能力，并秉承了得实系列打印机的高性能高兼容性....</p>-->
+                                <!--</div>-->
+                                <!--</li>-->
+
+                            </ul>
+                        </div>
+                        <!---------技术支持-------->
+                        <div class="note_list technical_support clearfix">
+                            <ul class="printer-zoner">
+                                <li>
+                                    <p class="product_icon">
+                                        <img src="../img/forumf/CIT-window.png"/>
+                                    </p>
+
+                                    <div class="product_content">
+                                        <a class="title" href="javascript:void(0);">Window专区</a>
+                                        <!--帖子主题目-->
+                                        <div class="commentTime">
+													<span class="xs1 xw0 i">今日: <strong class="xi1">1</strong><b
+                                                            class="ico_fall">&nbsp;</b><span
+                                                            class="pipe">| </span>主题: <strong class="xi1">12591</strong>
+													<span class="pipe"> | </span>排名: <strong class="xi1" title="上次排名:3">9</strong><b
+                                                                class="ico_fall">&nbsp;</b></span>
+                                        </div>
+                                        <p style="font-size: 14px; line-height: 20px;">
+                                            AR-550采用优化升级的新一代打印头，打印寿命高达4亿次/针1＋6联高清晰拷贝能力，并秉承了得实系列打印机的高性能高兼容性....</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p class="product_icon">
+                                        <img src="../img/forumf/MAS.png"/>
+                                    </p>
+
+                                    <div class="product_content">
+                                        <a class="title" href="javascript:void(0);">Linux专区</a>
+                                        <!--帖子题目-->
+                                        <div class="commentTime">
+													<span class="xs1 xw0 i">今日: <strong class="xi1">1</strong><b
+                                                            class="ico_fall">&nbsp;</b><span
+                                                            class="pipe">| </span>主题: <strong class="xi1">12591</strong>
+													<span class="pipe"> | </span>排名: <strong class="xi1" title="上次排名:3">9</strong><b
+                                                                class="ico_fall">&nbsp;</b></span>
+                                        </div>
+                                        <p style="font-size: 14px; line-height: 20px;">
+                                            AR-550采用优化升级的新一代打印头，打印寿命高达4亿次/针1＋6联高清晰拷贝能力，并秉承了得实系列打印机的高性能高兼容性....</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p class="product_icon">
+                                        <img src="../img/forumf/Android.png"/>
+                                    </p>
+
+                                    <div class="product_content">
+                                        <a class="title" href="javascript:void(0);">Android专区</a>
+                                        <!--帖子题目-->
+                                        <div class="commentTime">
+													<span class="xs1 xw0 i">今日: <strong class="xi1">1</strong><b
+                                                            class="ico_fall">&nbsp;</b><span
+                                                            class="pipe">| </span>主题: <strong class="xi1">12591</strong>
+													<span class="pipe"> | </span>排名: <strong class="xi1" title="上次排名:3">9</strong><b
+                                                                class="ico_fall">&nbsp;</b></span>
+                                        </div>
+                                        <p style="font-size: 14px; line-height: 20px;">
+                                            AR-550采用优化升级的新一代打印头，打印寿命高达4亿次/针1＋6联高清晰拷贝能力，并秉承了得实系列打印机的高性能高兼容性....</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p class="product_icon">
+                                        <img src="../img/forumf/iOS.png"/>
+                                    </p>
+
+                                    <div class="product_content">
+                                        <a class="title" href="javascript:void(0);">Mas/ios专区</a>
+                                        <!--帖子题目-->
+                                        <div class="commentTime">
+													<span class="xs1 xw0 i">今日: <strong class="xi1">1</strong><b
+                                                            class="ico_fall">&nbsp;</b><span
+                                                            class="pipe">| </span>主题: <strong class="xi1">12591</strong>
+													<span class="pipe"> | </span>排名: <strong class="xi1" title="上次排名:3">9</strong><b
+                                                                class="ico_fall">&nbsp;</b></span>
+                                        </div>
+                                        <p style="font-size: 14px; line-height: 20px;">
+                                            AR-550采用优化升级的新一代打印头，打印寿命高达4亿次/针1＋6联高清晰拷贝能力，并秉承了得实系列打印机的高性能高兼容性....</p>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <!-------解决方案------->
+                        <div class="note_list applicatsolution clearfix">
+                            <ul class="printer-zoner">
+                                <li>
+                                    <p class="product_icon">
+                                        <img src="../img/forumf/product2.jpg"/>
+                                    </p>
+
+                                    <div class="product_content">
+                                        <a class="title" href="javascript:void(0);">行政行业</a>
+                                        <!--帖子题目-->
+                                        <div class="commentTime">
+													<span class="xs1 xw0 i">今日: <strong class="xi1">1</strong><b
+                                                            class="ico_fall">&nbsp;</b><span
+                                                            class="pipe">| </span>主题: <strong class="xi1">12591</strong>
+													<span class="pipe"> | </span>排名: <strong class="xi1" title="上次排名:3">9</strong><b
+                                                                class="ico_fall">&nbsp;</b></span>
+                                        </div>
+                                        <p style="font-size: 14px; line-height: 20px;">
+                                            AR-550采用优化升级的新一代打印头，打印寿命高达4亿次/针1＋6联高清晰拷贝能力，并秉承了得实系列打印机的高性能高兼容性....</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p class="product_icon">
+                                        <img src="../img/forumf/product2.jpg"/>
+                                    </p>
+
+                                    <div class="product_content">
+                                        <a class="title" href="javascript:void(0);">医疗行业</a>
+                                        <!--帖子题目-->
+                                        <div class="commentTime">
+													<span class="xs1 xw0 i">今日: <strong class="xi1">1</strong><b
+                                                            class="ico_fall">&nbsp;</b><span
+                                                            class="pipe">| </span>主题: <strong class="xi1">12591</strong>
+													<span class="pipe"> | </span>排名: <strong class="xi1" title="上次排名:3">9</strong><b
+                                                                class="ico_fall">&nbsp;</b></span>
+                                        </div>
+                                        <p style="font-size: 14px; line-height: 20px;">
+                                            AR-550采用优化升级的新一代打印头，打印寿命高达4亿次/针1＋6联高清晰拷贝能力，并秉承了得实系列打印机的高性能高兼容性....</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p class="product_icon">
+                                        <img src="../img/forumf/product2.jpg"/>
+                                    </p>
+
+                                    <div class="product_content">
+                                        <a class="title" href="javascript:void(0);">保险行业</a>
+                                        <!--帖子题目-->
+                                        <div class="commentTime">
+													<span class="xs1 xw0 i">今日: <strong class="xi1">1</strong><b class="ico_fall">&nbsp;</b>
+                                                    <span class="pipe">| </span>主题: <strong class="xi1">12591</strong>
+													<span class="pipe"> | </span>排名: <strong class="xi1" title="上次排名:3">9</strong><b class="ico_fall">&nbsp;</b></span>
+                                        </div>
+                                        <p style="font-size: 14px; line-height: 20px;">
+                                            AR-550采用优化升级的新一代打印头，打印寿命高达4亿次/针1＋6联高清晰拷贝能力，并秉承了得实系列打印机的高性能高兼容性....</p>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <p class="product_icon">
+                                        <img src="../img/forumf/product2.jpg"/>
+                                    </p>
+
+                                    <div class="product_content">
+                                        <a class="title" href="javascript:void(0);">农业</a>
+                                        <!--帖子题目-->
+                                        <div class="commentTime">
+													<span class="xs1 xw0 i">今日: <strong class="xi1">1</strong><b class="ico_fall">&nbsp;</b>
+                                                     <span class="pipe">| </span>主题: <strong class="xi1">12591</strong>
+													<span class="pipe"> | </span>排名: <strong class="xi1" title="上次排名:3">9</strong><b class="ico_fall">&nbsp;</b></span>
+                                        </div>
+                                        <p style="font-size: 14px; line-height: 20px;">
+                                            AR-550采用优化升级的新一代打印头，打印寿命高达4亿次/针1＋6联高清晰拷贝能力，并秉承了得实系列打印机的高性能高兼容性....</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="common-problems">
+                    <div class="problem-title">
+                        <p class="comment">论坛</p>
+                    </div>
+                    <div class="problem-content">
+                        <ul class="probemlist">
+                            <li class="questions">
+                                <h3 class="hot-technology">常见问题</h3>
+                                <!--<p>-->
+                                <!--<a class="messageSubject" href="">M277 DW驱动安装不了 </a>-->
+                                <!--</p>-->
+                                <!--<p>-->
+                                <!--<a class="messageSubject" href="">M277 DW驱动安装不了 </a>-->
+                                <!--</p>-->
+                                <!--<p>-->
+                                <!--<a class="messageSubject" href="">M277 DW驱动安装不了 </a>-->
+                                <!--</p>-->
+                                <!--<p>-->
+                                <!--<a class="messageSubject" href="">M277 DW驱动安装不了 </a>-->
+                                <!--</p>-->
+                                <!--<p>-->
+                                <!--<a class="messageSubject" href="">M277 DW驱动安装不了 </a>-->
+                                <!--</p>-->
+
+                            </li>
+                            <li class="programme">
+                                <img src="../img/forumf/Solutions.jpg"/>
+
+                                <p class="ds-guide">
+                                    <a href="">得实指导解决方案</a>
+                                </p>
+
+                                <p>我们将尽可能的帮你解决打印机出现的各种问题</p>
+                            </li>
+
+                            <li class="hot-window">
+                                <div class="window">
+                                    <h3 class="hot-technology">热门技术文档</h3>
+
+                                    <p>
+                                        <a href="forum-content.html">安装并使用 Windows 内置打印驱动程序></a>
+
+                                    <p>
+                                        <a href="forum-content.html">使用“Apple 软件更新”在 Mac 上安装合适的打印机驱动程序和软件</a>
+                                    </p>
+
+                                    <p>
+                                        <a href="forum-content.html">LaserJet 1018、1020、1022 激光打印机 - 安装/更换硒鼓</a>
+                                    </p>
+                                </div>
+                                <div class="video">
+                                    <a class="download-pic" href="videoPlay.html">
+                                        <img src="../img/forumDetail/original3.jpg"/>
+                                    </a>
+                                    <a class="download-pic" href="college-video.html">
+                                        <img src="../img/forumDetail/origin4.jpg"/>
+                                    </a>
+                                </div>
+
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="askexpert">
+                    <div class="problem-title">
+                        <p class="comment">专家问答</p>
+                    </div>
+
+                    <div class="expert-content">
+                        <ul class="expertul">
+                            <li class="expertli">
+                                <div class="expert-pic">
+                                    <img src="../img/forumf/expert1.png" alt="">
+                                </div>
+                                <div class="expert">
+                                    <h3>专家一</h3>
+                                    <ul>
+                                        <li>
+                                            <a href="">激光打印机维修技能实训</a>
+                                        </li>
+                                        <li>
+                                            <a href="">打印机维修清零软件,打印机维修程序集合</a>
+                                        </li>
+                                        <li>
+                                            <a href="">打印机维修清零软件,打印机维修程序集合</a>
+                                        </li>
+                                        <li>
+                                            <a href="">打印机维修清零软件,打印机维修程序集合</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </li>
+                            <li class="expertli">
+                                <div class="expert-pic">
+                                    <img src="../img/forumf/expert2.png" alt="">
+                                </div>
+                                <div class="expert">
+                                    <h3>专家二</h3>
+                                    <ul>
+                                        <li>
+                                            <i class="icon_dot"></i>
+                                            <a href="">激光打印机维修技能实训</a>
+                                        </li>
+                                        <li>
+                                            <a href="">打印机维修清零软件,打印机维修程序集合</a>
+                                        </li>
+                                        <li>
+                                            <a href="">打印机维修清零软件,打印机维修程序集合</a>
+                                        </li>
+                                        <li>
+                                            <a href="">打印机维修清零软件,打印机维修程序集合</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="expertli">
+                                <div class="expert-pic">
+                                    <img src="../img/forumf/expert3.png" alt="">
+                                </div>
+                                <div class="expert">
+                                    <h3>专家三</h3>
+                                    <ul>
+                                        <li>
+                                            <a href="">激光打印机维修技能实训</a>
+                                        </li>
+                                        <li>
+                                            <a href="">打印机维修清零软件,打印机维修程序集合</a>
+                                        </li>
+                                        <li>
+                                            <a href="">打印机维修清零软件,打印机维修程序集合</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="">打印机维修清零软件,打印机维修程序集合</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="footpic">
+        <img src="../img/forumf/ds2.png"/>
+    </div>
+
+</div>
+<!------------底部-------->
+<footer class="public-footer"></footer>
+
+
+<script src="../js/public.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/new_forum.js"></script>
+<script src="../js/login_publicstyle.js"></script>
+<script src="../js/new-forumbbs.js"></script>
+
+</body>
+
+</html>

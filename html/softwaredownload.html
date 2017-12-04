@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="description" content="得实客户支持">
+    <title>得实客户支持</title>
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/softwaredownload.css"/>
+    <script src="../js/asset/jquery-1.9.1.min.js"></script>
+    <script src="../js/asset/videojs-ie8.min.js"></script>
+</head>
+<body>
+<!--头部-->
+<header class="public-header"></header>
+<!--搜索功能-->
+<div class="detection_input">
+    <h3>输入您的得实产品型号</h3>
+    <div class="search">
+        <span class="search_icon"></span>
+        <input type="text" class="search_input" placeholder="请输入得实产品型号"/>
+        <input type="submit" class="search_btn" value="搜索" />
+    </div>
+</div>
+<!--搜索结果-->
+<div class="search_result">
+    <!--驱动下载-->
+    <div class="software_download">
+        <div class="download_title title">
+            <h3 class="download_text title_text">软件、驱动、固件下载</h3>
+        </div>
+        <div class="download_tab">
+            <ul class="clearfix">
+                <li class="active">驱动程序</li>
+                <li>固件</li>
+                <li>实用工具</li>
+                <li>用户指南</li>
+            </ul>
+        </div>
+        <!--没有搜到结果时-->
+        <div class="noresult">没有搜到您所要的结果</div>
+        <div class="download_content">
+            <!--驱动程序-->
+            <div class="download_cdrive dcommon">
+                <div class="cdrive_top ">
+                    <span>驱动名称</span>
+                    <span>大小</span>
+                    <span>下载</span>
+                </div>
+                <ul class="cdrive_content">
+                    <li><span>DC-1300驱动</span><span>329.4MB</span><span><a class="download">下载</a></span></li>
+                </ul>
+            </div>
+            <!--固件-->
+            <div class="download_firmware dcommon">
+                <div class="cdrive_top">
+                    <span>固件名称</span>
+                    <span>大小</span>
+                    <span>下载</span>
+                </div>
+                <ul class="cdrive_content">
+                    <li><span> DC-1300固件</span><span>329.4MB</span><span><a class="download">下载</a></span></li>
+                    <li><span> DC-1300固件</span><span>329.4MB</span><span><a class="download">下载</a></span></li>
+                    <li><span> DC-1300固件</span><span>329.4MB</span><span><a class="download">下载</a></span></li>
+                    <li><span> DC-1300固件</span><span>329.4MB</span><span><a class="download">下载</a></span></li>
+                </ul>
+            </div>
+            <!--实用工具-->
+            <div class="download_tool dcommon">
+                <div class="cdrive_top">
+                    <span>实用工具名称</span>
+                    <span>大小</span>
+                    <span>下载</span>
+                </div>
+                <ul class="cdrive_content">
+                    <li><span>DC-1300诊断工具</span><span>329.4MB</span><span><a class="download">下载</a></span></li>
+                    <li><span>DC-1300设置工具</span><span>329.4MB</span><span><a class="download">下载</a></span></li>
+                    <li><span>DC-1300诊断工具</span><span>329.4MB</span><span><a class="download">下载</a></span></li>
+                    <li><span>DC-1300设置工具</span><span>329.4MB</span><span><a class="download">下载</a></span></li>
+                </ul>
+            </div>
+            <!--二次开发包-->
+            <div class="download_package dcommon">
+                <div class="cdrive_top">
+                    <span>二次开发包名称</span>
+                    <span>大小</span>
+                    <span>下载</span>
+                </div>
+                <ul class="cdrive_content">
+                    <li><span>DC-1300二次开发包</span><span>329.4MB</span><span><a class="download">下载</a></span></li>
+                    <li><span>DC-1300二次开发包</span><span>329.4MB</span><span><a class="download">下载</a></span></li>
+                    <li><span>DC-1300二次开发包</span><span>329.4MB</span><span><a class="download">下载</a></span></li>
+                    <li><span>DC-1300二次开发包</span><span>329.4MB</span><span><a class="download">下载</a></span></li>
+                </ul>
+            </div>
+            <!--用户指南-->
+            <div class="user_guide dcommon">
+                <div class="cdrive_top">
+                    <span>用户指南名称</span>
+                    <span>大小</span>
+                    <span>下载</span>
+                </div>
+                <ul class="cdrive_content">
+                    <li><span>DC-1300用户指南</span><span>329.4MB</span><span><a class="download">下载</a></span></li>
+                    <li><span>DC-1300用户指南</span><span>329.4MB</span><span><a class="download">下载</a></span></li>
+                    <li><span>DC-1300用户指南</span><span>329.4MB</span><span><a class="download">下载</a></span></li>
+                    <li><span>DC-1300用户指南</span><span>329.4MB</span><span><a class="download">下载</a></span></li>
+                </ul>
+            </div>
+        </div>
+        <!--分页-->
+        <div class="ppage">
+            <div class="page_result">
+                第<span>1</span>页，
+                共<span>1</span>页，
+                每页显示10条记录
+            </div>
+            <div class="ascheme_propagation">
+                <span>首页</span>
+                <span class="active">上一页</span>
+                <input type="text" class="page_change" value="1"/>
+                <span>下一页</span>
+                <span>尾页</span>
+                <input type="submit" value="跳转" class="change_btn"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<!--底部-->
+<footer class="public-footer"></footer>
+<script src="../js/public.js"></script>
+<script src="../js/common.js"></script>
+</body>
+<script src="../js/softwaredownload.js"></script>
+</html>

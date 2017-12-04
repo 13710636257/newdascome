@@ -1,0 +1,124 @@
+body{
+    width:760px;
+    margin:0 auto;
+    padding-top:10px;
+}
+/*头部*/
+header h2{
+    height:70px;
+    line-height: 70px;
+    font-size:30px;
+    font-family: "宋体 Bold";
+    font-weight:bold;
+}
+
+/*导航*/
+nav{
+    position:relative;
+}
+nav ul{
+    border-bottom:1px solid #666;
+    width:612px;
+
+}
+nav ul li{
+    float:left;
+    padding:11px 20px;
+    border:1px solid #666;
+    border-bottom:none;
+    text-align: center;
+    margin-right:6px;
+}
+nav ul li:nth-child(5) a{
+    color:#42ABDD;
+}
+
+nav ul li:last-of-type{
+    margin-right:0;
+}
+nav ul li a{
+    font-family: '微软雅黑 Bold', '微软雅黑';
+    font-weight:bold;
+    color:#666;
+    font-size:18px;
+}
+nav ul li a.current{
+    color:#42ABDD;
+}
+nav .login_account{
+    position:absolute;
+    color:#42ABDD;
+    font-size:14px;
+    right:0;
+    top:10px;
+}
+
+
+
+
+.content{
+    margin:20px 0 30px 0;
+}
+
+.content li{
+    float:left;
+    margin-right:4px;
+}
+.content li a{
+    display:block;
+    position:relative;
+}
+.content li img{
+    width:160px;
+    height:200px;
+}
+
+.content li:nth-child(3) img{
+    width:428px;
+}
+
+.content li:nth-child(4) img{
+    width:428px;
+}
+
+
+.content li a h3{
+    position: absolute;
+    top:116px;
+    left:30px;
+    font-size:18px;
+    font-weight:700;
+}
+
+.content li a p{
+    position: absolute;
+    width:294px;
+    left:30px;
+    top:148px;
+    line-height: 20px;
+    font-family: '宋体 Regular', '宋体';
+    font-size: 14px;
+    color: #000000;
+}
+
+.content li:nth-child(5) a p,.content li:nth-child(6) a p{
+    font-family: '宋体 Regular', '宋体';
+    font-size: 15px;
+    color: #999999;
+    top:46px;
+    left:50px;
+}
+
+/*列表*/
+.other_info{
+    text-align: center;
+    margin-bottom:20px;
+    
+}
+.other_info a{
+    display: inline-block;
+    color:#999;
+    font-weight:bold;
+    padding:0 20px;
+    border-right:2px solid #999;
+}

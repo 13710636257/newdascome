@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="description" content="得实客户支持">
+    <meta name="name" content="预约客服">
+    <title>预约</title>
+
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/appointment.css"/>
+    <script src="../js/asset/jquery-1.9.1.min.js"></script>
+
+    <!--  Internet Explorer 8 需要 Respond.js 配合才能实现对媒体查询（media query）的支持-->
+    <!--[if lt IE 9]>
+    <script src="../js/asset/html5shiv.min.js"></script>
+    <script src="../js/asset/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--头部-->
+
+<header class="public-header"></header>
+
+<div class="appointment_banner"></div>
+<div class="appointment_contianer clearfix">
+
+    <div class="appointment_left">
+        <dl>
+            <dt>请预约类型</dt>
+            <dd class="current">在线远程支持</dd>
+            <dd>电话预约</dd>
+            <dd>在线视频支持</dd>
+            <dd>设备在线支持</dd>
+        </dl>
+    </div>
+
+    <div class="appointment_right">
+        <div class="caption clearfix">
+            <div class="title">
+                <h3>在线远程支持</h3>
+            </div>
+            <div class="wait">
+                <span class="wait_number">等待人数: <strong class="number">0</strong></span>
+                <!--<span class="wait_time">预约等候时间: <strong class="time">30</strong>分</span>-->
+            </div>
+        </div>
+
+        <div class="content">
+			<!--<p></p>-->
+            <ul class="content_list">
+                <li class="fill_item">
+                    <label for="client_name">姓名 ：</label>
+                    <input type="text" id="client_name" placeholder="请输入姓名"/>
+                </li>
+                <li class="fill_item">
+                    <label for="client_contact">QQ：</label>
+                    <input type="text" id="client_contact" placeholder="请输入QQ号"/>
+                </li>
+                <li class="fill_item">
+                    <label for="DS_type">机型 ：</label>
+                    <input type="text" id="DS_type" placeholder="如：针式打印机"/>
+                </li>
+                <li class="fill_item">
+                    <label for="DS_number">机号 ：</label>
+                    <input type="text" id="DS_number" placeholder="如：DC-1300"/>
+                </li>
+                <li class="fill_item">
+                    <label for="appointment_time">预约时间 ：</label>
+                    <input type="text" id="appointment_time" placeholder="如：2017-5-25"/>
+                </li>
+            </ul>
+
+            <div class="inquiry clearfix">
+                <span class="inquiry_title">内容描述 ：</span>
+                <textarea class="inquiry_area" placeholder="请输入询问的内容"></textarea>
+            </div>
+
+            <div class="confirm">
+                <label for="agree" class="sr-only">同意协议</label>
+                <input type="checkbox" id="agree"/>
+                <a href="javascript:void(0);" class="agree_link">我已阅读得实隐私政策，并同意相关政策</a>
+            </div>
+            
+            
+        </div>
+
+    </div>
+
+
+</div>
+
+<!--底部-->
+<footer class="public-footer"></footer>
+
+<script src="../js/public.js"></script>
+<script src="../js/common.js"></script>
+<script>
+
+</script>
+</body>
+</html>

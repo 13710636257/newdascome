@@ -1,0 +1,187 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #f7f7f7;
+}
+.suggestion_top{
+	width: 1200px;
+	line-height: 25px;
+	margin: 0 auto;
+}
+
+.suggestion_contant{
+	width: 1200px;
+	margin: 0 auto;
+	padding-bottom: 30px;
+}
+.tellus{
+	width: 1200px;
+	border: 1px solid #e2e2e2;
+	margin: 0 auto;
+	background: white;
+	padding-bottom: 25px;
+}
+.tellus h3{
+	font-size: 24px;
+	line-height:55px;
+	text-align: center;
+	padding-left: 10px;
+	color: white;
+	background: #009de7;
+	border-bottom: 1px solid #a9a9a9;
+}
+
+
+/*-----产品信息-------*/
+.product_information{
+	width: 70%;
+	line-height: 48px;
+	margin: 0 auto;
+	padding-left: 40px;
+}
+.product_information td{
+	padding-left: 20px;
+}
+
+.title{
+	width: 780px;
+	line-height:20px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid gainsboro;
+}
+
+.title p{
+	width: 75px;
+	height: 20px;
+	font-weight: 600;
+	border-bottom: 1px solid #46bdc3;
+}
+.product_information span{
+	color: red;
+}
+.product_td td{
+	width: 345px;
+	height: 50px;
+}
+.product_td td input{
+	width: 253px;
+	height: 25px;
+	margin-top: 10px;
+	border: 1px solid gainsboro;
+	float: right;
+	
+}
+
+.feedback{
+	width:780px;
+	margin-left: 20px;
+}
+
+.personal_information td{
+	width: 345px;
+	height: 50px;
+	
+}
+.personal_information td input{
+	width: 253px;
+	height: 25px;
+	border: 1px solid gainsboro;
+}
+.leave_word textarea{
+	width: 615px;
+	height: 132px;
+	vertical-align: top;
+	margin-top: 10px;
+	border: 1px solid gainsboro;
+}
+.personal td{
+	padding-left: 30px;
+}
+/*----提交按钮---*/
+.sub{
+	width: 1200px;
+	height: 50px;
+	/*background: #6dbbf8;*/
+	
+}
+.submit{
+	display: block;
+	width: 145px;
+	line-height:45px;
+	background: #009de7;
+	border: none;
+	margin: auto;
+	margin-top: 20px;
+	font-size: 20px;
+	color: white;
+
+}
+/*-----留言区域-----*/
+.leave_word{
+	width: 735px;
+}
+.leave_word td{
+	padding-left:30px;
+}
+.leave_word td input {
+	border: 1px solid gainsboro;
+}
+
+/*-----提示文字-----*/
+.prompt{
+	padding: 10px;
+	width: 615px;
+	margin: auto;
+	color: #7c7b7b;
+	font-size: 14px;
+	line-height: 20px;
+}
+.prompt span{
+	color: red;
+	font-size: 18px;
+}
+.files{
+	width: 712px;
+	height: 30px;
+	margin-top: 10px;
+
+}
+
+.files label{
+	float:left;
+	width:165px;
+	height:30px;
+	line-height:35px;
+	background: plum;
+	padding:0px 0px 0px 42px;
+	box-sizing: border-box;
+	color: #757575;
+	font-size: 18px;
+	margin-left: 90px;
+	
+}
+
+.files label:nth-of-type(1){
+	background: url(../img/contact_ds/file.png)no-repeat 0px 0px;
+	background-size: 32px 32px;
+	}
+	
+	
+.upload{display: none;}
+
+#upfile{
+	display: block;
+	padding-left: 10px;
+	width: 445px;
+	height: 30px;
+	border: 1px solid #dfdede;
+	line-height: 30px;
+	color: gray;
+	/*background: #dfdede;*/
+	font-size: 18px;
+	float:left;
+}
+

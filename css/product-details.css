@@ -1,0 +1,409 @@
+body{
+    background:#f7f7f7;
+}
+.product-details{
+    max-width: 1200px;
+    background: white;
+    margin:20px auto;
+}
+/*}*/
+
+.wrapper {
+    max-width: 1200px;
+    height: 45px;
+    line-height: 45px;
+    /*border-bottom: 1px dashed gainsboro;*/
+    background: #0096d6;
+    color: white;
+}
+.wrapper ul li {
+    float: left;
+    margin-left: 10px;
+}
+.wrapper ul li a{
+    color: white;
+}
+.product{
+
+    max-width: 1200px;
+}
+
+
+.product-img{
+    float: left;
+    display: inline-block;
+    width: 400px;
+    height: 360px;
+    padding: 20px;
+    text-align: center;
+    border:1px solid gainsboro;
+}
+
+.product-img img{
+    width: 247px;
+    height: 258px;
+}
+
+.product-del{
+    width: 59.7%;
+    height: 362px;
+    padding: 20px;
+    border: 1px solid gainsboro;
+    border-left: none;
+    border-top: none;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    float: right;
+}
+.product-del h2{
+    font-size: 28px;
+    padding-bottom: 20px;
+}
+.product_trtext{
+    width: 100%;
+    height: 198px;
+    overflow: hidden;
+}
+.product_trtext p{
+    line-height: 30px;
+    text-indent: 32px;
+    color:#797474;
+}
+.product-del .message_detail p{
+    width: 100px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 14px;
+    background:#ff5dc3 ;
+    font-size: 14px;
+    float: right;
+    margin-right: 40px;
+}
+
+/*详情信息*/
+.message_detail{
+    position: relative;
+}
+.message_detail .message_btn{
+    position: absolute;
+    right:0;
+    top:-16px;
+    font-size:16px;
+    cursor: pointer;
+}
+.message_detail .img_show{
+    width:800px;
+    height:700px;
+    overflow-y: scroll;
+    position:fixed;
+    left:46.5%;
+    top:50%;
+    margin-left:-300px;
+    margin-top:-300px;
+    border:2px solid red;
+    z-index:999;
+    display: none;
+}
+.message_detail .img_show .close_img{
+    position: absolute;
+    right:0;
+    top:0;
+    padding:5px 15px;
+    background:rgba(0,0,0,0.5);
+    color:#fff;
+    font-size:50px;
+    cursor: pointer;
+}
+.message_detail .img_show img{
+    width:800px;
+    height:700px;
+}
+
+
+
+/*驱动、固件下载*/
+.software_download{
+    width:1200px;
+    margin:0 auto;
+    margin-top:20px;
+    background: #fff;
+    overflow: hidden;
+    padding:20px;
+    box-sizing: border-box;
+    min-width:540px;
+    /*box-shadow: 0 0 24px 4px #ccc;*/
+}
+.title{
+    position: relative;
+    z-index: 1;
+}
+.title .title_text{
+    width:330px;
+    padding:18px;
+    font-size:26px;
+    text-align: center;
+    background: #fff;
+    margin:0 auto;
+}
+.title:before{
+    position: absolute;
+    content:"";
+    width:1000px;
+    left:50%;
+    margin-left:-500px;
+    box-sizing: border-box;
+    border-top:1px solid #ccc;
+    top:50px;
+    margin-top:-15px;
+    z-index:-1;
+}
+.software_download .download_tab{
+    width:100%;
+    margin-top:30px;
+
+}
+.software_download .download_tab ul{
+    width:100%;
+}
+.software_download .download_tab li{
+    float:left;
+    width:20%;
+    box-sizing: border-box;
+    padding:13px;
+    text-align: center;
+    font-size:18px;
+    background: #ccc;
+    border-right:10px solid #fff;
+    cursor: pointer;
+}
+.software_download .download_tab li:last-of-type{
+    border-right:none;
+}
+.software_download .download_tab li.active{
+    background:#1b8be9;
+    color:#fff;
+}
+/*驱动、软件、固件下载主要内容*/
+.software_download .download_content>div{
+    display: none;
+    padding:25px 0;
+}
+.software_download .download_content .download_cdrive{
+    display: block;
+
+}
+.software_download .dcommon .cdrive_top{
+    width:100%;
+    border-bottom:2px solid #999;
+}
+.dcommon .cdrive_top span{
+    display: inline-block;
+    height:60px;
+    line-height: 60px;
+    font-size:20px;
+
+    font-weight:bold;
+}
+.dcommon .cdrive_top span:nth-child(1){
+    width:751px;
+}
+.dcommon .cdrive_top span:nth-child(2){
+    width:200px;
+    text-align: center;
+
+}
+.dcommon .cdrive_top span:nth-child(3){
+    width:200px;
+    text-align: center;
+}
+.dcommon .cdrive_content li{
+    padding:6px 0;
+    height:50px;
+    line-height: 50px;
+    border-bottom:1px solid #999;
+}
+.dcommon .cdrive_content li span{
+    display: inline-block;
+    font-size:20px;
+}
+.dcommon .cdrive_content li:hover{
+    color:#1b8be9;
+}
+.dcommon .cdrive_content li span:nth-child(1){
+    width:751px;
+}
+.dcommon .cdrive_content li span:nth-child(2){
+    width:200px;
+    text-align: center;
+
+}
+.dcommon .cdrive_content li span:nth-child(3){
+    width:200px;
+    text-align: center;
+}
+.dcommon .cdrive_content li .download{
+    width:100px;
+    height:35px;
+    line-height: 35px;
+    display: inline-block;
+    font-size:20px;
+    text-align: center;
+    font-size:16px;
+    background:#1b8be9;
+    color:#fff;
+    margin-left:28px;
+    border-radius: 6px;
+}
+
+/*视频教程*/
+.product_video{
+    width:1200px;
+    margin:0 auto;
+    background: #fff;
+    overflow: hidden;
+    padding: 0px 20px 20px 20px;
+    box-sizing: border-box;
+    min-width:540px;
+}
+/*没有结果的样式*/
+.product_video  .noresult{
+    height:50px;
+    line-height: 48px;
+    font-size:24px;
+    color:red;
+    text-align: center;
+}
+/*有结果的样式*/
+.product_video .video_list {
+    padding:10px 20px;
+    /*display:none;*/
+}
+.product_video .video_list li{
+    float:left;
+    position: relative;
+    width:354px;
+    box-sizing: border-box;
+    margin-right:28px;
+    background: #f7f7f7;
+   box-shadow: 2px 2px 5px 3px #999;
+    /*border-bottom: 1px solid grey;*/
+}
+.product_video .video_list li:nth-child(3n){
+    margin-right:0;
+}
+.product_video .video_list li:before{
+    position: absolute;
+    content:"";
+    top:54%;
+    left:50%;
+    margin-left:-40px;
+    margin-top:-58px;
+    width:80px;
+    height:55px;
+    background:url("../img/productDetail/play_icon.png") no-repeat;
+    background-position: 0 -92px;
+    z-index:2;
+}
+.product_video .video_list li p{
+    position:absolute;
+    top:64px;
+    left:50%;
+    margin-left:-110px;
+    width:220px;
+    line-height: 40px;
+    color:#fff;
+    font-size:26px;
+    z-index:1;
+}
+.product_video .video_list li img{
+    width:100%;
+    height:205px;
+}
+.product_video .video_list li h3{
+    padding:20px 0;
+    text-align: center;
+    font-size:18px;
+    /*color:#1b8be9;*/
+}
+
+/*视频播放页面*/
+.video_play{
+    position:fixed;
+    width:800px;
+    height:580px;
+    left:50%;
+    top:50%;
+    margin-left:-400px;
+    margin-top:-300px;
+    z-index:9999;
+    background:#fff;
+    border:1px solid #999;
+    display: none;
+}
+#my-video {
+    width: 800px;
+    height: 500px;
+    object-fit: fill;
+}
+.video_play .close{
+    position:relative;
+}
+.video_play .close span{
+    position:absolute;
+    padding:16px 30px;
+    background:#1b8be9;
+    color:#fff;
+    font-size:18px;
+    border-radius: 6px;
+    right:20px;
+    top:10px;
+    cursor: pointer;
+}
+
+
+/*疑难检测*/
+.Troubleshooting{
+    width:1200px;
+    margin:0 auto;
+    margin-top:20px;
+    background: #fff;
+    overflow: hidden;
+    padding:20px;
+    box-sizing: border-box;
+    min-width:540px;
+    /*box-shadow: 0 0 24px 4px #ccc;*/
+}
+.Troubleshooting  .trouble_text{
+    width:220px;
+}
+
+.Troubleshooting .trouble_list .trouble_lleft{
+    float:left;
+    width:400px;
+    height:400px;
+}
+.Troubleshooting .trouble_list ul{
+    float:left;
+    width: 715px;
+    margin-left:20px;
+    margin-top: 30px;
+
+}
+.Troubleshooting .trouble_list li{
+    padding:14px 0px 14px 50px;
+
+
+}
+.Troubleshooting .trouble_list li a{
+    display: block;
+    font-size:18px;
+    /*width: 615px;*/
+
+}
+.Troubleshooting .trouble_list li a:before{
+    content:"\e602";
+    font-family: iconfont;
+    font-size:20px;
+    color:#1b8be9;
+    margin-right:20px;
+}

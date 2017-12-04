@@ -1,0 +1,57 @@
+header{
+    background:#333;
+}
+.header{
+    width:1200px;
+    margin:0 auto;
+    height:70px;
+    position:relative;
+}
+
+.header img{
+    position:absolute;
+    height:60px;
+    width:60px;
+    margin-top:5px;
+}
+
+.header ul{
+    padding:0 100px;
+    height:70px;
+}
+
+.header ul li{
+    float:left;
+    height:66px;
+    line-height: 66px;
+    border-bottom:4px solid #333;
+    padding:0 64px;
+
+}
+.header ul li:nth-child(1){
+    border-bottom:4px solid red;
+
+}
+.header ul li a{
+    font-size:18px;
+    color:#fff;
+}
+
+.header  .login_register{
+    position:absolute;
+    top:0;
+    right:0;
+    color:#fff;
+    height:70px;
+    line-height:67px;
+}
+.header  .login_register a{
+    display: inline-block;
+    padding:0 20px;
+    font-size:14px;
+    line-height: 14px;
+    color:#fff;
+}
+.header  .login_register .login{
+    border-right:1px solid #fff;
+}

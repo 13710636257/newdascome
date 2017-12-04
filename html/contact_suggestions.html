@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="description" content="得实客户支持">
+    <title>得实客户支持</title>
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/contact_suggestion.css"/>
+    <script src="../js/asset/jquery-1.9.1.min.js"></script>
+
+    <!--  Internet Explorer 8 需要 Respond.js 配合才能实现对媒体查询（media query）的支持-->
+    <!--[if lt IE 9]>
+    <script src="../js/asset/html5shiv.min.js"></script>
+    <script src="../js/asset/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+<header class="public-header"></header>
+
+<div class="suggestion_top">
+    <span><a href="">首页></a></span><span><a href="">联系我们</a></span>
+</div>
+<div class="suggestion_contant">
+    <div class="tellus">
+        <h3>告诉我们您的想法</h3>
+
+        <div class="product_information">
+            <div class="title">
+                <p>产品信息</p>
+            </div>
+            <table class="product_td">
+                <tr>
+                    <td>
+                        <span>*&nbsp;</span>产品型号<input type="text" style="width: 253px;height: 25px;"/>
+                    </td>
+                    <td>
+                        <span>*&nbsp;</span>序列号<input type="text" style="width: 253px;height: 25px;"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span>*&nbsp;</span>购买日期<input type="date"/></td>
+                    <td><span>*&nbsp;</span>服务日期<input type="date"/></td>
+                </tr>
+            </table>
+            <div class="feedback">
+                <label>您是否有购买我们公司的产品：</label><input type="radio" name="have" id="select" value=""/> 有
+                <input type="radio" name="have" id="unselect" value=""/> 无 &nbsp;&nbsp;&nbsp;&nbsp; <span
+                    style="font-size: 14px;">注：如有购买的话请填写产品信息</span>
+            </div>
+
+            <div class="title"><p>联系信息</p></div>
+            <table class="personal_information">
+                <tr>
+                    <td><span>*&nbsp;</span>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名&nbsp;&nbsp;&nbsp;<input type="text"/>
+                    </td>
+                    <td><span>*</span>手机号码&nbsp;&nbsp;&nbsp;<input type="text"/></td>
+                </tr>
+                <tr>
+                    <td><span>*&nbsp;</span>固定电话&nbsp;&nbsp;<input type="text"/></td>
+                    <td><span>&nbsp;&nbsp;</span>微信/QQ&nbsp;&nbsp;&nbsp;<input type="text"/></td>
+                </tr>
+            </table>
+
+            <table class="personal">
+                <tr>
+                    <td><input type="radio" name="file" class="personalBtn" style="width: 15px; height: 15px;"/> 个人</td>
+                    <td><input type="radio" name="file" class="jigou" style="width: 15px; height: 15px;"/> 机构</td>
+                </tr>
+            </table>
+
+            <table class="personal_information">
+                <tr>
+                    <td class="company"><span>&nbsp;&nbsp;</span>公司名称&nbsp;&nbsp;<input type="text"/></td>
+                    <td><span>*&nbsp;</span>电子邮件&nbsp;&nbsp;<input type="text"/></td>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <td>
+                        <span>*&nbsp;</span>所在地区&nbsp;&nbsp;
+                        <select id="Province_select" style="margin-top: 0px; width: 160px;height: 25px">
+                            <option selected="selected" value="">请选择</option>
+                            <option value="11763"> 广东省</option>
+                            <option value="9518"> 北京市</option>
+                            <option value="10389">福建省</option>
+                            <option value="9762"> 甘肃省</option>
+                            <option value="11385"> 广西壮族自治区</option>
+                            <option value="11665">贵州省</option>
+                            <option value="11489">海南省</option>
+                            <option value="9359"> 河北省</option>
+                            <option value="10736"> 河南省</option>
+                            <option value="10062"> 黑龙江省</option>
+                            <option value="10880"> 湖北省</option>
+                            <option value="10974">湖南省</option>
+                            <option value="10226"> 吉林省</option>
+                            <option value="10569"> 江苏省</option>
+                            <option value="10286"> 江西省</option>
+                            <option value="10153"> 辽宁省</option>
+                            <option value="9135">内蒙古自治区</option>
+                            <option value="9860"> 青海省</option>
+                            <option value="9530"> 山东省</option>
+                            <option value="9240"> 山西省</option>
+                            <option value="9658"> 陕西省</option>
+                            <option value="10729">上海市</option>
+                            <option value="11092">四川省</option>
+                            <option value="9524"> 天津市</option>
+                            <option value="11515">云南省</option>
+                            <option value="10648"> 浙江省</option>
+                            <option value="11360">重庆市</option>
+                        </select>
+
+                    </td>
+                    <td>
+                        <select id="City" style="margin-top: 0px; width: 160px;height: 25px">
+                            <option selected="selected" value=""> 请选择</option>
+                            <option value="潮州市">潮州市</option>
+                            <option value="东莞市">东莞市</option>
+                            <option value="佛山市">佛山市</option>
+                            <option value="广州市">广州市</option>
+                            <option value="河源市">河源市</option>
+                            <option value="惠州市">惠州市</option>
+                            <option value="江门市">江门市</option>
+                            <option value="揭阳市">揭阳市</option>
+                            <option value="罗定市">罗定市</option>
+                            <option value="茂名市">茂名市</option>
+                            <option value="梅州市">梅州市</option>
+                            <option value="清远市">清远市</option>
+                            <option value="汕头市">汕头市</option>
+                            <option value="汕尾市">汕尾市</option>
+                            <option value="韶关市">韶关市</option>
+                            <option value="深圳市">深圳市</option>
+                            <option value="阳江市">阳江市</option>
+                            <option value="云浮市">云浮市</option>
+                            <option value="湛江市">湛江市</option>
+                            <option value="肇庆市">肇庆市</option>
+                            <option value="中山市">中山市</option>
+                            <option value="珠海市">珠海市</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select style="margin-top: 0px; width: 160px;height: 25px">
+                            <option selected="selected" value=""> 请选择</option>
+                            <option value="潮州市">天河区</option>
+                            <option value="东莞市">越秀区</option>
+                            <option value="佛山市">白云区</option>
+                            <option value="广州市">番禺区</option>
+                            <option value="河源市">荔湾区</option>
+
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <table class="leave_word">
+                <tr>
+                    <td>详细地址&nbsp;&nbsp;<input type="text" style="width:615px;height:25px;"/></td>
+                </tr>
+                <tr>
+                    <td>
+                        留 &nbsp;&nbsp; &nbsp;&nbsp;言 &nbsp;&nbsp;<textarea
+                            style="width: 615px;height: 155px; vertical-align: top;"></textarea>
+                    </td>
+                </tr>
+            </table>
+            <div class="files">
+                <label>
+                    <input type="file" name="files" class="upload" id="file" value=""/>
+                    <span>点击上传文件</span>
+                </label>
+                <!--<input type="text" id="upfile" placeholder="可上传文件/视频/照片"/>-->
+                <div id="upfile"></div>
+            </div>
+        </div>
+
+        <div class="prompt">
+            <p>为了给您提供更优质的服务，我们需要获取您的信息，以便我们给您提供更好的产品服务支持，并向您推送最新的产品信息。 我们承诺保护您的隐私，不会将您的信息出售或非法提供给他人。
+                若您同意向我们提供您的信息，请填写并提交。</p>
+            注：<span>* </span>为必填项目
+        </div>
+        <div class="sub">
+            <input type="submit" name="submit" class="submit" value="提交申请"/>
+        </div>
+    </div>
+</div>
+
+<!-----底部------>
+
+<!--底部-->
+<footer class="public-footer"></footer>
+
+<script src="../js/public.js"></script>
+<script src="../js/common.js"></script>
+<script type="text/javascript">
+    var upfile = document.getElementById("upfile");
+    var ofile = document.getElementById("file");
+//    点击上传文件
+    ofile.onchange = function () {
+        console.log(ofile.value)
+        upfile.innerHTML = ofile.value
+    }
+
+//表单事件 change
+    $('#unselect').change(function () {
+        if ($(this).get(0).checked) {
+            $('.product_td').hide();
+        }
+    })
+    $('#select').change(function () {
+        if ($(this).get(0).checked) {
+            $('.product_td').show();
+        }
+    })
+    $('.personalBtn').change(function () {
+        if ($(this).get(0).checked) {
+            $('.company').hide();
+        }
+    })
+    $('.jigou').change(function () {
+        if ($(this).get(0).checked) {
+            $('.company').show();
+        }
+    })
+</script>
+</body>
+
+</html>

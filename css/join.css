@@ -1,0 +1,275 @@
+
+
+body{
+	background: #f7f7f7;
+}
+
+.most_top{
+	width: 1200px;
+	line-height: 35px;
+	margin: 0 auto;
+}
+.most_top a{
+	color: #737373;
+}
+
+.join_banner {
+    width: 100%;
+    height:327px;
+    margin: auto;
+    background: url("../img/contact_ds/ds3.jpg");
+    background-size: 100% 100%;
+    color: #fff;
+} 
+
+.jop {
+width: 1200px;
+margin: 20px auto;
+/*background: white;*/
+}
+
+.jop_item {
+    height: 46px;
+    width: 344px;
+    display: inline-block;
+    margin-left: 5px;
+    position: relative;
+    border: 1px solid rgb(169, 169, 169);
+    background: white;
+}
+
+.jop_item:first-child {
+    margin-left: 0;
+}
+
+/* 指示箭头*/
+.icon_arrow {
+    position: absolute;
+    right: 14px;
+    top: 20px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 8px dashed #B0B0B0;
+    border-top: 8px solid \9;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+
+    -webkit-transition: transform .2s ease-in;
+    -moz-transition: transform .2s ease-in;
+    -ms-transition: transform .2s ease-in;
+    -o-transition: transform .2s ease-in;
+    transition: transform .2s ease-in;
+
+}
+
+/* 点击下拉 箭头旋转*/
+.click_rotate {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+/* 请选择 提示*/
+.jop_tip {
+    height: 44px;
+    padding-left: 20px;
+    padding-right: 10px;
+    overflow: hidden;
+    font-size: 16px;
+    line-height: 44px;
+    color: #c0c0c0
+    position: relative;
+    z-index: 11;
+}
+
+/* 确认按钮*/
+.confirm_btn {
+    display: inline-block;
+    width: 140px;
+    height: 48px;
+    text-align: center;
+    line-height: 45px;
+    font-weight: 600;
+    font-size: 18px;
+    background-color: #1D8CE9;
+    color: #fff;
+
+    float: right;
+
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.jop_item ul {
+    width: 100%;
+    max-height: 200px;
+    position: absolute;
+    top: 43px;
+    left: -1px;
+    z-index: 9;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: 1px solid rgb(169, 169, 169);
+    background-color: #f0f0f0;
+    display: none;
+}
+
+.jop_item ul li {
+
+    font-size: 16px;
+    color: #919191;
+    line-height: 30px;
+    margin-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+.jop_item ul li:hover {
+    background-color: #fff;
+}
+
+/* 工作具体展示*/
+
+.join_container{
+    width: 1200px;
+    background: white;
+    margin: 0 auto;
+}
+
+.jop_detail {
+    margin-top: 15px;
+    margin-bottom: 55px;
+    position: relative;
+}
+
+.allJop {
+    overflow: hidden;
+}
+
+.allJop li {
+    font-size: 0;
+    margin-bottom: 1px;
+    border-bottom: 1px solid #e3e3e3;
+
+}
+
+.allJop li span {
+    display: inline-block;
+    height: 24px;
+    line-height: 24px;
+    padding: 10px;
+    font-size: 14px;
+    margin-left: 1px;
+    /*text-align: center;*/
+    /*vertical-align: 20px;*/
+    text-indent: 8px;
+}
+
+.allJop li:first-child span {
+    /*background: #737373;*/
+    background: gainsboro;
+    font-size: 16px;
+    font-weight: 600;
+    /*color: white;*/
+
+}
+
+.allJop li .company {
+    width: 303px;
+}
+
+.position {
+    width: 200px;
+}
+
+.number {
+    width: 105px;
+    color: #0087f4;
+}
+
+.time {
+    width: 105px;
+}
+
+.salary {
+    width: 129px;
+}
+
+.address {
+    width: 105px;
+}
+
+.detail {
+    width: 105px;
+    position: absolute;
+}
+
+/* 查看详情 按钮*/
+.detail_btn {
+    display: inline-block;
+    width:80px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: -2px;
+    font-size: 12px;
+	margin-left: 5px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: #55b2fa;
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+
+/* 查看详情 图标*/
+.icon_detail {
+    display: block;
+    width: 20px;
+    height: 20px;
+
+    /*background-color: #b8aaff;*/
+    position: absolute;
+    top: 4px;
+    right: 0;
+
+    /*background: url("../img/join/detail.png") no-repeat center center;*/
+    background-size: 100% 100%;
+}
+
+.page {
+    width: 400px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 14px;
+    color: #797979;
+    margin: 0px auto 0;
+}
+
+.record {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* 显示记录条数*/
+.record_number {
+    padding-right: 5px;
+    font-weight: 600;
+    color: #454545;
+    font-size: 12px;
+
+}

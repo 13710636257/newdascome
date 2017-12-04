@@ -1,0 +1,179 @@
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background: gainsboro;
+}
+/*头部*/
+.personal-header{
+    width: 100%;
+    height: 55px;
+    background:#09C;
+    color: white;
+    box-shadow: 0 0 5px #888;
+}
+
+.head-maddle{
+    width: 50%;
+    height: 55px;
+    margin: auto;
+
+}
+.head-left{
+    line-height: 55px;
+    font-size: 24px;
+    float: left;
+}
+.head-right{
+    height: 100%;
+    float: right;
+}
+
+.head-right ul li{
+    float: left;
+    padding: 20px;
+    font-size: 14px;
+}
+.head-right ul li a{
+    color: white;
+}
+.user-center{
+    width: 900px;
+    margin: auto;
+}
+
+
+/*----右边内容------*/
+.user-right{
+    width:90%;
+    /*height: 829px;*/
+    padding: 20px 40px 20px 40px;
+
+    background:white;
+    /*border: 1px solid gainsboro;*/
+    font-size: 14px;
+    padding-bottom: 60px;
+
+}
+
+
+.user-profile{
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    border-bottom: 1px solid #e0e0e0;
+
+}
+.personal-data ul li{
+    width: 80%;
+    padding-top: 15px;
+    padding-left: 30px;
+    margin-top: 20px;
+}
+.personal-data ul li span{
+    display: inline-block;
+    width: 95px;
+}
+.personal-data  li .inp{
+    text-indent: 10px;
+    padding: 7px 0;
+    outline: 0;
+    width: 228px;
+    height: 14px;
+    border: 1px solid #e6e6e6;
+}
+.personal-data  li em {
+    color: #f62121;
+}
+.personsignature {
+    resize: none;
+    outline: 0;
+    width: 228px;
+    height: 100px;
+    border: 1px solid #e6e6e6;
+    text-indent: 10px;
+    padding-top: 5px;
+    vertical-align: top;
+}
+
+.personal-data ul li .btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-size: 14px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #ff8b3d;
+    border: 1px solid #ff8b3d;
+    color: #fff;
+    padding: 0;
+    width: 148px;
+    margin-left: 50px;
+}
+
+.ps, select {
+    padding: 5px 2px 5px 1px;
+    border: 1px solid #e6e6e6;
+}
+
+
+/*------修改头像----------*/
+.change-headimg .xs2 {
+    padding: 15px 0px 15px 0px;
+    font-size: 14px !important;
+}
+.choice-img{
+    width: 100%;
+    height: 65px;
+    padding-top: 20px;
+}
+
+.change-headimg p{
+    padding: 15px 0px 15px 0px;
+}
+.default-pic{
+    width: 180px;
+    height:168px;
+    text-align: center;
+}
+.default-pic img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+/*---选择图片--*/
+#addPic{
+    display: inline-block;
+    background: red;
+    padding: 10px 22px 0px 22px;
+    font-size: 15px;
+    background: #09C;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    direction: ltr;
+}
+#upload-img-btn{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    font-family: Arial;
+    font-size: 118px;
+    cursor: pointer;  height: 100%;
+}
+.picture{
+    width: 450px;
+    height: 250px;
+    border: 1px solid gainsboro;
+
+    background: no-repeat center center;
+    background-size:cover;
+}
+.sub{  /*上传*/
+    width: 100%;
+    height: 45px;
+    margin-top: 20px;
+}
+

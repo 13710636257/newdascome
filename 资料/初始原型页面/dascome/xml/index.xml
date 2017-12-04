@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="GBK"?>
+    <WDevCfg VTAG="0100">
+
+    <CfgInfo Counts="59" CFGChk="12" CFGVer="01" CFGLen="80" CFGID="01" DEVID="01">
+
+    <CfgItem CharNums="7" Bits="56" Type="2" Tag="0" Name="标 识 "/>
+
+    <CfgItem Bits="1" Type="3" Tag="0" Name="数 据 位 " Datas="8;7"/>
+
+    <CfgItem Bits="1" Type="3" Tag="0" Name="停 止 位 " Datas="0;1"/>
+
+    <CfgItem Bits="2" Type="3" Tag="0" Name="奇 偶 位 " Datas="None;Odd;Even;Mark"/>
+
+    <CfgItem Bits="1" Type="0" Tag="0" Name="保 留 "/>
+
+    <CfgItem Bits="3" Type="3" Tag="0" Name="波 特 率 " Datas="1200;2400;4800;9600;19200;38400;57600;115200"/>
+
+    <CfgItem Bits="8" Type="3" Tag="0" Name="切 刀 " Datas="无效;有效"/>
+
+    <CfgItem Bits="8" Type="3" Tag="0" Name="语 言 " Datas="英文;中文;Big5"/>
+
+    <CfgItem Bits="8" Type="3" Tag="0" Name="ASCII 字体 " Datas="12 x 24;9 x 17"/>
+
+    <CfgItem Bits="8" Type="3" Tag="0" Name="检 测 标 签" Datas="无效;有效"/>
+
+    <CfgItem Bits="8" Type="3" Tag="0" Name="纸 感 应 器" Datas="反射;穿透"/>
+
+    <CfgItem Bits="8" Type="3" Tag="0" Name="黑 标 设 置" Datas="无效;有效"/>
+
+    <CfgItem Bits="8" Type="1" Tag="0" Name="AD 值 " MaxVal="255" MinVal="0"/>
+
+    <CfgItem Bits="8" Type="3" Tag="0" Name="仿 真 模 式" Datas="ESC/POS;ZPLII;EPLII"/>
+
+    <CfgItem Bits="8" Type="1" Tag="0" Name="间 隙 长 度" MaxVal="255" MinVal="0"/>
+
+    <CfgItem Bits="8" Type="3" Tag="0" Name="缺 纸 检 测" Datas="无效;有效"/>
+
+    <CfgItem Bits="8" Type="1" Tag="0" Name="默认 代码页" MaxVal="255" MinVal="0"/>
+
+    <CfgItem Bits="8" Type="3" Tag="0" Name="自动校验标签" Datas="无效;有效"/>
+
+    <CfgItem Bits="16" Type="1" Tag="1" Name="页 长 " MaxVal="65535" MinVal="0"/>
+
+    <CfgItem Bits="16" Type="1" Tag="1" Name="左 边 界 " MaxVal="65535" MinVal="0"/>
+
+    <CfgItem Bits="16" Type="1" Tag="1" Name="DA 值 " MaxVal="65535" MinVal="0"/>
+
+    <CfgItem Bits="8" Type="3" Tag="0" Name="打 印 介 质" Datas="标签纸;连续纸"/>
+
+    <CfgItem Bits="8" Type="3" Tag="0" Name="打 印 类 型" Datas="热转印;热敏"/>
+
+    <CfgItem Bits="8" Type="3" Tag="0" Name="页 模 式 " Datas="无效;有效"/>
+
+    <CfgItem Bits="8" Type="0" Tag="0" Name="保 留 "/>
+
+    <CfgItem Bits="16" Type="1" Tag="1" Name="AD_Label 值" MaxVal="65535" MinVal="0"/>
+
+    <CfgItem Bits="16" Type="1" Tag="1" Name="AD_Gap 值" MaxVal="65535" MinVal="0"/>
+
+    <CfgItem Bits="16" Type="1" Tag="1" Name="AD_Black 值" MaxVal="65535" MinVal="0"/>
+
+    <CfgItem Bits="8" Type="3" Tag="0" Name="打 印 速 度" Datas="?; 90mm/S;110mm/S;130mm/S;150mm/S"/>
+
+    <CfgItem Bits="8" Type="1" Tag="0" Name="打 印 浓 度" MaxVal="255" MinVal="0"/>
+
+    <CfgItem Bits="8" Type="3" Tag="0" Name="剥离器 设置" Datas="无效;有效"/>
+
+    <CfgItem Bits="8" Type="0" Tag="0" Name="保 留 "/>
+
+    <CfgItem Bits="16" Type="1" Tag="1" Name="到 打 印 位" MaxVal="32767" MinVal="-32768"/>
+
+    <CfgItem Bits="16" Type="1" Tag="1" Name="到 切 纸 位" MaxVal="32767" MinVal="-32768"/>
+
+    <CfgItem Bits="16" Type="0" Tag="0" Name="保 留 "/>
+
+    <CfgItem Bits="8" Type="1" Tag="0" Name="PhotoTRGain" MaxVal="255" MinVal="0"/>
+
+    <CfgItem Bits="8" Type="0" Tag="0" Name="保 留 "/>
+
+    <CfgItem Bits="16" Type="1" Tag="1" Name="BMBFeedPos " MaxVal="65535" MinVal="0"/>
+
+    <CfgItem Bits="8" Type="0" Tag="0" Name="保 留 "/>
+
+    <CfgItem Bits="8" Type="1" Tag="0" Name="ZPL_PrintDarkness" MaxVal="255" MinVal="0"/>
+
+    <CfgItem Bits="16" Type="1" Tag="1" Name="标 签 长 度" MaxVal="65535" MinVal="0"/>
+
+    <CfgItem Bits="16" Type="1" Tag="1" Name="连续纸 长度" MaxVal="65535" MinVal="0"/>
+
+    <CfgItem Bits="16" Type="1" Tag="1" Name="纵向 调整位" MaxVal="32767" MinVal="-32768"/>
+
+    <CfgItem Bits="16" Type="1" Tag="1" Name="撕纸 调整位" MaxVal="32767" MinVal="-32768"/>
+
+    <CfgItem CharNums="4" Bits="32" Type="2" Tag="2" Name="IP 地 址 "/>
+
+    <CfgItem CharNums="4" Bits="32" Type="2" Tag="2" Name="子 网 掩 码"/>
+
+    <CfgItem CharNums="4" Bits="32" Type="2" Tag="2" Name="网 关 "/>
+
+    <CfgItem Bits="8" Type="3" Tag="0" Name="DHCP " Datas="无效;有效"/>
+
+    <CfgItem Bits="8" Type="0" Tag="0" Name="保 留 "/>
+
+    <CfgItem Bits="16" Type="1" Tag="1" Name="rawPortNum " MaxVal="65535" MinVal="0"/>
+
+    <CfgItem Bits="16" Type="1" Tag="1" Name="rawTimeOut " MaxVal="65535" MinVal="0"/>
+
+    <CfgItem Bits="8" Type="3" Tag="0" Name="切 纸 方 式" Datas="全切;半切"/>
+
+    <CfgItem Bits="8" Type="0" Tag="0" Name="保 留 "/>
+
+</CfgInfo>
+
+</WDevCfg>

@@ -1,0 +1,320 @@
+body{
+    background:#f7f7f7;
+    width:100%;
+    min-width:1200px;
+}
+@font-face {
+    font-family: 'iconfont';
+    src: url('../font/iconfont.eot');
+    src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../font/iconfont.woff') format('woff'),
+    url('../font/iconfont.ttf') format('truetype'),
+    url('../font/iconfont.svg#iconfont') format('svg');
+}
+header{
+    background:#333;
+}
+.header{
+    width:1200px;
+    margin:0 auto;
+    height:70px;
+    position:relative;
+
+
+}
+.header img{
+    position:absolute;
+    height:60px;
+    width:60px;
+    margin-top:5px;
+}
+.header ul{
+    padding:0 100px;
+    height:70px;
+}
+.header ul li{
+    float:left;
+    height:66px;
+    line-height: 66px;
+    border-bottom:4px solid #333;
+    padding:0 64px;
+
+}
+.header ul li:nth-child(1){
+    border-bottom:4px solid red;
+}
+.header ul li a{
+    font-size:18px;
+    color:#fff;
+}
+.header  .login_register{
+    position:absolute;
+    top:0;
+    right:0;
+    color:#fff;
+    height:70px;
+    line-height:67px;
+}
+.header  .login_register span{
+    display: inline-block;
+    padding:0 20px;
+    font-size:14px;
+    line-height: 14px;
+}
+.header  .login_register .login{
+    border-right:1px solid #fff;
+}
+/*搜索*/
+.banner{
+    width:1200px;
+    height:334px;
+    background:url("../img/product/bg2.png") no-repeat;
+    background-size:100%;
+    text-align: center;
+    overflow: hidden;
+    margin:0 auto;
+    margin-top:20px;
+}
+.banner h3{
+    font-size:42px;
+    color:#fff;
+    margin-top:100px;
+}
+.banner p{
+    color:#fff;
+    margin-top:60px;
+    /*padding:30px;*/
+    font-size:18px;
+}
+/*自动检测*/
+/*产品号输入*/
+.banner .search_tip{
+    display: inline-block;
+    height:50px;
+    line-height: 50px;
+    font-size:20px;
+    color:#fff;
+}
+.detection_input{
+    width:1200px;
+    margin:0 auto;
+    text-align: center;
+    margin-top:30px;
+    background:#fff;
+    padding:30px 0;
+}
+.detection_input h3{
+    font-size:30px;
+}
+.detection_input .search{
+    position:relative;
+    font-size:0;
+    margin-top:20px;
+}
+.detection_input .search .search_input{
+    width:620px;
+    height:50px;
+    padding-left:50px;
+    text-indent: 10px;
+    font-size:20px;
+    border-radius: 4px 0 0 4px;
+    border:none;
+    border:1px solid #ccc;
+}
+.detection_input .search .search_icon:before{
+    position: absolute;
+    content:"\e601";
+    font-family: iconfont;
+    width:50px;
+    height:50px;
+    line-height: 50px;
+    font-size:30px;
+    color:#6d6565;
+}
+.detection_input .search .search_btn{
+    display: inline-block;
+    width:60px;
+    height:54px;
+    line-height: 54px;
+    font-size:18px;
+    background: #0097de;
+    color:#fff;
+    border-radius: 0 4px 4px 0;
+    vertical-align: top;
+    border:1px solid #ccc;
+    border-left:none;
+}
+/*自动检测*/
+.detection_auto .detection_btn{
+    display: inline-block;
+    padding:16px 20px;
+    font-size:20px;
+    background: #0097de;
+    color:#fff;
+    margin-top:50px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.detection_auto .detection_autoo{
+    position: fixed;
+    width:260px;
+    /*height:100px;*/
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    /*border:1px solid #ccc;*/
+    background: #fff;
+    padding:10px 20px;
+    box-shadow: 0 0 24px 4px #ccc;
+    display: none;
+}
+.detection_auto .detection_autoo .close_autoo{
+    position: absolute;
+    top:0;
+    right:0;
+    padding:8px 14px;
+    font-size:20px;
+    background:rgba(0,0,0,0.5);
+    color:#fff;
+    cursor: pointer;
+}
+.detection_auto .detection_autoo a{
+    display: block;
+    text-align: left;
+    padding:10px 0;
+    cursor: pointer;
+}
+.detection_auto .detection_autoo a:hover{
+    color:red;
+}
+.detection_auto .detection_autoo h3{
+    font-size:18px;
+    padding:10px 0;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.detection_auto .detection_autoo a:before{
+    content:'*';
+    font-size:20px;
+    vertical-align: middle;
+    color:red;
+    padding-right:20px;
+}
+.detection_auto .download_tip{
+    position: fixed;
+    width:466px;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    border:1px solid #ccc;
+    margin:0 auto;
+    margin-top:20px;
+    padding:20px;
+    display: none;
+    background:#fff;
+
+
+}
+.detection_auto .download_tip .dclose_btn{
+    position: absolute;
+    padding:10px 14px;
+    font-size:22px;
+    color:#fff;
+    background:rgba(0,0,0,0.5);
+    right:-16px;
+    top:-20px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.detection_auto .download_tip p{
+    text-align: left;
+    /*margin-top:30px;*/
+}
+.detection_auto .download_tip .error_tip{
+    padding:20px 0;
+}
+.detection_auto .download_tip .error_tip span{
+    color:red;
+}
+.detection_auto .download_tip .error_tip span:nth-child(3){
+    padding-left:33px;
+    line-height:34px;
+}
+.detection_auto .download_tip .component_download{
+    display: inline-block;
+    padding:14px 26px;
+    font-size:20px;
+    background:#0097de;
+    color:#fff;
+    border-radius: 4px;
+    /*margin-top:10px;*/
+    cursor: pointer;
+}
+
+
+
+/*底部*/
+footer{
+    margin-top:80px;
+}
+
+footer .service_info{
+    background:#ebebeb;
+    padding:20px 0;
+}
+/*服务信息*/
+footer .info_content{
+    width:1200px;
+    margin:0 auto;
+}
+
+footer .info_content .footnav{
+    float:left;
+    width:240px;
+}
+
+.info_content .footnav h3{
+    font-size:20px;
+    color:#676767;
+    font-weight:bold;
+
+}
+.info_content .footnav ul{
+    margin-top:10px;
+}
+.info_content .footnav li{
+    padding:10px 0;
+
+}
+
+.info_content .footnav li a{
+    display: block;
+    font-size:16px;
+    color:#676767;
+}
+
+
+.service_copyright{
+    background:#000;
+    color:#fff;
+    padding:20px 0;
+}
+
+.service_copyright .copyright_content{
+    width:1200px;
+    margin:0 auto;
+    text-align: center;
+}
+.copyright_content .aboutus{
+    padding:10px 0;
+}
+.copyright_content .aboutus a{
+    color:#fff;
+    padding: 0 20px;
+    border-right:1px solid #fff;
+
+}
+.copyright_content .aboutus a:last-of-type{
+    border-right:none;
+
+}

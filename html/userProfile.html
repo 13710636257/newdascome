@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="description" content="得实客户支持">
+    <title>得实客户支持</title>
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/public-style.css" />
+    <link rel="stylesheet" href="../css/userProfile.css" />
+    <script src="../js/asset/jquery-3.1.1.js" type="text/javascript" charset="utf-8"></script>
+    <!--  Internet Explorer 8 需要 Respond.js 配合才能实现对媒体查询（media query）的支持-->
+    <!--[if lt IE 9]>
+    <script src="../js/asset/html5shiv.min.js"></script>
+    <script src="../js/asset/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+    <header>
+        <div class="header">
+            <div class="head_logo">
+                <img src="../img/home/logo2.png" alt="div" />
+            </div>
+            <div class="searchAll">
+                <p class="sch">
+                    <input type="text" class="inputleft"  placeholder="请输入搜索内容" />
+                    <input type="submit" class="rightbtn" value="搜索" />
+                </p>
+            </div>
+            <div class="nav">
+                <ul class="navUl">
+                    <li>
+                        <a href="home.html" class="taba">首页</a>
+                    </li>
+                    <li>
+                        <a href="product.html" class="taba">产品</a>
+                    </li>
+                    <li>
+                        <a href="application-Solution.html" class="taba">应用与解决方案</a>
+                    </li>
+                    <li class="community">
+                        <a href="forum.html" class="taba">社区论坛</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="taba">联系得实</a>
+                    </li>
+                </ul>
+                <div class="login_register">
+                    <a class="login" href="loginff.html">登录</a>
+                    <a class="register" href="registerFF.html">注册</a>
+                    
+                 
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="user-center">
+        <div class="user-left">
+            <h4>设置</h4>
+            <ul>
+                <li class="bgd-color">个人资料</li>
+                <li>修改头像</li>
+                <li>密码安全</li>
+            </ul>
+        </div>
+        <!---------------个人资料--------------->
+        <div class="user-right  personal-data" style="display:block;">
+            <h3 class="user-profile">个人信息</h3>
+            <ul class="profileUl">
+                <li>
+                	<span>用户名</span>
+                	<span>stella</span>
+                </li>
+
+                <li>
+                	<span>姓名</span>
+                	<em>&nbsp;</em>
+                	<input type="text" name="" class="inp" value="" />
+                </li>
+                <li>
+                	<span>姓别</span>
+                	<em>&nbsp;</em>
+                	<select name="gender" id="gender" class="ps" tabindex="1"><option value="">性别</option><option value="1">男</option><option value="2">女</option></select>
+                </li>
+                <li>
+                	<span>居住地</span>
+                	<em>*</em>
+                	<select name="resideprovince" id="resideprovince" class="ps" onchange="showdistrict('residedistrictbox', ['resideprovince', 'residecity', 'residedist', 'residecommunity'], 4, 1, 'reside')" tabindex="1"><option value="">-省份-</option><option did="1" value="北京市">北京市</option><option did="2" value="天津市">天津市</option><option did="3" value="河北省">河北省</option><option did="4" value="山西省">山西省</option><option did="5" value="内蒙古自治区">内蒙古自治区</option><option did="6" value="辽宁省">辽宁省</option><option did="7" value="吉林省">吉林省</option><option did="8" value="黑龙江省">黑龙江省</option><option did="9" value="上海市">上海市</option><option did="10" value="江苏省">江苏省</option><option did="11" value="浙江省">浙江省</option><option did="12" value="安徽省">安徽省</option><option did="13" value="福建省">福建省</option><option did="14" value="江西省">江西省</option><option did="15" value="山东省">山东省</option><option did="16" value="河南省">河南省</option><option did="17" value="湖北省">湖北省</option><option did="18" value="湖南省">湖南省</option><option did="19" value="广东省">广东省</option><option did="20" value="广西壮族自治区">广西壮族自治区</option><option did="21" value="海南省">海南省</option><option did="22" value="重庆市">重庆市</option><option did="23" value="四川省">四川省</option><option did="24" value="贵州省">贵州省</option><option did="25" value="云南省">云南省</option><option did="26" value="西藏自治区">西藏自治区</option><option did="27" value="陕西省">陕西省</option><option did="28" value="甘肃省">甘肃省</option><option did="29" value="青海省">青海省</option><option did="30" value="宁夏回族自治区">宁夏回族自治区</option><option did="31" value="新疆维吾尔自治区">新疆维吾尔自治区</option><option did="32" value="台湾省">台湾省</option><option did="33" value="香港特别行政区">香港特别行政区</option><option did="34" value="澳门特别行政区">澳门特别行政区</option><option did="35" value="海外">海外</option><option did="36" value="其他">其他</option></select>
+                </li>
+                
+                <li>
+                	<span>手机号码</span>
+                	<em>*</em>
+                	<input type="text" name="" class="inp" value="" />
+                </li>
+                <li>
+                	<span>邮箱</span>
+                	<em>*</em>
+                	<input type="text" name="" class="inp" value="" />
+                </li>
+               
+                <li>
+                	<span>个人简介</span>
+                	<em>&nbsp;</em>
+                	<textarea class="personsignature"></textarea>
+                </li>
+                <li>
+                	<span></span>
+                	<input type="submit" name="" class="btn submit" value="提交" />
+                </li>
+            </ul>
+        </div>
+        
+        <!---------------修改头像----------------->
+        <div class="user-right change-headimg">
+        	<h2 class="xs2">当前我的头像</h2>
+        	<p>如果您还没有设置自己的头像，系统会显示为默认头像，您需要自己上传一张新照片来作为自己的个人头像 </p>
+        	<div class="default-pic">
+        		<img src="../img/forumf/head2.png"/>
+        		<p>120x120</p>
+        	</div>
+        	<h2 class="xs2" style="margin-top: 20px;">设置我的新头像</h2>
+        	<p class="choice-tip">
+        		请选择一个新照片进行上传编辑。
+        		</br></br>头像保存后，您可能需要刷新一下本页面(按F5键)，才能查看最新的头像效果 
+        	</p>
+        	<div class="choice-img">
+	        	<span id="addPic" style="" class=""><span>选择图片</span>
+	        	<br /><br /><input id="upload-img-btn" title="点此上传图片" multiple="" type="file" name="Filedata">
+	        	</span>
+        	</div>
+        	<div class="picture"></div>
+        	<div class="sub">
+        		<input type="submit" name="upload_thumbnail" value="上传头像" id="save_thumb">
+        	</div>
+        	
+        </div>
+        <!---------密码安全---------->
+        <div class="user-right  password-safe">
+        	<h2>账号中心</h2>
+	        <ul class="password-center">
+	        	<!--账号密码-->
+	        	<li>
+	        		<div class="img-ctn">
+						<img class="img" src="../img/personalCenter/acnt_pwd.png">
+					</div>
+	        		<div class="item-info">
+						<div class="title">帐号密码</div>
+						<div class="desc">用户保护帐号信息和登录安全</div>
+					</div>
+					<div class="btn-ctn">
+						<input class="btn btn-modify btn-acnt-pwd"  type="button" value="修改">
+					</div>
+	        	</li>
+	        	<!--<li>
+	        		<div class="item-info">
+						<div class="title">
+							安全手机
+							<span class="account phone account-bind">137****6257</span>					
+						</div>
+						<div class="desc">
+							安全手机可用于登录得实帐号，找回密码或其它安全验证
+							<span class="suggest phone"> </span>
+						</div>
+					</div>
+					<div class="btn-ctn">
+						<input class="btn btn-modify btn-acnt-pwd"  type="button" value="修改" onclick="_gaq('update_pwd_busi=1&amp;client_id=')">
+					</div>
+	        	</li>-->
+	        	<!--安全邮箱-->
+	        	<li>
+	        		<div class="img-ctn">
+						<img class="img" src="../img/personalCenter/safe_mail.png">
+					</div>
+	        		<div class="item-info">
+						<div class="title">安全邮箱<!--<span class="account mail account-unbind">未绑定</span>--></div>
+						<div class="desc">安全邮箱可用于登录得实帐号，找回密码或其它安全验证<!--<span class="suggest">建议立即绑定</span>--></div>
+					</div>
+					
+					<div class="btn-ctn">					
+						<input class="btn btn-set btn-mail"  type="button" value="绑定">
+					</div>
+	        	</li>
+
+	        	<li>
+	        		<div class="img-ctn">
+						<img class="img" src="../img/personalCenter/question.png">
+					</div>
+	        		<div class="item-info">
+						<div class="title">
+							密保问题
+							<span class="account question-text account-unbind">未设置</span>						
+						</div>
+						<div class="desc">
+							密保问题可用于登录vivo帐号，找回密码或其它安全验证
+							<span class="suggest account-unbind">建议立即设置</span>
+						</div>
+					</div>
+					<div class="btn-ctn">					
+						<input class="btn btn-set btn-mail"  type="button" value="设置">
+					</div>
+	        	</li>
+	        	
+	        </ul>
+	        	<!-- -- 修改账号密码  弹框 -->
+        	<div class="modal-container modify-password">
+					<div class="close-ctn"><img class="close-img" src="../img/personalCenter/close.jpg"></div>
+					<div class="modal-header">
+						修改密码
+					</div>
+					<div class="modal-body">
+						<p class="small-title title1">原密码</p>
+						<input id="originPasswordInput" class="password-field" type="password" placeholder="请输入旧密码" autocomplete="off">
+						
+						<div class="err_tip" id="old_pwd_error"> <!--错误提示-->
+							<span>原密码错误</span>
+						</div>
+						
+						<p class="small-title title2">新密码</p>
+						<input id="newPasswordInput" class="password-field" type="password" placeholder="请输入新密码(6-16位字母和数字组合)" autocomplete="off" maxlength="16">
+	
+						<input id="reNewPasswordInput" class="password-field scrollview" type="password" placeholder="请再次确认密码" autocomplete="off" maxlength="16">
+						
+						<div class="err_tip" id="new_pwd_error"> 
+							<span>确认密码不能为空</span>
+						</div>
+					</div>
+					
+					<div class="submit-btn">
+						<input type="submit" class="btn" name="login" value="完成" >
+					</div>
+			</div>
+        	
+        		<!--密保问题 弹框-->
+        	<div class="modal-container modal-password">
+					<div class="close-ctn"><img class="close-img" src="../img/personalCenter/close.jpg"></div>
+					<div class="modal-header">
+						身份验证
+					</div>
+					<div class="modal-body">
+						<p class="small-title text-center">为了保护您的帐号安全，需要验证您的身份</p>
+						<div class="tip">
+							<span class="desc">验证码已发送至邮箱</span>
+							<span class="account">194***07@qq.com</span>
+						</div>
+						
+						<label class="labelbox" for="codeInput">
+			    			<input id="codeInput" class="msg-code-input" placeholder="请输入短信验证码" autocomplete="off">
+			    			<span class="separator"></span>
+			    			<input type="button" class="get-code-btn " value="获取验证码" id="verify_phone_identity">
+						</label>
+<!--						
+						<div class="err_tip" style="display: none;">
+							<div class="dis_box"><span>验证码发送过多，请明天再试</span></div>
+						</div>-->
+					</div>
+					<div class="submit-btn">
+						<input type="submit" class="btn" name="login" value="验证" >
+					</div>
+			</div>
+        	
+        	
+        </div>
+        
+    </div>
+
+</body>
+	<script src="../js/userProfile.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		
+		
+		
+		
+		$('#upload-img-btn').on('change',function(){
+			var files = this.files;
+			if(files.length<1) return;
+			
+			readerFile(files[0])
+			
+		});
+		
+		function readerFile(file){
+			
+			var reader = new FileReader();//想要创建一个FileReader对象
+			
+			
+			reader.onloadstart = function(e){
+				
+				console.log(e)
+			}
+			
+			reader.onprogress = function(e){
+				
+				console.log(e)
+			}
+			
+			reader.onload = function(e){			
+				console.log(e);
+		
+			
+			$('.picture').css({
+				backgroundImage:'url('+e.target.result+')'
+			})
+				
+				
+			}
+			
+			reader.readAsDataURL(file);//把文件读取的类型 base64
+		}
+		
+	</script>
+
+</html>

@@ -1,0 +1,463 @@
+.college_content {
+    margin-top: 30px;
+}
+
+.public_content {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.video_container > div {
+    height: 470px;
+}
+
+.college_player {
+    height: 429px;
+    border: 1px solid #000000;
+}
+
+/* 主播部分*/
+.video_container {
+    width: 1198px;
+    overflow: hidden;
+    border: 1px solid #000000;
+}
+
+.video_col_lf {
+    width: 165px;
+    float: left;
+    position: relative;
+}
+
+.video_col_md {
+    width: 788px;
+    float: left;
+}
+
+.video_col_rg {
+    width: 244px;
+    float: left;
+    position: relative;
+    background-color: #fff;
+
+}
+
+.h-50, .video_title h4, .chat-hd-title h4 {
+    height: 40px;
+    line-height: 40px;
+
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* 中间头部*/
+.col_md_header {
+    height: 40px;
+    position: relative;
+    overflow: hidden;
+    border-right: 1px solid #454545;
+}
+
+.video_title {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* 头部的标题*/
+.h-40 {
+    width: 165px;
+    border-bottom: 1px solid #454545;
+    line-height: 40px;
+    text-align: center;
+}
+
+.video_title h4 {
+    text-align: left;
+    padding: 0 15px;
+    line-height: 40px;
+    font-weight: bolder;
+    font-size: 16px;
+    width: 500px;
+    color: #000;
+    border-left: 1px solid #454545;
+}
+
+.chat-hd-title h4 {
+    width: 245px;
+    border-bottom: 1px solid #454545;
+    line-height: 40px;
+    text-align: center;
+}
+
+/* 观看*/
+.people_watch {
+    width: 150px;
+    padding: 0 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 5px;
+}
+
+.icon_watch::after {
+
+    position: absolute;
+    top: 6px;
+    left: 0;
+    content: "\e65a";
+    font-family: iconfont;
+    font-size: 22px;
+    vertical-align: middle;
+}
+
+.watch_number {
+    color: #797979;
+    font-weight: bolder;
+    display: inline-block;
+    font-size: 10px;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+/* 直播复选框*/
+input[type="checkbox"] + label {
+
+    display: inline-block;
+    width: 50px;
+    height: 28px;
+    line-height: 28px;
+    text-align: right;
+    padding-left: 10px;
+    padding-right: 6px;
+    color: #fff;
+    font-size: 10px;
+    border: 1px solid #eee;
+    background-color: #fc9;
+    cursor: pointer;
+
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+
+    position: relative;
+
+}
+
+input[type="checkbox"] + label::after {
+    content: '';
+    width: 26px;
+    height: 26px;
+    border: 1px solid #fff;
+
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    -webkit-transition: left ease-out 0.2s, backgorund-color ease-out 0.2s;
+    -moz-transition: left ease-out 0.2s, backgorund-color ease-out 0.2s;
+    -o-transition: left ease-out 0.2s, backgorund-color ease-out 0.2s;
+    transition: left ease-out 0.2s, backgorund-color ease-out 0.2s;
+}
+
+[type="checkbox"]:checked + label {
+    background-color: #3c6;
+
+    -webkit-transition: backgorund-color ease-out 0.2s;
+    -moz-transition: backgorund-color ease-out 0.2s;
+    -o-transition: backgorund-color ease-out 0.2s;
+    transition: backgorund-color ease-out 0.2s;
+}
+
+[type="checkbox"]:checked + label::after {
+    left: 39px;
+    top: 0;
+
+    -webkit-transition: left ease-out 0.2s;
+    -moz-transition: left ease-out 0.2s;
+    -o-transition: left ease-out 0.2s;
+    transition: left ease-out 0.2s;
+}
+
+/* 播放列表*/
+.video_container dl {
+    width: 165px;
+    height: 435px;
+    border-bottom: 10px;
+    box-sizing: border-box;
+    /* 超过 435 隐藏*/
+    overflow: hidden;
+}
+
+.video_container dt {
+    margin-bottom: 20px;
+}
+
+.video_container dd {
+    width: 155px;
+    height: 30px;
+    padding-left: 5px;
+    padding-right: 6px;
+
+    cursor: pointer;
+    overflow: hidden;
+
+    white-space: nowrap;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+
+.video_container dd span {
+    line-height: 16px;
+}
+
+.video_container dd:hover span {
+    color: #797979;
+    transition: color .4s;
+}
+
+.lf-tip {
+    font-size: 14px;
+    color: #000;
+    font-weight: bolder;
+}
+
+.lf-video-title {
+    font-size: 12px;
+    color: #454545;
+    font-weight: bolder;
+}
+
+/* 加载更多视频*/
+.load_video {
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+    font-size: 14px;
+    padding: 6px 15px;
+    line-height: 15px;
+
+    color: #000;
+}
+
+/* 聊天*/
+.chat-hd-title {
+    margin-bottom: 20px;
+}
+
+.chat_list {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 224px;
+
+    font-size: 12px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    box-sizing: border-box;
+}
+.chat_list-item{
+    line-height: 20px;
+}
+/* 聊天P*/
+.chat_list-item_text{
+
+    word-break: break-all;
+    word-wrap: break-word;
+    line-height: 20px;
+}
+.chat_list-item span {
+    display: inline-block;
+    line-height: 20px;
+    font-size: 10px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.player_role {
+    width: 30px;
+    background-color: #48eec2;
+    color: #fff;
+    border: 1px solid #eee;
+    padding-right: 10px;
+    position: relative;
+}
+
+.player-order {
+    display: inline-block;
+    height: 18px;
+    width: 12px;
+    line-height: 18px;
+    text-align: center;
+    border-radius: 2px;
+    color: #48eec2;
+    background-color: #fff;
+
+    position: absolute;
+    right: 1px;
+    top: 1px;
+}
+
+.player_rank {
+    width: 36px;
+    text-align: center;
+    border: 1px solid #70ee4e;
+    color: #70ee4e;
+}
+
+.player_name {
+    color: #319bee;
+    cursor:pointer;
+    display: inline-block;
+    line-height: 20px;
+    font-size: 10px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+
+
+}
+
+/* 发送消息*/
+.message_details {
+    font-size: 12px;
+    color: #797979;
+    line-height: 16px;
+
+
+}
+
+/* 发送底部*/
+.chat_footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    width: 244px;
+}
+
+.expression {
+    padding-left: 10px;
+    border-top: 1px solid #E0E0E0;
+}
+
+/* 表情*/
+.emotion_details {
+
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    margin-top: 4px;
+
+    background: url(../img/collegeVideo/emotion.png) no-repeat center center;
+    background-size: 16px 16px;
+}
+
+.control_btn {
+    height: 32px;
+    line-height: 32px;
+    display: block;
+}
+
+.icon_control_color {
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    margin-top: 5px;
+    background: url(../img/collegeVideo/font.png) no-repeat center center;
+    background-size: 26px 26px;
+
+}
+
+/* 限制字数*/
+.chat_limit_input {
+    width: 50px;
+    height: 32px;
+}
+
+.chat_limit_input span {
+    color: #797979;
+    font-size: 12px;
+    line-height: 32px;
+}
+
+.chat_send {
+    position: relative;
+}
+
+/* 信息的输入框*/
+.message_textarea {
+    width: 234px;
+    height: 32px;
+    max-height: 60px;
+    line-height: 16px;
+    padding: 4px 4px 6px 4px;
+    overflow-y: auto;
+    border: 1px solid #E0E0E0;
+
+
+    //display: none;
+}
+
+/* 发送按钮提示*/
+.login_inside {
+    height: 32px;
+    width: 190px;
+    line-height: 32px;
+    margin-left: 10px;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px 0 0 4px;
+    font-size: 12px;
+    text-align: center;
+
+    position: absolute;
+    left: 0;
+    bottom: 4px;
+    z-inde: 333;
+
+}
+
+/* 发送按钮*/
+.sent_btn {
+    display: block;
+    height: 32px;
+    width: 38px;
+    line-height: 32px;
+    text-align: center;
+    cursor: pointer;
+
+    background-color: #bcc3cf;
+    border: 1px solid #E0E0E0;
+    border-radius: 0 4px 4px 0;
+    font-size: 12px;
+    color:#fff;
+
+    position: absolute;
+    right: 2px;
+    bottom: 4px;
+    z-inde: 333;
+
+}
+
+.sent_btn:hover {
+    background: #f14700;
+    border: 1px solid #f14700;
+}
+
+.is_log {
+    color: #ff921a;
+    margin-right: 20px;
+}
+
+.is_log:hover {
+    color: #f14700;
+    transition: color .3s;
+}

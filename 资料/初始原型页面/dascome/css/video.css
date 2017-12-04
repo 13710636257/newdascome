@@ -1,0 +1,142 @@
+body{
+    width:760px;
+    margin:0 auto;
+    padding-top:10px;
+}
+/*头部*/
+header h2{
+    height:70px;
+    line-height: 70px;
+    font-size:30px;
+    font-family: "宋体 Bold";
+    font-weight:bold;
+}
+
+/*导航*/
+nav{
+    position:relative;
+}
+nav ul{
+    border-bottom:1px solid #666;
+    width:612px;
+
+}
+nav ul li{
+    float:left;
+    padding:11px 20px;
+    border:1px solid #666;
+    border-bottom:none;
+    text-align: center;
+    margin-right:6px;
+}
+nav ul li:nth-child(1) a{
+    color:#42ABDD;
+}
+
+nav ul li:last-of-type{
+    margin-right:0;
+}
+nav ul li a{
+    font-family: '微软雅黑 Bold', '微软雅黑';
+    font-weight:bold;
+    color:#666;
+    font-size:18px;
+}
+nav ul li a.current{
+    color:#42ABDD;
+}
+nav .login_account{
+    position:absolute;
+    color:#42ABDD;
+    font-size:14px;
+    right:0;
+    top:10px;
+}
+
+/*识别产品标题*/
+.recognition_title h3{
+    height:100px;
+    line-height:100px;
+    font-size:24px;
+    font-family: '宋体 Bold', '宋体';
+    font-weight: 700;
+}
+/*识别产品内容*/
+.recoginition_content>h3{
+    font-size:20px;
+    height:50px;
+    font-family: '宋体';
+    font-weight: bold;
+}
+.recoginition_content .recognition_ongoing{
+    position: relative;
+    width:396px;
+    height:136px;
+    background:#E0E0E0;
+    padding:20px;
+    box-sizing: border-box;
+
+}
+.recoginition_content .recognition_ongoing h3{
+    font-family:'宋体';
+    font-weight: 700;
+    font-size:16px;
+}
+.recoginition_content .recognition_ongoing p{
+    font-family:'宋体';
+    height:46px;
+    line-height:46px;
+    font-size:12px;
+    color:#666;
+}
+.recoginition_content .recognition_ongoing a{
+    position: absolute;
+    bottom:20px;
+    width:90px;
+    height:30px;
+    line-height: 30px;
+    text-align: center;
+    color:#fff;
+    background:#ff0000;
+    font-size:14px;
+    border-radius:4px;
+}
+/*产品号*/
+.produce_code{
+    width:396px;
+    height:128px;
+    margin-top:20px;
+    padding: 20px;
+    box-sizing:border-box;
+    background:#E0E0E0;
+    position: relative;
+}
+.produce_code h3{
+    font-family:'宋体';
+    font-weight: bold;
+}
+.produce_code input{
+    width:200px;
+    height:18px;
+    margin:14px 0
+}
+.produce_code span{
+    position: absolute;
+    width:22px;
+    height:22px;
+    background:url("../img/search.png") no-repeat;
+    background-size:22px 22px;
+    left:236px;
+    top:52px;
+}
+.produce_code a{
+    display:block;
+    width:90px;
+    height:30px;
+    line-height: 30px;
+    text-align:center;
+    font-size:12px;
+    color:#fff;
+    background:#42ABDD;
+    border-radius:4px;
+}

@@ -1,0 +1,248 @@
+body{
+    background:#f7f7f7;
+}
+@font-face {
+    font-family: 'iconfont';
+    src: url('../font/iconfont.eot');
+    src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../font/iconfont.woff') format('woff'),
+    url('../font/iconfont.ttf') format('truetype'),
+    url('../font/iconfont.svg#iconfont') format('svg');
+}
+header{
+    background:#333;
+
+}
+.header{
+    width:1200px;
+    margin:0 auto;
+    height:70px;
+    position:relative;
+}
+
+.header img{
+    position:absolute;
+    height:60px;
+    width:60px;
+    margin-top:5px;
+}
+
+.header ul{
+    padding:0 100px;
+    height:70px;
+}
+
+.header ul li{
+    float:left;
+    height:66px;
+    line-height: 66px;
+    border-bottom:4px solid #333;
+    padding:0 64px;
+
+}
+.header ul li:nth-child(1){
+    border-bottom:4px solid red;
+
+}
+.header ul li a{
+    font-size:18px;
+    color:#fff;
+}
+
+.header  .login_register{
+    position:absolute;
+    top:0;
+    right:0;
+    color:#fff;
+    height:70px;
+    line-height:67px;
+}
+
+.header  .login_register a{
+    display: inline-block;
+    padding:0 20px;
+    font-size:14px;
+    line-height: 14px;
+    color:#fff;
+}
+
+.header  .login_register .login{
+    border-right:1px solid #fff;
+}
+
+
+.auto_detection{
+    width:1000px;
+    margin:0 auto;
+    border:1px solid #ccc;
+    background:#fff;
+    margin-top:20px;
+    text-align: center;
+
+}
+
+.auto_detection h3{
+    font-size:40px;
+    margin:40px 0;
+    text-align: center;
+}
+
+.auto_detection .detection_list{
+    width:600px;
+    margin:0 auto;
+    border:1px solid #ccc;
+    text-align: left;
+
+
+}
+.auto_detection .detection_list .top_list{
+    background:#f1ebeb;
+    padding:0 10px;
+
+}
+.auto_detection .detection_list .top_list span{
+    display: inline-block;
+    width:32.8%;
+    box-sizing: border-box;
+    padding:20px 0;
+    font-size:16px;
+}
+.auto_detection .detection_list .change_detection{
+    width:100%;
+    paddng:0 10px;
+}
+.auto_detection .detection_list .change_detection li{
+    padding:10px;
+    border-bottom:1px solid #ccc;
+}
+.auto_detection .detection_list .change_detection li span{
+    display: inline-block;
+    width:32.8%;
+}
+
+.auto_detection .detection_list .change_detection li:nth-child(2n) select{
+    height:30px;
+    width:120px;
+    background:#d3effb;
+    border:1px solid #d3effb;
+
+}
+.auto_detection .detection_list .change_detection li select option{
+    background: #d3effb;
+
+}
+.auto_detection .detection_list .change_detection li:nth-child(2n+1) select{
+    height:30px;
+    width:120px;
+    background:#a5dff5;
+    border:1px solid #a5dff5;
+
+}
+.auto_detection .detection_list .change_detection li:nth-child(2n){
+    background:#d3effb;
+}
+.auto_detection .detection_list .change_detection li:nth-child(2n+1){
+    background:#a5dff5;
+}
+.auto_detection  .change_btn{
+    display: inline-block;
+    padding:18px 30px;
+    font-size:18px;
+    background:#0097de;
+    color:#fff;
+    margin:20px 0;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.auto_detection .auto_product {
+    width:600px;
+    margin:0 auto;
+    text-align: left;
+    padding:6px 0;
+
+}
+.auto_detection .auto_product span{
+    font-size:16px;
+    color:red;
+    text-align: left;
+}
+.auto_detection .auto_product select{
+    width:160px;
+    height:30px;
+    font-size:14px;
+    margin-left:10px;
+    text-indent: 6px;
+}
+/*底部*/
+footer{
+    margin-top:20px;
+}
+
+footer .service_info{
+    background:#ebebeb;
+    padding:20px 0;
+}
+/*服务信息*/
+footer .info_content{
+    width:1200px;
+    margin:0 auto;
+}
+
+footer .info_content .footnav{
+    float:left;
+    width:240px;
+}
+
+.info_content .footnav h3{
+    font-size:20px;
+    color:#676767;
+    font-weight:bold;
+
+}
+.info_content .footnav ul{
+    margin-top:10px;
+}
+.info_content .footnav li{
+    padding:10px 0;
+
+}
+
+.info_content .footnav li a{
+    display: block;
+    font-size:16px;
+    color:#676767;
+}
+
+
+.service_copyright{
+    background:#000;
+    color:#fff;
+    padding:20px 0;
+}
+
+.service_copyright .copyright_content{
+    width:1200px;
+    margin:0 auto;
+    text-align: center;
+}
+.copyright_content .aboutus{
+    padding:10px 0;
+}
+.copyright_content .aboutus a{
+    color:#fff;
+    padding: 0 20px;
+    border-right:1px solid #fff;
+
+}
+.copyright_content .aboutus a:last-of-type{
+    border-right:none;
+
+}
+
+.copyright_content p span{
+    display: inline-block;
+    width:20px;
+    height:20px;
+    background:url("../img/home/icon_ba.png") no-repeat;
+}
+

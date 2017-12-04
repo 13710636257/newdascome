@@ -1,0 +1,447 @@
+
+
+
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('../font/iconfont.eot');
+    src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../font/iconfont.woff') format('woff'),
+    url('../font/iconfont.ttf') format('truetype'),
+    url('../font/iconfont.svg#iconfont') format('svg');
+}
+body{
+    background:#f7f7f7;
+
+}
+
+/* 字体图标*/
+[class="icon-*"]{
+    font-family: 'iconfont';
+    font-size:22px;
+}
+
+/*------头部-----*/
+header{
+    background:#333;
+}
+
+.header {
+    width: 1200px;
+    margin: 0 auto;
+    height: 70px;
+    position: relative;
+ }
+.head_logo{
+	width: 155px;
+	height: 52px;
+	float: left;
+	padding-top: 8px;
+}
+.head_logo img{
+    height:60px;
+    width:155px;
+}
+.nav{
+	position: relative;
+}
+.searchAll{
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	right:-30px;
+	top: 23px;
+	z-index: 999;
+}
+.searchAll:before{
+    position: absolute;
+    content:"\e601";
+    font-family: iconfont;
+    width:30px;
+    height:30px;
+    line-height: 30px;
+    font-size:24px;
+    color:white;
+   
+}
+.sch{
+	width:1200px;
+	height:145px;
+	background:#f1f1f1;
+	position: absolute;
+	top: 70px;
+	right: -30px;
+	text-align: center;
+	line-height: 145px;
+	display: none;
+	z-index: 99;
+}
+.inputleft{
+	width: 410px;
+	height:43px;
+}
+
+.rightbtn{
+	margin: 0;
+	padding: 0;
+	width: 60px;
+	height: 48px;
+	line-height: 47px;
+	margin-left: -4px;
+	background: #0097de;
+    color:#fff;
+ 	border: none;
+ 	font-size: 18px;
+}
+
+.header .navUl{
+   width: 1004px;
+	height: 70px;
+
+	float: left;
+}
+.header .navUl li{
+	width: 130px;
+	height:66px;
+    float:left;
+    line-height: 66px;
+    text-align: center;
+    margin-left: 15px;
+    color: white;
+    position: relative;
+}
+.header .navUl li:hover {
+	background: #0097de;
+	border-bottom:4px solid #0097de;
+}
+
+
+.header .navUl li:nth-of-type(3){
+	width: 160px;
+}
+
+.header .navUl li a{
+    font-size:18px;
+    color:#fff;
+    display: block;
+}
+
+.menu .list{
+	width:1920px;
+	height: 285px;
+	position: absolute;
+	top:70px;
+	left:-362px;
+	background:#f1f1f1;
+	z-index: 99;
+	display: none;
+	/*opacity: .8;*/
+	border: 1px solid #d7d7d7;
+}
+.list ul{
+	width: 1250px;
+	height: 245px;
+	margin: 0 auto;
+	padding: 20px;
+	
+}
+
+.list .product li{
+	width: 173px;
+	height: 245px;
+	margin-left: 35px;
+	float: left;
+	line-height: 55px;
+	text-align: center;
+}
+.list .product li:hover{
+	background:white;
+}
+
+.list .product li img{
+	width: 143px;
+	height: 85px;
+}
+.printer_title{
+	font-size: 18px;
+	color: red;
+}
+
+.checkmore{
+	display: block;
+	width: 110px;
+	line-height: 30px;
+	border-radius: 14px;
+	margin: 0 auto;
+}
+.list .product li:hover .checkmore{
+	background: red;
+}
+.list .applicationSolution li{
+	width:240px;
+	height:205px;
+	line-height: 35px;
+	float: left;
+	margin-left: 20px;
+	padding: 20px;
+}
+.list .applicationSolution li h3{
+	font-size: 18px;
+	color: red;
+}
+.support img{
+	width:240px;
+}
+.list .applicationSolution li:hover{
+	background: white;
+}
+
+.more{
+	display: block;
+	width: 110px;
+	line-height: 30px;
+	border-radius: 14px;
+	
+}
+
+.list .applicationSolution li:hover .more{
+	background: red;
+	text-align: center;
+}
+
+
+
+.header  .login_register{
+    position:absolute;
+    top:0;
+    right:0px;
+    color:#fff;
+    height:70px;
+    line-height:67px;
+
+}
+.login_register ul li{
+    width: 65px;
+    height:70px;
+    float: left;
+
+    text-align: center;
+}
+
+.login_register .login,.login_register .register{
+    display: inline-block;
+    padding:0px 12px;
+    font-size:14px;
+    line-height: 14px;
+    color:#e1e1e1;
+}
+.header .login_register a:hover{
+	color: red;
+}
+
+.header  .login_register .login{
+    border-right:1px solid #fff;
+    position:relative
+}
+
+.login_register .account-setting{
+	width: 70px;
+
+	background: white;
+	border: 2px solid gainsboro;
+	padding: 0px 10px 10px 10px;
+	position: absolute;
+	top:70px;
+	left: -8px;
+	z-index: 9;
+	display: none;
+	
+	
+}
+.login_register .account-setting dl dd{
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	margin-top: 10px;
+	color: black;
+	text-align: center;
+}
+.login_register .account-setting  dd a{
+    font-size: 14px;
+}
+
+
+
+
+
+
+/*底部*/
+footer{
+    margin-top:20px;
+}
+
+footer .service_info{
+    background:#ebebeb;
+    padding:20px 0;
+}
+/*服务信息*/
+footer .info_content{
+    width:1200px;
+    margin:0 auto;
+}
+
+footer .info_content .footnav{
+    float:left;
+    width:240px;
+}
+
+.info_content .footnav h3{
+    font-size:20px;
+    color:#676767;
+    font-weight:bold;
+
+}
+.info_content .footnav ul{
+    margin-top:10px;
+}
+.info_content .footnav li{
+    padding:10px 0;
+
+}
+
+.info_content .footnav li a{
+    display: block;
+    font-size:16px;
+    color:#676767;
+}
+
+
+.service_copyright{
+    background:#000;
+    color:#fff;
+    padding:20px 0;
+}
+
+.service_copyright .copyright_content{
+    width:1200px;
+    margin:0 auto;
+    text-align: center;
+}
+.copyright_content .aboutus{
+    padding:10px 0;
+}
+.copyright_content .aboutus a{
+    color:#fff;
+    padding: 0 20px;
+    border-right:1px solid #fff;
+
+}
+.copyright_content .aboutus a:last-of-type{
+    border-right:none;
+
+}
+
+.copyright_content p span{
+    display: inline-block;
+    width:20px;
+    height:20px;
+    background:url("../img/home/icon_ba.png") no-repeat;
+}
+
+
+
+/* 额外的固定的导航栏*/
+.connect_us{
+    position:fixed;
+    right:0;
+    top:530px;
+}
+
+.connect_us li{
+    width:70px;
+    height:60px;
+    border:1px solid #ccc;
+    background: #4ca6fd;
+    color:#fff;
+    position: relative;
+    cursor: pointer;
+}
+
+.connect_us li span:before{
+    content:"\e60e";
+    display: block;
+    font-family: iconfont;
+    font-size:30px;
+    text-align: center;
+
+}
+
+.connect_us li p{
+    padding:10px 0;
+    text-align: center;
+    font-size:14px;
+}
+
+.connect_us li.weixin span:before{
+    content:"\e63b";
+}
+.connect_us li.cnphone span:before{
+    content:"\e604";
+}
+.connect_us li .hcontent{
+    position:absolute;
+    left:-140px;
+    top:0;
+    border:1px solid #ccc;
+    padding:10px;
+    background: #fff;
+    display: none;
+
+}
+
+.connect_us li .hcontent p{
+    text-align: center;
+    color:#000;
+    padding:0;
+
+}
+/*qq*/
+.connect_us li .qconnect{
+    color:#000;
+    color:#4ca6fd;
+    border:1px solid #4ca6fd;
+    top:-40px;
+    font-size:18px;
+    left:-140px;
+}
+/*微信*/
+.connect_us li .wconnect{
+    top:-30px;
+}
+
+.connect_us li:hover .hcontent{
+    display: block;
+}
+
+.connect_us li.cnphone{
+    height:90px;
+    padding-bottom:6px;
+}
+.connect_us li.cnphone p.phone{
+    font-size:14px;
+    padding-top:0;
+}
+
+
+/* 固定的内容宽度*/
+.public-w-1000{
+    width: 1000px;
+    margin:0 auto;
+}
+
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}

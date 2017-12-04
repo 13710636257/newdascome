@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div style="display:none">
+    <object  classid="clsid:D598FD69-575B-417C-A251-8B3E6535B553"  id="SC41" codebase="PAZU4JP.cap">
+    </object>
+</div>
+
+<input type="button" value="立即检测" class="btn"/>
+<script>
+//    var ocx=document.getElementById("");
+
+var btn=document.querySelector(".btn");
+btn.onclick=function(){
+    try{
+        var obj = new ActiveXObject("CtiClient");
+        alert("已经注册");
+    }
+    catch(e)
+    {
+        alert("没有注册");
+    }
+}
+</script>
+</body>
+</html>

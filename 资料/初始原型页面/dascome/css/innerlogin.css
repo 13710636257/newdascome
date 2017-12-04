@@ -1,0 +1,51 @@
+body{
+    width:760px;
+    margin:0 auto;
+    padding-top:10px;
+}
+
+.banner{
+    margin-top:20px;
+    width:100%;
+
+}
+.banner img{
+    width:100%;
+}
+.login{
+    width:100%;
+    margin-top:20px;
+    border:1px solid #ebebeb;
+}
+.login .login_content{
+    width:200px;
+    padding:20px;
+    margin:0 auto;
+}
+
+.login .login_content input{
+    width:200px;
+    height:30px;
+    text-indent: 8px;
+    margin-bottom:20px;
+}
+
+.login .login_content .submit{
+    width:80px;
+    height:40px;
+    line-height: 40px;
+    text-align: center;
+    color:#fff;
+    background:#42ABDD;
+    font-size:16px;
+    outline: none;
+    border:none;
+    font-weight: bold;
+    border-radius:8px;
+    text-indent: 0;
+}
+
+.submit_content{
+    width:80px;
+    margin:0 auto;
+}

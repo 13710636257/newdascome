@@ -1,0 +1,262 @@
+body {
+    background: #f7f7f7;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+/* 注册头部*/
+.register-header {
+    height: 70px;
+}
+.headbox {
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+
+}
+.headbox img {
+    margin-top: 8px;
+}
+.register-header ul {
+    float: right;
+    font-size: 0;
+    text-align: right;
+}
+
+.register-header ul li {
+    display: inline-block;
+    line-height: 20px;
+    padding: 25px 30px;
+}
+
+.register-header ul li a {
+    color: #fff;
+    font-size: 16px;
+    display: block;
+    transition: color .1s ease-in;
+}
+
+.register-header ul .last {
+    padding-right: 0;
+}
+
+/* :hover*/
+.register-header ul li a:hover {
+    color: #e93223;
+}
+
+/* 注册内容*/
+.register-main {
+
+}
+
+.register-container {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+
+    background-color: #c6c1ff;
+}
+
+.register-container dl {
+    border: 1px solid gainsboro;
+    padding: 40px;
+    width: 735px;
+	background: white;
+	line-height: 54px;
+    position: absolute;
+    left: 43%;
+    top: 110px;
+    margin-left: -300px;
+}
+
+.register-container dt {
+    font-size: 28px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.register-container dd {
+    margin-top: 20px;
+    height: 40px;
+    position: relative;
+}
+
+.register-container label {
+    display: inline-block;
+    width: 100px;
+    font-size: 16px;
+    text-align: right;
+    line-height: 40px;
+    font-weight: 600;
+}
+
+.register-container input {
+    display: inline-block;
+    margin-left: 15px;
+    width: 360px;
+    height: 18px;
+    padding: 10px 20px 10px 10px;
+    border: 1px solid #E0E0E0;
+
+}
+
+.register-container input:hover {
+    border-color: #00c1de;
+    border-radius: 4px;
+}
+
+/*验证码*/
+.register-container #verify-number {
+    width: 120px;
+}
+
+/*验证码* 图片容器*/
+.verify-box {
+    overflow: hidden;
+    height: 40px;
+    position: absolute;
+    left: 290px;
+    top: 0;
+}
+
+/* 验证图片*/
+.verify-box img {
+    display: inline-block;
+    width: 120px;
+    height: 38px;
+    border: 1px solid #e98482;
+    vertical-align: top;
+}
+
+/* 更换图片按钮*/
+.verify-box .change-btn {
+    display: inline-block;
+    border: 0;
+    line-height: 40px;
+    text-align: center;
+    width: 60px;
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.verify-box .change-btn:hover {
+    color: #e93223;
+}
+
+/* 注册按钮*/
+#register-btn {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    display: block;
+    margin-left: 175px;
+    width: 390px;
+    color: #fff;
+    background-color: #029AFF;
+    border: 0;
+    font-size: 18px;
+    transition: background-color .1s ease-in;
+    cursor: pointer;
+}
+
+#register-btn:hover {
+    background-color: #0e6cca;
+}
+
+/*同意注册*/
+.register-container .last {
+    overflow: hidden;
+}
+
+/* 协议描述文字*/
+.register-container .last label {
+    width: 380px;
+    font-size: 12px;
+    font-weight: 400;
+    float: left;
+}
+
+/* 同意复选框*/
+.register-container .last input {
+    width: 14px;
+    height: 14px;
+    margin-top: 13px;
+    margin-left: 170px;
+    float: left;
+}
+
+/* :hover 协议*/
+.register-container .last label:hover {
+    text-decoration: underline;
+    color: #e93233;
+    border-bottom: 1px solid #e93233;
+}
+
+/* 提示框*/
+.register-tip {
+    width: 240px;
+    padding: 5px;
+    height: 60px;
+    position: absolute;
+    left: 520px;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+
+    display: none;
+}
+
+.register-tip.first {
+    height: 40px;
+}
+
+.register-tip li {
+    line-height: 20px;
+    font-size: 12px;
+}
+
+.register-tip li .fa {
+    color: #e93223;
+}
+
+/* 用户名*/
+.username-dd .register-tip {
+    top: -5px;
+}
+
+/* 密码提示*/
+.pwd-dd .register-tip {
+    top: -15px;
+    width: 190px;
+}
+
+/* 再次确认密码*/
+.again-pwd .register-tip {
+    top: -5px;
+    width: 160px;
+    height: 40px;
+}
+
+/* 邮箱*/
+.email-dd .register-tip {
+    top: -5px;
+    width: 130px;
+    height: 40px;
+}
+
+/* 手机*/
+.mobile-dd .register-tip {
+    top: -5px;
+    width: 130px;
+    height: 40px;
+}
+
+/*验证码*/
+.code-dd .register-tip {
+    top: 5px;
+    width: 90px;
+    height: 20px;
+}

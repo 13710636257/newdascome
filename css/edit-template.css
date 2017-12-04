@@ -1,0 +1,1796 @@
+
+
+.fixed {
+    width: 100%;
+    height: 100%;
+
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.online_drawing_wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: #B7B7B7;
+    position: relative;
+}
+
+/* 内容*/
+.drawing_panel_box {
+    height: 100%;
+    background-color: #f0f0f0;
+}
+
+.drawing_tpl_box {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.drawing_tpl_caption h2 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 40px;
+    color: #919191;
+    padding-top: 30px;
+
+}
+
+/* ul */
+.drawing_tpl_list {
+    padding-top: 10px;
+    padding-bottom: 30px;
+
+}
+
+/* 模板 li */
+.drawing_tpl_item {
+    width: 290px;
+    float: left;
+
+    background-color: #fff;
+    border-radius: 8px;
+    margin-top: 30px;
+
+    margin-left: 40px;
+    position: relative;
+}
+
+.drawing_tpl_item:nth-of-type(4n+1) {
+    margin-left: 0;
+}
+
+.drawing_tpl_item img {
+    display: block;
+    width: 290px;
+    height: 182px;
+
+    transition: transform .4s ease-out;
+}
+
+.tpl_item_back {
+    display: none;
+}
+
+.drawing_tpl_item img:hover {
+    transform: scale(1.2);
+}
+
+/* 切换按钮*/
+.drawing_tpl_list .icon_switch {
+    width: 40px;
+    height: 40px;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 9;
+
+    font-size: 2em;
+    line-height: 40px;
+    text-align: center;
+    color: #398bff;
+    display: none;
+}
+
+/* ：hover 切换按钮*/
+.drawing_tpl_item:hover .icon_switch {
+    display: block;
+}
+
+/******************
+编辑模板************/
+
+/* 顶部工具栏*/
+.tool_top_nav {
+    height: 80px;
+    /* position: relative; 需 width: 100%; 不然 就不能铺满 9-21*/
+    width: 100%;
+    margin-left: 80px;
+    background: white;
+    background-blend-mode: screen;
+    position: relative;
+    z-index: 9;
+}
+
+.tool_top_nav ul {
+    font-size: 0;
+    height: 60px;
+
+}
+
+.tool_top_nav li {
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 12px;
+    display: inline-block;
+}
+
+/* 公共样式*/
+.tool_top_nav li, .tool_slider_nav li {
+    /*width: 58px;*/
+    /*height: 58px;*/
+    /*cursor: pointer;*/
+    /*position: relative;*/
+    /*border-radius: 4px;*/
+    /*transition: border-color .2s ease-out;*/
+    /*background-color: #787878;*/
+    /*background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.40) 120%) #989898;*/
+    /*background-blend-mode: multiply, multiply;*/
+    /*border: 1px solid #787878;*/
+    /*box-shadow: 1px 2px 6px #141414;*/
+    width: 55px;
+    height: 55px;
+    position: relative;
+    border-radius: 8px;
+    transition: border-color .2s ease-out;
+    background-color: #adadad;
+    border: 1px solid #787878;
+    box-shadow: 1px 2px 6px #141414;
+}
+
+/* ：hover 提示字体图标 */
+.tool_top_nav li::after,
+.tool_slider_nav li::after {
+    content: attr(data-tip);
+    display: none;
+
+    position: absolute;
+    z-index: 9;
+
+    line-height: 30px;
+    text-align: center;
+    padding: 0 4px;
+    font-size: 14px;
+    width: 70px;
+    /*border: 1px solid #454545;*/
+    border-radius: 2px;
+    /*background-color: #E6E6E6;*/
+}
+
+/* 打印*/
+.tool_top_nav .print-btn::after {
+    width: 30px;
+}
+
+.tool_top_nav .rotate_right::after {
+    width: 168px;
+}
+
+/* :hover block*/
+.tool_top_nav li:hover::after, .tool_slider_nav li:hover::after {
+    display: block;
+}
+
+.tool_top_nav li:hover, .tool_slider_nav li:hover {
+    border-color: #fff;
+}
+
+/* 顶部工具栏*/
+.tool_top_nav li::after {
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 25%);
+}
+
+/* 侧边工具栏*/
+.tool_slider_nav li::after {
+    top: 50%;
+    left: 100%;
+    transform: translate(10%, -50%);
+}
+
+/* 侧边的工具栏*/
+.tool_slider_nav {
+    padding: 10px;
+    width: 60px;
+    height: 100%;
+    position: relative;
+    z-index: 9;
+    background: white;
+    margin-top: -80px;
+}
+
+.tool_slider_nav li {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.tool_slider_nav li:first-child {
+    margin-top: 0;
+}
+
+/* 选中当前激活状态的图形*/
+.tool_slider_nav .step-active {
+    border-color: #fff;
+    background-color: #454545;
+}
+
+.tool_slider_nav .step-active:hover {
+    background-color: #454545;
+}
+
+/* 字体图标*/
+.tool_slider_nav .fa, .tool_top_nav .fa, .icon {
+    display: block;
+    font-size: 2.35em;
+    /*color: #E0E0E0;*/
+    color: white;
+    line-height: 58px;
+    text-align: center;
+}
+
+.tool_top_nav .fa {
+    font-size: 2.65em;
+}
+
+/* 画布
+*********************/
+.edit-template-main {
+    background: #cde6fb;
+    /*background-color: #f7f7f7;*/
+    transform-style: preserve-3d;
+    perspective: 300px;
+    position: absolute;
+    left: 80px;
+    top: 80px;
+    right: 0;
+    bottom: 0;
+    /* IE 9添加前缀实现*/
+    width: calc(100% - 412px);
+    height: calc(100% - 82px);
+    min-height: 550px;
+    border-top: 1px solid black;
+
+    border-left: 1px solid black;
+}
+
+/*这个容器在 CSS3 没有作用了*/
+.canvas_wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+/* 9-27 Konva画布容器*/
+#container {
+    position: absolute;
+    border-radius: 18px;
+    overflow: hidden;
+    /*box-shadow: 0 0 15px rgba(0,0,0,.3);*/
+    border: 1px solid #f5f5f5;
+}
+/* 标准浏览器*/
+.common-browser{
+    top: 50%;
+    left: 50%;
+    /* IE兼容性*/
+    transform: translate(-50%, -50%);
+}
+
+/* 兼容IE的类名*/
+.pollfiy {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+}
+
+/*
+****************************打印容器*/
+.print_container {
+    width: 350px;
+    height: 620px;
+
+    position: fixed;
+    top: 80px;
+    left: 80px;
+    background-color: #E0E0E0;
+/ / display : none;
+
+}
+
+/* 关闭打印*/
+.close-layer {
+    text-align: right;
+    margin-top: 5px;
+}
+
+.close-layer .fa-window-close {
+    margin-right: 20px;
+    font-size: 2em;
+    color: #B7B7B7;
+}
+
+.close-layer .fa-window-close:hover {
+    color: #b9051d;
+}
+
+.operation-list {
+    padding: 0 5%;
+    overflow: hidden;;
+}
+
+.operation-list li {
+    float: left;
+    width: 33.33%;
+    height: 50px;
+    line-height: 50px;
+
+}
+
+.operation-list li:nth-child(2) {
+    text-align: center;
+}
+
+.operation-list li:nth-child(3) {
+    text-align: right;
+}
+
+.operation-list input[type="button"], #printImg, #clrbox {
+    display: inline-block;
+    line-height: 30px;
+    padding: 0 20%;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #1976D2;
+    color: #f0f0f0;
+
+}
+
+.selection {
+    padding: 0 5%;
+}
+
+.selection dt {
+    line-height: 30px;
+    font-size: 14px;
+    padding-left: 15%;
+
+}
+
+.selection dd {
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+}
+
+.selection dd input[type="text"] {
+    line-height: 18px;
+    padding: 3px;
+    width: 85%;
+    text-indent: 6px;
+    float: right;
+
+}
+
+.picpath dd {
+    margin-top: 5px;
+}
+
+.picpath dd input[type="text"] {
+    width: 85%;
+    float: right;
+}
+
+.selection dd label {
+    font-size: 14px;
+    padding-right: 5px;
+    float: left;
+    line-height: 24px;
+}
+
+/*打印图片按钮*/
+#printImg {
+    width: 75px;
+    padding: 0;
+    float: left;
+}
+
+/* 选择打到图片*/
+.selectImg-box {
+    float: left;
+    height: 30px;
+    overflow: hidden;
+    padding: 0 10px;
+    margin-left: 10px;
+    background-color: #bcbcbc;
+}
+
+.selectImg-box label {
+    float: left;
+    height: 24px;
+    margin-top: 3px;
+    display: inline-block;
+}
+
+.selectImg-box input {
+    float: left;
+    line-height: 30px;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-top: 6px;
+
+}
+
+/* 清除框*/
+.ouput-box {
+    padding: 0 5%;
+    margin-top: 10px;
+}
+
+.ouput-box h3 {
+    line-height: 30px;
+}
+
+/* 信息提示*/
+.ouput-box textarea {
+    width: 100%;
+    display: block;
+    height: 250px;
+}
+
+/* 清除按钮*/
+#clrbox {
+    width: 75px;
+    padding: 0;
+    margin-top: 10px;
+}
+
+/*登录注册
+***************/
+.tool_top_nav .navbar-right {
+    position: absolute;
+    right: 95px;
+    top: 0;
+    padding: 10px 50px;
+    height: 60px;
+
+}
+
+.login-box {
+    line-height: 60px;
+}
+
+/* 登录与登录信息交换容器*/
+.navbar-right a {
+    padding: 5px 25px;
+    /*padding: 25px;*/
+    text-align: center;
+    margin-left: 5px;
+    color: #454545;
+   font-weight: 800;
+    transition: color .2s ease-in;
+    background-image: linear-gradient(to top, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #efeeec 75%, #e9e9e7 100%);
+
+}
+
+.navbar-right a:hover {
+    color: #e00b33;
+}
+
+.printer-info {
+    width: 300px;
+}
+
+/* 打印机列表*/
+.printer-info dl {
+    font-size: 14px;
+    font-weight: 600;
+    /* height: 60px;
+     overflow: hidden;*/
+    width: 200px;
+    display: inline-block;
+    position: relative;
+
+}
+
+/* 显示当前的打印机序列号*/
+.printer-info dt {
+    height: 60px;
+    line-height: 60px;
+    text-indent: 10px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+/*显示序列号 span*/
+.printer-info .current-printer {
+    display: inline-block;
+    width: 118px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    float: right;
+    margin-right: 36px;
+    color: #9e2322;;
+}
+
+/* 打印机列表中选择*/
+.printer-info dt .fa-list {
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    position: absolute;
+    left: 165px;
+    top: 20px;
+    font-size: 17px;
+    color: #e00b33;
+    cursor: pointer;
+}
+
+/* 用来提示选择打印机*/
+.printer-info dd {
+    font-size: 12px;
+    font-weight: 600;
+    color: #e00b33;
+    width: 60px;
+    height: 20px;
+    line-height: 20px;
+    position: absolute;
+    right: -10px;
+    top: -6px;
+    display: none;
+    border: 1px solid #B7B7B7;
+    padding: 0 5px;
+    border-radius: 4px;
+}
+
+/* 退出按钮*/
+.printer-info #quit-btn {
+    padding: 5px;
+    font-size: 16px;
+    float: right;
+    color: #000;
+    margin-top: 20px;
+    margin-right: 36px;
+    transition: color .1s ease-in;
+}
+
+.printer-info #quit-btn:hover {
+    color: #e00b33;
+}
+
+/*登录注册
+end ***************/
+
+/* 新建画布设置容器*/
+.built-paper-aside {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, .3);
+
+    display: none;
+}
+
+.built-paper-wrap {
+    width: 260px;
+    height: 260px;
+    background-color: #18c0ff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 6px;
+}
+
+/* 标题 新建画布*/
+.built-paper-wrap dt {
+    line-height: 40px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+    background-color: #33baff;
+    padding-left: 20px;
+    border-radius: 6px 6px 0 0;
+    overflow: hidden;
+
+}
+
+/* 关闭 图标*/
+.built-paper-wrap .fa-times {
+    float: right;
+    font-size: 1.3em;
+    margin-right: 10px;
+    margin-top: 8px;
+
+    transition: color .1s ease-in;
+}
+
+.built-paper-wrap .fa-times:hover {
+    color: #e00b33;
+}
+
+.built-paper-wrap dd {
+    height: 30px;
+    margin-top: 35px;
+    color: #fff;
+    padding-left: 20px;
+}
+
+/* 输入值*/
+.built-paper-wrap input {
+    display: inline-block;
+    width: 100px;
+    padding: 5px 10px;
+    margin-left: 20px;
+    border: 1px solid #B7B7B7;
+    border-radius: 3px;
+
+}
+
+.built-paper-wrap label {
+    display: inline-block;
+    text-align: right;
+    font-size: 14px;
+}
+
+/* 像素*/
+.built-paper-wrap span {
+    margin-left: 10px;
+    font-size: 13px;
+}
+
+/* 按钮群*/
+.built-paper-wrap .buts-dd {
+    text-align: center;
+}
+
+/* 按钮*/
+.built-paper-wrap button {
+    display: inline-block;
+    width: 80px;
+    line-height: 24px;
+    text-align: center;
+    border: 0;
+    background-color: #f6f6f6;
+    color: #787878;
+    font-size: 14px;
+}
+
+/* 取消按钮*/
+.buts-dd .cancel-built {
+    margin-left: 20px;
+}
+
+/* end 新建画布设置容器*/
+/*********************************************************/
+/*********************************************************/
+/*********************************************************/
+/* 画布低下 坐标信息*/
+.position_info_box {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 0;
+}
+
+.position_info_box li {
+    font-size: 14px;
+    display: inline-block;
+    width: 50px;
+    line-height: 30px;
+    margin-left: 5px;
+}
+
+.position_info_box strong {
+    font-weight: 800;
+}
+
+.position_info_box span {
+    padding-left: 5px;
+}
+
+/*
+end *****画布低下 坐标信息*/
+/* 右边修改面板样式*/
+.panel_slider_box {
+    background: white;
+    width: 310px;
+    height: calc(100% - 80px);
+    position: absolute;
+    right: 0;
+    /*left: 100px;*/
+    top: 80px;
+    bottom: 0;
+    z-index: 10;
+    padding: 0 10px;
+    /*background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);*/
+}
+
+/* tab 容器*/
+.slider_tab_container {
+    width: 25px;
+    position: absolute;
+    left: -26px;
+    top: 0;
+}
+
+.slider_tab_list {
+    width: 100%;
+}
+
+.slider_tab_list li {
+    line-height: 22px;
+    padding-top: 25px;
+    padding: 25px 0;
+    text-align: center;
+    margin-top: 5px;
+    background-color: #adadad;
+    border-radius: 14px 0px 0px 14px;
+    color: white;
+    cursor: pointer;
+}
+
+/* 选中状态*/
+.slider_tab_list .tab_active {
+    /*background-color: #1c7fff;*/
+    background: #009de7;
+    color: #fff;
+}
+
+/* panel面板容器*/
+.slider_panel_container {
+    width: 100%;
+    height: 100%;
+}
+
+.pallet-content {
+    margin-top: 10px;
+    width: 100%;
+    display: none;
+}
+
+.pallet-content.panel_show {
+    display: block;
+}
+
+/* 背景色面板
+*********************/
+.color-bg {
+    padding-bottom: 10px;
+    height: 352px;
+    width: 310px;
+}
+
+/* 下滑 控制*/
+.pallet-content .slide_down {
+    cursor: pointer;
+    font-family: sans-serif;
+
+    transition: color .3s ease-out, background-color .3s ease-out;
+}
+
+/* 下滑状态*/
+.pallet-content .slide_down.active {
+    /*background-color: #c1c1c1;*/
+    /*color: #787878;*/
+    background-color: black;
+    color: white;
+}
+
+/* 下滑 控制*/
+.pallet-content .slide_down,
+.pallet-content .slide_down:hover,
+.pallet-content .slide_down.active:hover {
+    background-color: #009de7;
+    color: #f0f0f0;
+    border: 1px solid gainsboro;
+}
+
+.pallet-content .fa-sort-down {
+    float: right;
+    margin-right: 10px;
+    height: 22px;
+    line-height: 22px;
+}
+
+.pallet_font_box .slide_down_ctrl {
+    height: 210px;
+    padding-bottom: 10px;
+}
+
+/* 控制折叠*/
+.slide_down_ctrl {
+    display: none;
+}
+
+.pallet_color_box {
+    width: 310px;
+    height: 210px;
+}
+
+/* 颜色信息*/
+.pallet_color_info {
+    margin-top: 2px;
+
+}
+
+/* 公共的 input */
+.pallet_color_info input {
+    border-radius: 2px;
+    border: 1px solid #fff;
+
+    transition: border .3s ease-out;
+}
+
+.pallet_color_info input:hover {
+    border-color: #9e2322;
+}
+
+.pallet_color_info dt {
+    float: left;
+    height: 82px;
+    margin-top: 3px;
+    font-size: 0;
+}
+
+.pallet_color_info dd {
+    float: left;
+    margin-left: 19px;
+
+}
+
+.pallet_color_info dl .pallet_hsb {
+    float: right;
+    margin-right: 5px;
+}
+
+/* 当前颜色显示 与选择 对比*/
+.pallet_current_color {
+    width: 88px;
+    border: 1px solid #d7dee4;
+}
+
+.pallet_current_color span {
+    display: inline-block;
+    height: 60px;
+    font-size: 13px;
+    position: relative;
+    background-color: transparent;
+}
+
+/*旧*/
+.pallet_current_color .old_color {
+    width: 44px;
+    cursor: pointer;
+}
+
+/*新*/
+.pallet_current_color .new_color {
+    width: 43px;
+    border-left: 1px solid #727577;
+    border-color: hsla(0, 11%, 80%, .26);
+}
+
+/* ***************************
+显示当前的新旧颜色的提示
+*************************/
+.pallet_current_color span::after {
+    content: attr(data-tip);
+    display: block;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    background-color: #444;
+    color: #bbb;
+
+    position: absolute;
+    top: 60px;
+}
+
+/* 加一条 模糊线条*/
+.pallet_current_color .new_color::after {
+    border-left: 1px solid #919191;
+    border-color: hsla(0, 0%, 100%, .06);
+}
+
+.pallet_current_color .new_color::after {
+    width: 44px;
+    left: -1px;
+}
+
+.pallet_current_color .old_color::after {
+    width: 45px;
+    left: 0;
+}
+/* 旧颜色 还原*/
+.pallet_current_color .old_color::before{
+    content: attr(data-back);
+    display: none;
+    line-height: 18px;
+    width: 100%;
+    padding: 2px 0;
+    text-align: center;
+    background-color: rgba(28, 127, 255, 0.8);
+    color: #f0f0f0;
+    font-size:12px;
+
+    position: absolute;
+    top: -25px;
+    left: 0;
+
+}
+/* :hover  show 提示*/
+.pallet_current_color .old_color:hover::before{
+    display: block;
+}
+
+.pallet_color_info dd ul {
+    overflow: hidden;
+}
+
+.pallet_color_info dd ul li {
+    margin-top: 5px;
+    height: 24px;
+
+}
+
+.pallet_color_info dd ul label {
+    float: left;
+    font-size: 12px;
+    line-height: 22px;
+    color: #1A1A1A;
+    font-weight: 800;
+}
+
+.pallet_color_info dd ul input {
+    float: left;
+    display: block;
+    width: 43px;
+    line-height: 16px;
+    margin-left: 4px;
+    padding: 3px 4px;
+    font-size: 12px;
+
+}
+
+.pallet_hsb li .icon {
+    float: left;
+    margin-left: 5px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #1A1A1A;
+}
+
+/* 底部取消保存*/
+.pallet_bottom {
+    width: 100%;
+    padding: 20px 10px;
+}
+
+.pallet_bottom ul {
+    padding-right: 20px;
+}
+
+.pallet_bottom li {
+    float: right;
+    overflow: hidden;
+    line-height: 26px;
+    height: 26px;
+
+}
+
+.pallet_bottom .li_hex {
+    margin-right: 10px;
+}
+
+.pallet_bottom li label {
+    float: left;
+    font-size: 12px;
+    padding-left: 4px;
+    color: #1A1A1A;
+    font-weight: 800;
+}
+
+.pallet_bottom li input {
+    float: left;
+    display: inline-block;
+    width: 55px;
+    padding: 3px 6px;
+    line-height: 14px;
+    margin-left: 5px;
+    font-size: 12px;
+
+}
+
+.pallet_bottom li:first-child {
+    margin-left: -10px;
+    float: left;
+    overflow: hidden;
+}
+
+/* 切换图标 颜色类型*/
+.toggle_icon_box {
+    width: 42px;
+    height: 22px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+/* label */
+.toggle_icon_box label {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border: 1px solid #156cc1;
+    border-radius: 12px;
+    cursor: pointer;
+
+    position: relative;
+}
+
+.toggle_icon_box label::after {
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 2px;
+
+    width: 18px;
+    height: 18px;
+    border: 1px solid #156cc1;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: left ease-out 0.2s, backgorund-color ease-out 0.2s;
+}
+
+/* 复选框*/
+#toggle_shapetype {
+    display: none;
+}
+
+/* 禁用input选择，鼠标默认，不可以点击*/
+.toggle_icon_box input[disabled="disabled"] + label {
+    cursor: default;
+}
+
+/* 选择后的 label */
+.toggle_icon_box [type="checkbox"]:checked + label {
+    background-color: #04cc16;
+    transition: backgorund-color ease-out 0.3s;
+}
+
+/* 选择后的 label :a:after*/
+.toggle_icon_box [type="checkbox"]:checked + label:after {
+    left: 24px;
+    transition: left ease-out 0.3s;
+}
+
+/* 切换提示*/
+.toggle_tip {
+    float: right;
+    line-height: 26px;
+    font-size: 12px;
+    color: #e09180;
+}
+
+/* 背景色面板
+ end *********************/
+
+/* 字体设置*/
+
+/* 字体设置*/
+.pallet_font_wrap {
+    padding: 10px;
+    margin-left: -10px;
+    margin-top: -10px;
+
+}
+
+.font_item {
+    width: 100%;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+/* 标题*/
+.pallet-content h3 {
+    line-height: 36px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    padding-left: 4px;
+    overflow: hidden;
+}
+
+.font_box {
+    position: relative;
+}
+
+/* 三角形*/
+.font_item .icon_triangle {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+
+    width: 0;
+    height: 0;
+
+    border-top: 4px dashed #454545;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+
+    transition: transform .2s ease-in;
+}
+
+/* 点击选择文字旋转三角形*/
+.click_rotate {
+    transform: rotate(180deg);
+}
+
+/* 提示选择文字 内容*/
+.font_item .font_tip {
+    line-height: 22px;
+    width: 180px;
+    float: right;
+    border-bottom: 1px solid transparent;
+    padding-left: 10px;
+    padding-right: 25px;
+    font-size: 12px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #1A1A1A;
+
+    transition: border .2s ease-out;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.font_box .font_type {
+    width: 80px;
+    float: left;
+}
+
+.font_item .select_fontType {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 300px;
+    width: 215px;
+
+    background-color: #fff;
+    display: none;
+
+    position: absolute;
+    top: 24px;
+    right: 0;
+    z-index: 9;
+}
+
+.font_item .select_fontType li {
+    padding: 5px 10px;
+    font-size: 13px;
+    margin-bottom: 2px;
+    font-weight: 600;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.font_item .select_fontType li.font_on,
+.font_item .select_fontType .font_on:hover {
+    color: #f0f0f0;
+    background-color: rgba(26, 55, 253, .3);
+}
+
+/* :hover*/
+.font_item .select_fontType li:hover {
+    color: #1a37e9;
+    background-color: rgba(26, 55, 253, .2);
+}
+
+/*
+字体编辑************/
+.font_edit_list li {
+}
+
+.font_edit_list .font_color {
+    width: 130px;
+    background-color: #fff;
+    margin-right: 10px;
+}
+
+/* B I U */
+.font_edit_list {
+    position: relative;
+}
+
+.font_edit_list .edit_item {
+    height: 20px;
+    line-height: 20px;
+    display: inline-block;
+}
+
+/* 提示信息*/
+.edit_item::after {
+    content: attr(data-tip);
+    position: absolute;
+    top: -27px;
+    left: 80px;
+    width: 100px;
+    padding: 0 10px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #e00b33;
+    display: none;
+}
+
+.edit_item:hover::after {
+    display: block;
+}
+
+.edit_item:first-child {
+    margin-left: 8px;
+}
+
+/* B I U  图标*/
+.edit_item .fa {
+    padding: 0 2px;
+    display: inline-block;
+    line-height: 20px;
+    text-align: center;
+    margin-right: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.edit_item:hover {
+    color: #F10A0A;
+}
+
+/* 当前颜色*/
+.font_edit_list .color_current_box {
+    width: 128px;
+    height: 28px;
+    border-radius: 2px;
+    border: 1px solid #1a7ab7;
+    position: relative;
+}
+
+.color_current_box span {
+    display: block;
+    height: 24px;
+    width: 122px;
+    margin-left: 3px;
+    margin-top: 2px;
+    border-radius: 2px;
+    background-color: #090909;
+}
+
+/* 字体大小范围*/
+.range_box {
+    position: relative;
+}
+
+/* 滑动条*/
+.range_navbar {
+    height: 4px;
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: relative;
+    z-index: 1;
+
+    border-radius: 2px;
+    background-image: linear-gradient(225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
+}
+
+.range_navbar.last_bar {
+    background-color: transparent;
+}
+
+/* 角度的背景色*/
+.last_bar:after,
+.last_bar:before {
+    content: '';
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+/* 反方向：角度*/
+.last_bar:before {
+    left: 0;
+    width: 100px;
+    background-color: #200ee0;
+    border-radius: 2px 0 0 2px;
+}
+
+/* 正方向：角度*/
+.last_bar:after {
+    content: '';
+    width: 101px;
+    right: -1px;
+    background-color: rgb(199, 144, 146);
+    border-radius: 0 2px 2px 0;
+}
+
+/* 控制点*/
+.range_radius {
+    height: 18px;
+    width: 18px;
+
+    position: absolute;
+    top: -9px;
+    /* 16+1*2 中心点的位置与 滑动条开始点重合  maxLeft:191 px */
+    left: 0;
+    z-index: 3;
+
+    border-radius: 50%;
+    border: 1px solid #B7B7B7;
+    background-image: linear-gradient(to top, #e8198b 0%, #c7eafd 100%);
+
+    transition: transform .2s ease-out;
+}
+
+/* 旋转角度*/
+.range_navbar .angle-radius {
+    left: 90px;
+}
+
+/* ：hover 放大控制点*/
+.range_radius:hover {
+    transform: scale(1.4);
+}
+
+/* 控制点的 中心原点*/
+.range_radius::after {
+    content: '';
+    display: block;
+    width: 4px;
+    height: 4px;
+
+    border-radius: 50%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    background-color: #B7B7B7;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .5);
+
+}
+
+/* div 容器*/
+.currentValue {
+    line-height: 23px;
+    font-size: 12px;
+    color: #E0E0E0;
+    border: 1px solid #a8a4b9;
+
+    position: absolute;
+    top: -8px;
+    right: 0;
+}
+
+.currentValue:hover {
+    border-color: #e00b33;
+}
+
+/* input 显示于与设置值 */
+.currentValue input {
+    width: 25px;
+    padding: 4px 25px 4px 5px;
+    font-size: 12px;
+}
+
+/* px */
+.currentValue label {
+    width: 18px;
+    line-height: 23px;
+    text-align: center;
+
+    background-color: #0097de;
+    color: #f0f0f0;
+
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/*
+end ***************字体设置*/
+
+/* 背景图片*/
+.pallet_image_wrap {
+    width: 330px;
+    height: 100%;
+    margin-left: -10px;
+    margin-top: 0;
+    position: relative;
+}
+
+/* 背景色*/
+.pallet_image_wrap .pallet_color_container {
+    margin-left: 10px;
+    width: 310px;
+
+}
+
+/* h3 */
+.pallet_image_wrap .slide_down {
+    padding-left: 0;
+    text-indent: 4px;
+    width: 310px
+}
+
+/*背景颜色 h3 */
+.pallet_image_wrap .slide_down {
+    margin-left: 0;
+}
+
+/* 背景图片标题 h3*/
+.bg_image_box .slide_down {
+    margin-left: 10px;
+}
+
+/* 背景颜色容器*/
+.pallet_image_wrap .color-bg {
+    height: 100%;
+    padding-bottom: 0;
+}
+
+/* hex rgb 容器*/
+.bg_show_box {
+    overflow: hidden;
+    padding-bottom: 15px;
+    padding-top: 8px;
+}
+
+.bg_hex_box {
+    float: left;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.bg_hex_box:first-child {
+    margin-right: 23px;
+}
+
+.color-bg .pallet_color_box {
+    background-color: #93adff;
+}
+
+/* label */
+.bg_hex_box label {
+    float: left;
+    font-size: 12px;
+    padding-left: 4px;
+    color: #9a5559;
+    font-weight: 800;
+    line-height: 26px;
+}
+
+.bg_hex_box input {
+    float: left;
+    display: inline-block;
+    width: 55px;
+    line-height: 16px;
+    padding: 3px 6px;
+    margin-left: 8px;
+    font-size: 12px;
+    border-radius: 2px;
+    border: 1px solid black;
+}
+
+/* rgb 的 input */
+.bg_hex_box .read_rgb {
+    width: 94px;
+    color: #B7B7B7;
+    padding: 3px;
+}
+
+/* 背景图片*/
+.bg_image_box {
+    width: 100%;
+}
+
+/* 背景 ul */
+.bglist {
+    width: 100%;
+    padding-bottom: 25px;
+    overflow: hidden;
+    margin-top: -10px;
+    max-height: 320px;
+}
+
+.bglist li {
+    float: left;
+    margin-left: 10px;
+    margin-top: 15px;
+    border-radius: 8px;
+    border: 1px solid #e2e2e2;
+}
+
+/* 背景图片*/
+.bglist li img {
+    width: 148px;
+    height: 98px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/*分页*/
+.page_layer {
+    padding: 10px 0;
+}
+
+.page_layer dl {
+    overflow: hidden;
+    font-size: 12px;
+    color: #B7B7B7;
+    text-align: right;
+    padding: 0 10px;
+    line-height: 30px;
+}
+
+.page_layer dl span {
+    font-size: 12px;
+    color: #1A1A1A;
+}
+
+.page_layer dt {
+    width: 32px;
+    padding-left: 6px;
+    line-height: 22px;
+    display: inline-block;
+}
+
+.page_layer dd {
+    display: inline-block;
+    line-height: 22px;
+    height: 22px;
+    margin-left: 5px;
+    color: #1A1A1A;
+}
+
+/* 上下页切换*/
+.page_layer .dd_toggle {
+    position: relative;
+    width: 36px;
+    margin-left: 0;
+}
+
+.page_layer dd .fa {
+    font-size: 18px;
+    margin-left: 10px;
+    position: absolute;
+    top: 9px;
+    cursor: pointer;
+    color: #1A1A1A;
+}
+
+/* 上一页*/
+.dd_toggle .fa-caret-left {
+    left: 2px;
+}
+
+/* 下一页*/
+.dd_toggle .fa-caret-right {
+    right: 2px;
+}
+
+/* 页数输入框*/
+.page_layer dd input {
+    display: inline-block;
+    width: 20px;
+    line-height: 14px;
+    padding: 2px 5px;
+    margin-left: 3px;
+    margin-right: 3px;
+    font-size: 12px;
+    border-radius: 2px;
+}
+
+/* 跳转页*/
+.page_layer .dd_go {
+    margin-right: 10px;
+}
+
+.dd_go .page_go {
+    padding: 2px 5px;
+    border-radius: 2px;
+    border: 0;
+    font-size: 12px;
+    cursor: pointer;
+    background-color: #3ca0ff;
+    color: #fff;
+}
+
+/* end**分页***********************/
+/*本地选择图片*/
+.select_image_box {
+    background-color: #c1c1c1;
+    width: 310px;
+    margin-left: 10px;
+    padding: 5px 0;
+}
+
+.select_image_box dl {
+    height: 26px;
+}
+
+.select_image_box dt {
+    line-height: 26px;
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 5px;
+    float: left;
+
+}
+
+.select_image_box dd {
+    float: left;
+    margin-left: 6px;
+    line-height: 26px;
+    position: relative;
+}
+
+/* 本地预览图片 dd */
+.select_image_box .dd_local_image {
+    width: 310px;
+    padding: 10px 0;
+    border-radius: 6px;
+    margin-top: 5px;
+    margin-left: 0;
+}
+
+/* 预览的图片*/
+.dd_local_image img {
+    width: 100%;
+    height: 190px;
+    margin: 0 auto;
+    box-shadow: 0 1px 20px rgba(26, 26, 183, 0.5);
+
+}
+
+.select_image_btn {
+    border: 0;
+    cursor: pointer;
+    width: 208px;
+    background-color: #3ca0ff;
+    color: #fff;
+    border-radius: 2px;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.select_image_btn:hover {
+    background-color: #1c7fff;
+}
+
+/* end 本地选择图片*/
+
+/*
+end**************背景图片*/
+
+/* 画布信息*/
+
+.info_position_box dl {
+    margin-bottom: 15px;
+    border: 1px solid #009de7;
+    padding: 5px;
+}
+
+.info_position_box dt {
+    line-height: 26px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    padding-left: 4px;
+}
+
+.info_position_box dd {
+    line-height: 20px;
+    margin-top: 10px;
+}
+
+.info_position_box strong {
+    font-size: 12px;
+    font-weight: 600;
+    color: #1a1ab7;
+    padding-left: 5px;
+}
+
+.info_position_box span {
+    font-size: 13px;
+    font-weight: 600;
+
+}
+
+/*画布信息
+ end *************/
+/*预览图片*/
+
+/* 刷新预览图片*/
+.pallet_preview_wrap span {
+    float: right;
+    margin-right: 15px;
+    line-height: 26px;
+    cursor: pointer;
+    font-weight: normal;
+    font-size: 12px;
+
+}
+
+/* 刷新预览图片 图标*/
+.pallet_preview_wrap .fa-refresh {
+    padding-left: 5px;
+}
+
+.pallet_preview_wrap span:hover {
+    color: #9e2322;
+}
+
+/* li */
+.preview_image_list li {
+    width: 310px;
+    height: 190px;
+    padding: 10px 0;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 1px 20px rgba(26, 26, 183, 0.5);
+    margin-top: 15px;
+}
+
+/* 预览的图片*/
+.preview_image_list img {
+    display: block;
+    width: 290px;
+    height: 190px;
+    margin: 0 auto;
+}
+
+/*
+end*********预览图片*/
+/*兼容代码*/
+@media (max-height: 728px) {
+    .bg_image_box .bglist {
+        height: 320px;
+    }
+}

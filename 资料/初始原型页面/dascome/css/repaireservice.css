@@ -1,0 +1,99 @@
+body{
+    width:760px;
+    margin:0 auto;
+    padding-top:10px;
+}
+
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('../font/iconfont.eot');
+    src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../font/iconfont.woff') format('woff'),
+    url('../font/iconfont.ttf') format('truetype'),
+    url('../font/iconfont.svg#iconfont') format('svg');
+}
+.page_title{
+    height:80px;
+    line-height: 80px;
+    font-size:30px;
+    font-weight:bold;
+    text-align: center;
+}
+
+
+.banner img{
+    width:100%;
+}
+
+.select_content{
+    position:relative;
+    margin-top:20px;
+    border:1px solid #999;
+}
+.select_content .select_city{
+    height:60px;
+    line-height: 60px;
+    background:#dfdfdf;
+}
+
+.select_content .select_city select{
+    width:140px;
+    height:30px;
+    margin-left:30px;
+}
+.select_content .select_result ul{
+    padding:20px;
+    border-top:1px solid #756958;
+}
+.select_content .select_result li{
+    padding:8px 0;
+    border-bottom:1px solid #756958;
+}
+
+.select_result li .city_left{
+    float:left;
+    color:#3983d8;
+}
+.select_content .submitBtn{
+    position:absolute;
+   padding:10px;
+    color:#fff;
+    background:#3983d8;
+    border:none;
+    outline: none;
+    top:14px;
+    left:390px;
+    border-radius:6px;
+
+}
+
+
+.select_result li .city_info{
+    padding-left:90px;
+    color:#756958;
+
+}
+.select_result li .city_info p{
+    padding:0 0 6px 0;
+}
+.select_result li .city_info p:before{
+    content:"\e632";
+    font-family: iconfont;
+    font-size:18px;
+    color:#756958;
+    margin-right:6px;
+}
+
+.select_result li .city_info .code:before{
+    content:"\e66a";
+    font-size:16px;
+}
+
+
+.select_result li .city_info .phone:before{
+    content:"\e622";
+    font-size:20px;
+}
+
+

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="description" content="得实客户支持">
+    <title>得实客户支持</title>
+    <link rel="stylesheet" href="../css/base.css"/>
+    <link rel="stylesheet" href="../css/detectionauto.css"/>
+    <script src="../js/asset/jquery-3.1.1.js"></script>
+</head>
+<body>
+<object id="WDevObj" style="display:none" CLASSID = "CLSID:4B9A6841-8720-40F8-9BC6-71A0D65441EA"></object>
+<!--头部-->
+<header>
+    <div class="header">
+        <img src="../img/home/logo22.png" alt="div"/>
+        <ul>
+            <li><a href="home.html" class="taba">首页</a></li>
+            <li><a href="product.html" class="taba">产品</a></li>
+            <li><a href="application-Solution.html" class="taba">应用与解决方案</a></li>
+            <li><a href="forum-detail.html" class="taba">社区论坛</a></li>
+            <li><a href="javascript:;" class="taba">联系得实</a></li>
+        </ul>
+        <div class="login_register">
+            <a class="login" href="login.html">登录</a>
+            <a class="register" href="register.html">注册</a>
+        </div>
+    </div>
+</header>
+<div class="auto_detection">
+    <h3>配置信息</h3>
+    <div class="auto_product">
+        <span>*检测到您当前所连接的得实产品，请选择</span>
+        <select class="detection_opts">
+        </select>
+    </div>
+    <div class="detection_list">
+        <p class="top_list">
+            <span>选项名称</span>
+            <span>当前值</span>
+            <span>选项值</span>
+        </p>
+        <ul class="change_detection">
+            <!--<li>-->
+                <!--<span>仿真类型</span>-->
+                <!--<span>无</span>-->
+                <!--<select>-->
+                    <!--<option value="">STAR_EMUL</option>-->
+                    <!--<option value="">EV_EMUL</option>-->
+                    <!--<option value="">DS_EMUL</option>-->
+                <!--</select>-->
+            <!--</li>-->
+        </ul>
+    </div>
+    <span class="change_btn">修改</span>
+</div>
+<!--底部-->
+<footer>
+    <div class="service_info">
+        <div class="info_content clearfix">
+            <div class="footnav">
+                <h3>产品系列</h3>
+                <ul>
+                    <li><a href="javascript:;">家用系列</a></li>
+                    <li><a href="javascript:;">商用系列</a></li>
+                </ul>
+            </div>
+            <div class="footnav">
+                <h3>服务支持</h3>
+                <ul>
+                    <li><a href="javascript:;">驱动、固件下载</a></li>
+                    <li><a href="javascript:;">服务机构查询</a></li>
+                    <li><a href="javascript:;">常见问题</a></li>
+                </ul>
+            </div>
+            <div class="footnav">
+                <h3>购买指南</h3>
+                <ul>
+                    <li><a href="javascript:;">经销商查询</a></li>
+                    <li><a href="javascript:;">专卖店</a></li>
+                </ul>
+            </div>
+            <div class="footnav">
+                <h3>关于得实</h3>
+                <ul>
+                    <li><a href="javascript:;">公司简介</a></li>
+                    <li><a href="javascript:;">新闻资讯</a></li>
+                    <li><a href="javascript:;">中国业务网络</a></li>
+                </ul>
+            </div>
+            <div class="footnav">
+                <h3>关联网站</h3>
+                <ul>
+                    <li><a href="javascript:;">得实中国合作伙伴门户</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="service_copyright">
+        <div class="copyright_content">
+            <div class="aboutus">
+                <a href="javascript:;">网站地图</a>
+                <a href="javascript:;">联系我们</a>
+                <a href="javscript;;">加入我们</a>
+                <a href="javascript:;">使用声明</a>
+                <a href="javascript:;">隐私政策</a>
+            </div>
+            <p>© 2013 版权所有 得实集团 京ICP备10012480号  <span></span>粤公网安备 44070402440764号</p>
+        </div>
+    </div>
+</footer>
+</body>
+<script>
+    $(function(){
+        var ocx=null;
+        var hdev = null;
+        var flag=true
+        ocx = document.getElementById("WDevObj");
+        var PORTINFO_PMODE_CTRL   = 0x02;
+        var changeBtn=$(".change_btn");
+        if(ocx!=null)
+        {
+            try{
+                var res = ocx.EnumDevPath(0x302, "", 0, 0);
+            }catch(e){
+                console.log("您的浏览器未安装插件！");
+                flag=false;
+            }
+        }
+        if(flag){
+            var res = ocx.EnumDevPath(0x301, "", 0, 0);
+            var obj = eval('(' +  res  + ')');//由传出的字串转为JSON对象
+            console.log(obj.RtnCode);
+            var detectionOpts=$(".detection_opts");
+            var changeDetection=$(".change_detection");
+            if(obj.RtnCode==0){
+                var pterArr = obj.pathStr.split("\r\n");
+                var pterNum = obj.RtnVal;
+//                获取连接的得实产品
+                for(var i=0;i<pterArr.length;i++){
+                    hdev = ocx.OpenDev(pterArr[i],3000,3000,0x301,PORTINFO_PMODE_CTRL);
+                    if(hdev==-1){
+                        console.log("1打开设备失败,请刷新页面");
+                        ocx.CloseDev(hdev);
+                        hdev=null;
+                        return;
+                    }else{
+                        var res = ocx.GetDevType(hdev);
+                        var res2 = ocx.GetCfgInfo(hdev);
+                        var obj3 = eval('(' +  res2  + ')');
+                        var obj2 = eval('(' +  res  + ')');
+                        var opt=$("<option>"+obj3.Info[obj3.Info.length-1].CurVal+"</option>");
+                        detectionOpts.append(opt);
+                        ocx.CloseDev(hdev);
+                    }
+                };
+//                获取选项的设置
+                var opts=$(".detectionOpts option");
+                var oindex=0;
+                for(var i=0;i<opts.length;i++){
+                    if(detectionOpts.val()==$(opts[i]).val()){
+                        oindex=$(opts[i]).index();
+                    }
+                }
+                hdev = ocx.OpenDev(pterArr[oindex],3000,3000,0x301,PORTINFO_PMODE_CTRL);
+                if(hdev==-1){
+                    console.log("打开设备失败,请刷新页面");
+                    ocx.CloseDev(hdev);
+                    hdev=null;
+                    return;
+                }else{
+                    var res = ocx.GetDevType(hdev);
+                    var res2 = ocx.GetCfgInfo(hdev);
+                    var obj3 = eval('(' +  res2  + ')');
+                    var obj2 = eval('(' +  res  + ')');
+                    console.log(obj3.Info);
+                    for(var i=0;i<obj3.Info.length;i++){
+                        var  opthtml="";
+                        if(obj3.Info[i].Datas==undefined){
+                              opthtml="<option>无</option>"
+                        }else{
+                            datas= obj3.Info[i].Datas.split(";");
+                            for(var j=0;j<datas.length;j++){
+                                 opthtml+="<option>"+datas[j]+"</option>"
+                            }
+                        }
+                        var dataStr="";
+                        if(obj3.Info[i].Datas==undefined){
+                            dataStr=obj3.Info[i].CurVal;
+
+                        }else{
+                            datas= obj3.Info[i].Datas.split(";");
+                            var CurVal=parseFloat(obj3.Info[i].CurVal)
+                            dataStr=datas[CurVal];
+                        }
+                        var html=
+                                "<li>" +
+                                    "<span>"+obj3.Info[i].Name+"</span>" +
+                                    " <span>"+dataStr+"</span>" +
+                                    "<select>" +
+                                        opthtml+
+                                    " </select>" +
+                                "  </li>"
+                        changeDetection.append(html);
+                    }
+                }
+                res=ocx.CloseDev(hdev);
+            }
+        }
+    })
+
+</script>
+</html>

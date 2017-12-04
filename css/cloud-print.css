@@ -1,0 +1,758 @@
+
+body {
+    /*background: #f7f7f7;*/
+}
+.print-main-container {
+    margin: 0 auto;
+}
+
+.print-wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 第一部分*/
+.print-data-box {
+    width: 100%;
+    background-color: #f7f7f7;
+    background: url("../img/cloud-print/Header_Vario_2-Kopie.jpg") no-repeat center;
+    background-size: 100% 100%;
+
+}
+/*标题*/
+.print-wrap h1 {
+    text-align: center;
+    line-height: 58px;
+    font-size: 38px;
+    font-weight: 700;
+    color: white;
+    border-bottom: 1px solid gainsboro;
+    margin-top: 5px;
+    margin-bottom:24px;
+    padding-bottom: 20px;
+}
+.col-box {
+    overflow: hidden;
+    padding: 20px 0 30px 0px;
+}
+
+/* 第一部分 左边内容*/
+.col-left {
+    float: left;
+    width: 50%;
+    background-color: #fff;
+    height: 405px;
+    border-right: none;
+    position: relative;
+
+
+}
+
+.user-info-wrap {
+    overflow: hidden;
+    background-color: #f5f5f5;
+    height: 160px;
+    width: 100%;
+}
+
+/* 个人信息*/
+.user-info {
+    height: 160px;
+    float: left;
+    width: 50%;
+
+}
+
+.user-logo-box {
+    padding-left: 20px;
+    margin-top: 20px;
+    position: relative;
+}
+
+/* 头像*/
+.user-logo-box img {
+    width: 80px;
+    height: 80px;
+}
+
+.user-name-box {
+    padding-left: 20px;
+    font-size: 14px;
+    margin-top: 10px;
+
+}
+
+.user-name {
+    display: inline-block;
+    position: relative;
+    padding: 0 10px;
+    font-size: 12px;
+}
+
+/*等级*/
+.user-level {
+    position: absolute;
+    left: 98px;
+    bottom: -10px;
+    color: #9e2322;
+    border-radius: 4px;
+    background-color: #009de7;
+    padding: 0 4px;
+}
+
+/* 升级按钮*/
+.upgrade-btn {
+    width: 80px;
+    text-align: center;
+    line-height: 22px;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: #009de7;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+
+    transition: background-color .2s ease-in;
+}
+
+.upgrade-btn:hover {
+    background-color: #1976D2;
+}
+
+/* 设置*/
+.user-setting {
+    float: right;
+    width: 50%;
+    height: 160px;
+    background-color: #f5f5f5;
+    position: relative;
+}
+
+.setting-btn {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    font-size: 14px;
+    line-height: 30px;
+    cursor: pointer;
+
+    transition: color .2s ease-in;
+}
+
+.setting-btn:hover {
+    color: #ff0722;
+}
+
+/* 设置图标*/
+.setting-btn .fa-cog {
+    font-size: 18px;
+    padding: 0 5px;
+    float: left;
+    line-height: 30px;
+}
+
+/* 打印的数据条形图*/
+.print-detail-wrap {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.detail-list {
+    float: left;
+    width: 50%;
+    height: 236px;
+    padding-top: 10px;
+    background-color: #f0f0f0;
+
+}
+
+/* 标题*/
+.print-detail-wrap h3 {
+    line-height: 30px;
+    padding-left: 30px;
+
+    font-size: 18px;
+    font-weight: 700;
+    color: darkslategrey;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+
+.print-detail-wrap h2 .fa-line-chart {
+    padding-right: 10px;
+}
+
+.detail-list ul {
+    padding-bottom: 30px;
+}
+
+.detail-list ul li {
+    position: relative;
+    margin-top: 20px;
+    height: 24px;
+    width: 62%;
+    margin-left: 110px;
+
+}
+
+.detail-list ul li span {
+    display: inline-block;
+    height: 24px;
+    line-height: 24px;
+}
+
+/* 标题*/
+.caption {
+    font-size: 12px;
+    width: 80px;
+    text-align: right;
+    position: absolute;
+    left: -100px;
+    top: 0;
+}
+
+/* 条形状*/
+.amount-bar {
+    height: 24px;
+    position: relative;
+}
+
+/* 数量*/
+.amount-bar .amount {
+    position: absolute;
+    right: -35px;
+    top: 0;
+    line-height: 24px;
+    font-size: 12px;
+}
+
+/* 进度长度*/
+.day-finished .amount-bar {
+    width: 24px;
+    background-color: #ff997b;
+}
+
+.day-unfinished .amount-bar {
+    width: 9px;
+    background-color: #49CFAE;
+}
+
+.week-finished .amount-bar {
+    width: 94px;
+    background-color: #EC88BF;
+}
+
+.current-finished .amount-bar {
+    width: 140px;
+    background-color: #FFCE56;
+}
+
+/* 打印机状态*/
+.type-list {
+    width: 50%;
+    float: right;
+    height: 236px;
+    padding-top: 10px;
+    background-color: white;
+}
+
+.type-list ul {
+    font-size: 0;
+}
+
+.type-list ul li {
+    font-size: 15px;
+    display: inline-block;
+    width: 120px;
+    height: 70px;
+    margin-left: 20px;
+    background-color: #49CFAE;
+    margin-top: 20px;
+    color: #fff;
+    border-radius: 6px;
+}
+
+/*缺纸*/
+.type-list ul .nopaper-print {
+    background-color: #EC88BF;
+}
+
+.type-list ul li span {
+    display: block;
+    text-align: center;
+}
+
+.type-list ul li span:first-child {
+    padding-bottom: 10px;
+    line-height: 36px;
+}
+
+/* 第一部分 左边内容*/
+.col-right {
+    float: right;
+    width: 50%;
+    height: 100%;
+}
+
+.col-rigth-box {
+    border: 1px solid #B7B7B7;
+}
+
+.nav-tabs {
+    height: 30px;
+    font-size: 0;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.nav-tabs li {
+    display: inline-block;
+    font-size: 14px;
+    padding: 0 15px;
+    line-height: 28px;
+    margin-left: 1px;
+    cursor: pointer;
+    margin-top: 1px;
+}
+
+.nav-tabs .active, .nav-tabs li:hover {
+    background-color: #B7B7B7;
+
+}
+
+/*当前状态 图标红色*/
+.nav-tabs .active .fa, .nav-tabs li:hover .fa {
+    color: #009de7;
+}
+
+.panel-wrap {
+    height: 372px;
+    overflow: hidden;
+    position: relative;
+    background: white;
+}
+
+.panel-list {
+    display: none;
+    height: 320px;
+    background-color: #f0f0f0;
+    padding-bottom: 12px;
+
+}
+
+.list-active {
+    display: block;
+}
+
+.panel-list li {
+    line-height: 26px;
+    padding-left: 10px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    overflow: hidden;
+    transition: color .2s ease-in, background-color .2s ease-in;
+}
+
+.panel-list li:hover {
+    background-color: #009de7;
+    color: #E0E0E0;
+}
+
+.panel-list li span {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* 时间*/
+.panel-list li .time {
+    float: right;
+    max-width: 120px;
+    margin-right: 10px;
+    text-align: right;
+}
+
+/*内容*/
+.panel-list li .content {
+    float: left;
+    width: 450px;
+}
+
+.more-detail-btn {
+    position: absolute;
+    bottom: 8px;
+    right:15px;
+    text-align: center;
+    color: #009de7;
+    line-height: 24px;
+    width: 90px;
+    font-size: 14px;
+    border: 1px solid #009de7;
+    transition: color .2s ease-in;
+}
+
+.more-detail-btn:hover {
+    color: #ff0722;
+}
+
+/* 模块展示*/
+.print-template-box {
+    padding: 30px 0;
+}
+
+.print-template-box ul {
+    height: 120px;
+    /*background: plum;*/
+}
+
+.print-template-box ul li {
+    width: 262px;
+    margin-right: 47px;
+    float: left;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+    box-shadow: 0 2px 15px 0 rgba(0,0,0,.15);
+    //box-shadow: 0 25px 35px rgba(165,165,189,.3);
+    font-size: 24px;
+    border-radius: 6px;
+    border: 1px solid gainsboro;
+
+
+}
+.print-template-box ul li:hover{
+    border: 1px solid #009de7;
+    box-shadow: 0 2px 15px 0 rgba(0,157,231,.3);
+}
+
+.print-template-box ul li a {
+    /*color: #fff;*/
+    /*font-weight: 600;*/
+    color: #009de7;
+    display: block;
+}
+
+.print-template-box ul .last-child {
+    margin-right: 0;
+}
+
+/* 模板展示 最新模板*/
+.print-idea-box {
+    /*background-color: rgba(25, 118, 210, 0.29);*/
+    background: #f7f7f7;
+    padding-bottom: 28px;
+}
+
+.print-idea-box .print-wrap {
+    padding-top: 20px;
+}
+
+/* 大标题*/
+
+.print-wrap h2 {
+    text-align: center;
+    line-height: 45px;
+    font-size: 24px;
+    color: darkslategrey;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed gainsboro;
+}
+
+.template-box {
+    background: white;
+    margin-top:15px;
+    box-sizing: border-box;
+    position: relative;
+
+}
+
+.template-box h3 {
+    /*width: 80%;*/
+    line-height: 30px;
+    font-size: 17px;
+    font-weight: 500;
+    padding-left:30px;
+    padding-top: 10px;
+
+}
+
+.show-template-slider {
+    /*margin-top: 15px;*/
+    background: white;
+    position: relative;
+}
+
+/*查看更多*/
+.check-more {
+    display: inline-block;
+    font-size: 14px;
+    color: #ff7381;
+    padding: 3px 5px;
+    position: absolute;
+    top:-25px;
+    right: 25px;
+    z-index: 9;
+
+}
+
+
+/*切换按钮*/
+.slider-btn {
+    display: block;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+
+}
+
+.slider-btn .fa {
+    transition: color .2s ease-in;
+}
+
+.slider-btn .fa:hover {
+    color: #ff0722;
+}
+
+.template-box .prev {
+    left: 0px;
+}
+
+.template-box .next {
+    right: 0px;
+    text-align: right;
+}
+
+.slider-btn .fa {
+    font-size: 40px;
+}
+
+/* slider 容器*/
+.slider-list-box {
+    width: 100%;
+    height: 210px;
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;
+}
+
+/* slider ul*/
+.slider-list {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 99;
+}
+
+.slider-item {
+    height: 175px;
+    width: 270px;
+    float: left;
+    margin-left:25px;
+    margin-top: 10px;
+    /*background: url('../img/cloud-print/cardTpl/bg_5_fornt.png') no-repeat center center;*/
+    background-size: cover;
+}
+.slider-item img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 热门分类*/
+.classify-template-box {
+    height: 155px;
+}
+
+.classify-template-box .slider-list {
+    height: 100%;
+    width: 1100px;
+    margin-left: 50px;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.classify-item {
+    width: 11%;
+    float: left;
+    height: 62px;
+    line-height: 62px;
+    text-align: center;
+    margin-right: 3.53333%;
+    margin-left: 0;
+    margin-top: 40px;
+    font-size: 16px;
+    border: 1px solid gainsboro;
+    background: #f5f5f5;
+    cursor: pointer;
+}
+.classify-item:hover{
+    /*background: #009de7;*/
+    border: 1px solid #009de7;
+    color: #009de7;
+    transition: .5s;
+}
+
+.classify-template-box .more-template {
+    margin-right: 0;
+}
+
+/* 问题汇总*/
+.summary-box {
+    padding-bottom: 25px;
+}
+
+.summary-box .print-wrap {
+    margin-top: 38px;
+}
+
+.summary-box .print-wrap > dl {
+    width: 568px;
+    border: 1px solid gainsboro;
+}
+
+/* 常见问题*/
+.common-problem {
+    float: left;
+    overflow: hidden;
+    padding-bottom: 20px;
+    height: 368px;
+}
+
+.summary-box dt {
+    font-size: 18px;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-weight: 600;
+
+}
+
+/*查看更多问题详情*/
+.more-problem-btn {
+    float: right;
+    margin-right: 20px;
+    font-weight: normal;
+    font-size: 14px;
+    overflow: hidden;
+    /*color: #919191;*/
+    color: #ff7381;
+
+    transition: color .2s ease-in;
+}
+
+/*查看更多问题详情  图标*/
+
+.more-problem-btn .fa {
+    padding-left: 5px;
+    font-size: 12px;
+}
+
+.more-problem-btn:hover {
+    color: #ff0722;
+}
+
+.common-problem dd {
+    padding-top: 15px;
+    width: 528px;
+    margin-left: 20px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 14px;
+    color: #616161;
+}
+
+.common-problem .first {
+    margin-top: 20px;
+}
+
+/* 问题与建议*/
+.suggest-idea {
+    float: right;
+    margin-left: 60px;
+    height: 388px;
+}
+
+.fa-question-circle-o, .fa-pencil-square-o {
+    font-weight: 700;
+    color: #ff0722;
+    font-size: 18px;
+}
+
+.suggest-idea-content {
+    margin-top: 20px;
+}
+
+.suggest-submit-form {
+    display: block;
+    margin-left: 20px;
+}
+
+.suggest-idea-content p {
+    font-size: 12px;
+    color: #919191;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+.suggest-idee-input {
+    display: block;
+    background-color: #f0f0f0;
+    width: 506px;
+    height: 246px;
+    padding: 6px 10px;
+    border: 1px solid transparent;
+
+    transition: border-color .2s ease-in;
+}
+
+.suggest-idee-input:hover {
+    /*border-color: #029AFF;*/
+    border-color: #009de7;
+}
+
+.suggest-submit-form input {
+    margin-top: 10px;
+    display: inline-block;
+    border-radius: 4px;
+    padding: 5px 15px;
+    text-align: center;
+
+    color: #fff;
+    cursor: pointer;
+}
+
+/* 提交按钮*/
+.suggest-submit-btn {
+    background-color: #009de7;
+}
+
+/* 联系客服*/
+.link-service-btn {
+    float: right;
+    margin-right: 20px;
+    background-color: #ff7381;
+}
+
+/* 教程*/
+
+.course-box .print-wrap {
+    height: 100px;
+
+    background-color: #B7B7B7;
+}
+
+.course-box h3 {
+    line-height: 30px;
+    font-size: 24px;
+    font-weight: 500;
+}

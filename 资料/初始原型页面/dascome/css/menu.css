@@ -1,0 +1,103 @@
+﻿body{
+     width:760px;
+     margin:0 auto;
+     padding-top:10px;
+ }
+
+/*导航*/
+nav{
+    position:relative;
+}
+nav ul{
+    width:498px;
+    border-bottom:1px solid #666;
+}
+nav ul li{
+    float:left;
+    height:30px;
+    line-height: 30px;
+    width:86px;
+    border:1px solid #666;
+    border-bottom:none;
+    text-align: center;
+    margin-right:6px;
+}
+nav ul li.current{
+    color:#42ABDD;
+}
+nav ul li:nth-child(3){
+    width:120px;
+}
+nav ul li:last-of-type{
+    margin-right:0;
+}
+nav ul li a{
+    font-family: '微软雅黑 Bold', '微软雅黑';
+    font-weight:bold;
+    color:#666;
+    font-size:15px;
+}
+nav ul li a.current{
+    color:#42ABDD;
+}
+nav .login_account{
+    position:absolute;
+    color:#42ABDD;
+    font-size:12px;
+    right:16px;
+    top:10px;
+}
+
+/*搜索*/
+.search{
+    position: relative;
+    padding:20px 0;
+    font-size: 0;
+    -webkit-text-size-adjust:none;
+}
+.search .search_title{
+    display:inline-block;
+    width:170px;
+    height:40px;
+    line-height: 40px;
+    font-size:16px;
+    text-align: center;
+    background:#42ABDD;
+    color:#fff;
+    vertical-align: middle;
+}
+.search .search_text{
+    width:496px;
+    height:34px;
+    line-height: 34px;
+    text-indent:8px;
+    font-size:14px;
+    /*margin-left:-6px;*/
+    vertical-align:middle;
+}
+.search .submit_btn{
+    width:40px;
+    height:40px;
+    line-height: 40px;
+    background: url("../img/search.png") no-repeat;
+    background-size:40px 40px;
+    border:none;
+    vertical-align: middle;
+
+}
+
+.search_result{
+    display:block;
+    text-align: center;
+    height:30px;
+    line-height: 30px;
+    color:#ff0000;
+    font-size:18px;
+}
+.search_resultt{
+    display:block;
+    height:30px;
+    line-height: 30px;
+    color:#ff0000;
+    font-size:18px;
+}

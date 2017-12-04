@@ -1,0 +1,152 @@
+body{
+    width:760px;
+    margin:0 auto;
+    padding-top:10px;
+}
+/*头部*/
+header h2{
+    height:70px;
+    line-height: 70px;
+    font-size:30px;
+    font-family: "宋体 Bold";
+    font-weight:bold;
+}
+
+/*导航*/
+nav{
+    position:relative;
+}
+nav ul{
+    border-bottom:1px solid #666;
+    width:612px;
+
+}
+nav ul li{
+    float:left;
+    padding:11px 20px;
+    border:1px solid #666;
+    border-bottom:none;
+    text-align: center;
+    margin-right:6px;
+}
+nav ul li:nth-child(1) a{
+    color:#42ABDD;
+}
+
+nav ul li:last-of-type{
+    margin-right:0;
+}
+nav ul li a{
+    font-family: '微软雅黑 Bold', '微软雅黑';
+    font-weight:bold;
+    color:#666;
+    font-size:18px;
+}
+nav ul li a.current{
+    color:#42ABDD;
+}
+nav .login_account{
+    position:absolute;
+    color:#42ABDD;
+    font-size:14px;
+    right:0;
+    top:10px;
+}
+
+
+/*搜索*/
+.search{
+    position: relative;
+    padding:20px 0;
+    font-size: 0;
+    -webkit-text-size-adjust:none;
+}
+.search .search_title{
+    display:inline-block;
+    width:184px;
+    height:40px;
+    line-height: 40px;
+    font-size:16px;
+    text-align: center;
+    background:#2f99cc;
+    color:#fff;
+    vertical-align: middle;
+}
+.search .search_text{
+    width:532px;
+    height:34px;
+    line-height: 34px;
+    text-indent:8px;
+    font-size:14px;
+    vertical-align:middle;
+}
+.search .submit_btn{
+    width:40px;
+    height:40px;
+    line-height: 40px;
+    background: url("../img/search.png") no-repeat;
+    background-size:40px 40px;
+    border:none;
+    vertical-align: middle;
+    padding:0;
+}
+
+/*提醒标题*/
+.remind_title{
+    margin:40px 0;
+    margin-top:10px;
+}
+
+.remind_title h3{
+    font-size:20px;
+    font-family: "宋体 Bold", 宋体;
+    font-weight:bold;
+    margin-bottom: 12px;
+}
+.remind_title p{
+    font-size:12px;
+    font-family: "宋体 Bold", 宋体;
+    font-weight:bold;
+}
+
+/*热点问题*/
+.hot_question{}
+
+.hot_question .question_title{
+    position:relative;
+    padding-bottom:20px;
+    border-bottom:2px solid #999;
+}
+
+.hot_question .question_title h3{
+    font-family: '宋体 Bold', '宋体';
+    font-weight: 700;
+    font-size: 18px;
+    color:#333;
+}
+
+.hot_question .question_title a{
+    position:absolute;
+    right:0;
+    top:0;
+    font-family: 'Arial Normal', 'Arial';
+    font-weight: 400;
+    font-size: 14px;
+    color:#42ABDD;
+}
+
+/*问题列表*/
+
+.question_content ol{
+
+}
+.question_content li{
+    height:40px;
+    line-height: 40px;
+    border-bottom:1px solid #999;
+}
+.question_content li a{
+    font-family: '宋体 Regular', '宋体';
+    font-size: 14px;
+    color:#333;
+}

@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=8,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="description" content="得实客户支持">
+    <title>编辑模板</title>
+    <link rel="icon" href="../img/common/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/edit-template.css"/>
+    <!-- 颜色插件样式-->
+    <link rel="stylesheet" href="../css/themes.css"/>
+    <!-- awesome 字体图标库-->
+    <link rel="stylesheet" href="../font/font-awesome-4.7.0/css/font-awesome.css"/>
+    <script data-main="../js/main.js" src="../js/asset/requirejs/require.js" defer async></script>
+    <!--  Internet Explorer 8 需要 Respond.js 配合才能实现对媒体查询（media query）的支持-->
+    <!--[if lt IE 9]>
+    <script src="../js/asset/html5shiv.min.js"></script>
+    <script src="../js/asset/respond.min.js"></script>
+    <![endif]-->
+
+
+</head>
+<body class="fixed" style="padding: 0px">
+<main class="online_drawing_wrapper">
+    <div class="drawing_panel_box">
+        <!--  顶部工具栏-->
+        <section class="tool_top_nav ">
+            <ul>
+
+                <li class="undo-btn" data-tip="返回上一步" data-step="rotate-left">
+                    <i class="fa fa-rotate-left"></i>
+                </li>
+                <li class="regain-btn rotate_right" data-tip="恢复刚才撤销的步骤" data-step="rotate-right">
+                    <i class="fa fa-rotate-right"></i>
+                </li>
+                <li class="front-btn" data-tip="切换到正面" data-step="front-card">
+                    <i class="fa fa-id-card"></i>
+                </li>
+                <li class="reverse-btn" data-tip="切换到反面" data-step="back-card"
+                    data-src='../img/cloud-print/logo.png'>
+                    <i class="fa fa-credit-card"></i>
+                </li>
+                <li class="upload-btn" data-tip="上传云空间" data-step="upload">
+                    <i class="fa fa-cloud"></i>
+                </li>
+
+                <li class="print-btn" data-tip="打印" data-step="print">
+                    <i class="fa fa-print"></i>
+                </li>
+
+                <li class="noname-print-btn" data-tip="匿名打印" data-step="print" >
+                    <i class="fa fa-print" style="color:#009de7"></i>
+                </li>
+            </ul>
+
+            <div class="navbar-right">
+
+                <div class="edit-login login-box login-active">
+                    <a href="login.html" class="login-btn">登录</a>
+                    <a href="register.html" class="register-btn">注册</a>
+                </div>
+
+
+                <div class="printer-info login-box">
+                    <dl>
+                        <dt>
+                            <strong>当前:</strong>
+                            <span class="current-printer" data-selected='none'>没有选中打印机</span>
+                            <i class="fa fa-list" aria-hidden="true"></i>
+                        </dt>
+                        <dd class="print-tip">选择打印机</dd>
+                    </dl>
+
+                    <button id="quit-btn">退出</button>
+                </div>
+            </div>
+
+
+        </section>
+        <!--  /顶部工具栏-->
+        <!--  侧边工具栏-->
+        <section class="tool_slider_nav">
+            <ul id="tool_list">
+                <li data-tip="新增直线" data-step="line" data-shape='Line'>
+                    <i class="fa fa-minus"></i>
+                </li>
+                <li data-tip="新增矩形" data-step="rect" data-shape='Rect'>
+                    <i class="fa fa-stop"></i>
+                </li>
+                <li data-tip="新增椭圆" data-step="radius" data-shape='Ellipse'>
+                    <i class="fa fa-circle"></i>
+                </li>
+                <li data-tip="新增字体" data-step="font" data-shape='Text'>
+                    <i class="fa fa-font"></i>
+                </li>
+                <li data-tip="新增条形码" data-step="line-code" data-shape='Picture'>
+                    <i class="fa fa-barcode"></i>
+                </li>
+                <li data-tip="新增二维码" data-step="qr-code" data-shape='Picture'>
+                    <i class="fa fa-qrcode"></i>
+                </li>
+                <li data-tip="更换背景图" data-step="bg-image" data-shape='Picture'>
+                    <i class="fa fa-image"></i>
+                </li>
+
+            </ul>
+        </section>
+        <!--  /侧边工具栏-->
+        <!--中间绘制区域 -->
+        <section class="edit-template-main">
+            <!--  画布-->
+            <div class="canvas_wrapper">
+                <div id="container" class="common-browser"></div>
+
+                <!--  坐标展示-->
+                <div class="position_info_box">
+                    <ul>
+                        <li><strong>X:</strong><span class="x">0</span></li>
+                        <li><strong>Y:</strong><span class="y">0</span></li>
+                    </ul>
+                </div>
+            </div>
+            <!--  /画布-->
+        </section>
+        <!--/中间绘制区域 -->
+        <!-- 右边工具修改面板-->
+        <section class="panel_slider_box">
+            <!-- 修改面板标签导航-->
+            <div class="slider_tab_container">
+                <ul class="slider_tab_list">
+                    <li class="tab_tpl_btn tab_active">模板</li>
+                    <li class="tab_font_btn">字体</li>
+                    <li class="tab_preview_btn">预览</li>
+                    <li class="tab_info_btn ">画布信息</li>
+                </ul>
+            </div>
+            <!-- /修改面板标签导航-->
+
+            <div class="slider_panel_container">
+                <!--背景图片-->
+                <div class="pallet_image_wrap pallet-content panel_show">
+                    <!-- 背景颜色-->
+                    <div class="pallet_color_container">
+                        <h3 class="slide_down active">背景色面板
+                            <i class="fa fa-sort-down" aria-hidden="true"></i>
+                        </h3>
+
+                        <div class="color-bg slide_down_ctrl" id="bg_pallet_wrap" style="display: block">
+                            <div class="pallet_color_box">
+                                <div id="cp-default" class="cp cp-fancy"></div>
+                            </div>
+
+                            <div class="bg_show_box">
+                                <div class="bg_hex_box">
+                                    <label for="bg_pallet_hex">HEX</label>
+                                    <input type="text" id="bg_pallet_hex">
+                                </div>
+
+                                <div class="bg_hex_box">
+                                    <label for="bg_pallet_rgb">RGB</label>
+                                    <input type="text" class="read_rgb" id="bg_pallet_rgb" readonly>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /背景颜色-->
+
+                    <div class="bg_image_box">
+                        <h3 class="slide_down">模板图片
+                            <i class="fa fa-sort-down" aria-hidden="true"></i>
+                        </h3>
+
+                        <div class="slide_down_ctrl">
+                            <!-- 图片列表-->
+                            <ul class="bglist ">
+                                <li><img src="../img/draw/cardTpl/bg_1_back.png"></li>
+                                <li><img src="../img/draw/cardTpl/bg_10_fornt.png"></li>
+                                <li><img src="../img/draw/cardTpl/bg_14_back.png"></li>
+                                <li><img src="../img/draw/cardTpl/bg_15_fornt.png"></li>
+                                <li><img src="../img/draw/image/2.jpg"></li>
+                                <li><img src="../img/draw/image/3.jpg"></li>
+                                <li><img src="../img/draw/image/4.png"></li>
+                                <li><img src="../img/draw/image/5.jpg"></li>
+
+                            </ul>
+                            <!-- 图片列表-->
+
+                            <!--  分页-->
+                            <div class="page_layer">
+                                <dl>
+                                    <dt>
+                                        <span class="start">1</span>
+                                        <span class="line">/</span>
+                                        <span class="total">1</span>
+                                    </dt>
+                                    <dd class="dd_toggle">
+                                        <i class="fa fa-caret-left" aria-hidden="true"></i>
+                                        <i class="fa fa-caret-right" aria-hidden="true"></i>
+                                    </dd>
+
+                                    <dd>
+                                        到 <input type="text">页
+                                    </dd>
+
+                                    <dd class="dd_go">
+                                        <button class="page_go">GO</button>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <!-- / 分页-->
+                        </div>
+                    </div>
+
+                    <!-- 本地选择图片-->
+                    <div class="select_image_box">
+                        <dl>
+                            <dt>选择本地图片</dt>
+                            <dd style="display: none">
+                                <input type="file" name="" id="select_local_image">
+                            </dd>
+                            <dd class="dd_btn_box">
+                                <button class="select_image_btn">选择图片</button>
+                            </dd>
+                            <dd class="dd_local_image"></dd>
+                        </dl>
+                    </div>
+                </div>
+                <!--/背景图片-->
+                <!-- 字体设置-->
+                <div class="pallet_font_wrap pallet-content">
+                    <div class="pallet_color_container">
+                        <h3 class="slide_down active">颜色面板
+                            <i class="fa fa-sort-down" aria-hidden="true"></i>
+                        </h3>
+
+                        <div class="color-bg slide_down_ctrl" style="display: block">
+                            <div class="pallet_color_box">
+                                <div id="font_fancy" class="cp cp-fancy"></div>
+                            </div>
+                            <div class="pallet_color_info">
+                                <dl class="clearfix">
+                                    <dt class="pallet_current_color">
+                                        <span class="old_color" data-tip="旧" data-back="还原"
+                                              data-color="transparent"></span>
+                                        <span class="new_color" data-tip="新"></span>
+                                    </dt>
+                                    <dd class="pallet_rgb">
+                                        <ul>
+                                            <li>
+                                                <label for="pallet_red">R</label>
+                                                <input type="text" id="pallet_red"/>
+                                            </li>
+                                            <li>
+                                                <label for="pallet_green">G</label>
+                                                <input type="text" id="pallet_green"/>
+                                            </li>
+                                            <li>
+                                                <label for="pallet_blue">B</label>
+                                                <input type="text" id="pallet_blue"/>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                    <dd class="pallet_hsb">
+                                        <ul>
+                                            <li>
+                                                <!-- 色相-->
+                                                <label for="pallet_hue">H</label>
+                                                <input type="text" id="pallet_hue"/>
+                                                <i class="icon">°</i>
+                                            </li>
+                                            <li>
+                                                <!-- 饱和度-->
+                                                <label for="pallet_saturation">S</label>
+                                                <input type="text" id="pallet_saturation"/>
+                                                <i class="icon">%</i>
+                                            </li>
+                                            <li>
+                                                <!-- 明亮-->
+                                                <label for="pallet_brightness">V</label>
+                                                <input type="text" id="pallet_brightness"/>
+                                                <i class="icon">%</i>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                                <div class="pallet_bottom">
+                                    <ul>
+                                        <li>
+                                            <div class="toggle_icon_box" data-shapetype="background">
+                                                <input id="toggle_shapetype" name="checkBox" type="checkbox"
+                                                       checked="checked"/>
+                                                <label for="toggle_shapetype"></label>
+                                            </div>
+                                            <span class="toggle_tip">切换到背景色</span>
+                                        </li>
+                                        <li class="li_hex">
+                                            <label for="pallet_hex">HEX</label>
+                                            <input type="text" id="pallet_hex"/>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pallet_font_box">
+                        <h3 class="slide_down">字体设置
+                            <i class="fa fa-sort-down" aria-hidden="true"></i>
+                        </h3>
+
+                        <div class="slide_down_ctrl font_slide_setting">
+                            <div class="font_item">
+                                <div class="font_box clearfix">
+                                    <i class="icon_triangle"></i>
+
+                                    <h3 class="font_type">字体类型</h3>
+
+                                    <p class="font_tip">请选择字体</p>
+                                </div>
+                                <!-- 字体-->
+                                <ul class="select_fontType">
+                                    <li>宋体</li>
+                                    <li>微软雅黑</li>
+                                    <li>幼圆</li>
+                                    <li>黑体</li>
+                                    <li>华文细黑</li>
+                                    <li>Arial</li>
+                                </ul>
+                            </div>
+                            <div class="font_item">
+                                <h3>字体样式</h3>
+
+                                <div class="font_box">
+                                    <ul class="font_edit_list">
+                                        <li class="edit_item" data-style="1" data-tip="加粗">
+                                            <i class="fa fa-bold" aria-hidden="true"></i>
+                                        </li>
+                                        <li class="edit_item" data-style="2" data-tip="斜体">
+                                            <i class="fa fa-italic" aria-hidden="true"></i>
+                                        </li>
+                                        <li class="edit_item" data-style="3" data-tip="下划线">
+                                            <i class="fa fa-underline" aria-hidden="true"></i>
+                                        </li>
+                                        <li class="edit_item" data-style="4" data-tip="删除线">
+                                            <i class="fa fa-strikethrough" aria-hidden="true"></i>
+                                        </li>
+                                        <li class="edit_item" data-style="12" data-tip="加粗斜体">
+                                            <i class="fa fa-eraser" aria-hidden="true"></i>
+                                        </li>
+                                        <li class="edit_item" data-style="34" data-tip="下划线删除线">
+                                            <i class="fa fa-fire" aria-hidden="true"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="font_item">
+                                <h3>字体大小</h3>
+
+                                <div class="fontSize_range range_box">
+                                    <div class="range_navbar">
+                                        <div class="range_radius size-radius"></div>
+                                    </div>
+                                    <div class="currentValue">
+                                        <input type="text" value="13" id="size_currentValue" data-type="size"
+                                               class="ctrl_arrow"/>
+                                        <label for="size_currentValue">px</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="font_item">
+                                <h3>字体角度</h3>
+
+                                <div class="fontSize_range range_box">
+                                    <div class="range_navbar last_bar">
+                                        <div class="range_radius angle-radius"></div>
+                                    </div>
+                                    <div class="currentValue">
+                                        <input type="text" value="0" id="angle_currentValue" data-type="angle"
+                                               class="ctrl_arrow"/>
+                                        <label for="angle_currentValue">°</label>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /字体设置-->
+                <!-- 预览图片-->
+                <div class="pallet_preview_wrap pallet-content ">
+                    <h3>预览图片<span class="refresh-btn">刷新<i class="fa fa-refresh" aria-hidden="true"></i></span></h3>
+                    <ul class="preview_image_list">
+                        <li>
+                            <img src="../img/draw/image/3.jpg">
+                        </li>
+                    </ul>
+                </div>
+                <!-- /预览图片-->
+                <!-- 画布信息-->
+                <div class="pallet_info_wrap pallet-content">
+                    <div class="info_position_box">
+                        <dl>
+                            <dt>画布坐标</dt>
+                            <dd>
+                                <strong>横坐标(px)：</strong>
+                                <span class="x">0</span>
+                            </dd>
+                            <dd>
+                                <strong>纵坐标(px)：</strong>
+                                <span class="y">0</span>
+                            </dd>
+                        </dl>
+
+                        <dl>
+                            <dt>画布大小</dt>
+                            <dd>
+                                <strong>长(px)：</strong>
+                                <span class="info_width">600</span>
+                            </dd>
+                            <dd>
+                                <strong>宽(px)：</strong>
+                                <span class="info_height">400</span>
+                            </dd>
+                        </dl>
+
+                    </div>
+                </div>
+                <!-- /背景颜色-->
+            </div>
+
+        </section>
+        <!-- /右边工具修改面板-->
+    </div>
+
+
+    <!-- 打印机打印-->
+    <div class="print_container" style="display: none">
+
+        <div class="close-layer">
+            <i class="fa fa-window-close" aria-hidden="true"></i>
+        </div>
+
+        <ul class="operation-list">
+            <li><input type="button" value="枚举" id="enumeration"/></li>
+            <li><input type="button" value="打开" id="open"/></li>
+            <li><input type="button" value="关闭" id="close"/></li>
+        </ul>
+
+        <dl class="selection">
+            <dt>请输入要打开的打印机</dt>
+            <dd><input type="text" id="printername"/></dd>
+        </dl>
+
+        <dl class="selection picpath">
+            <dt>图片资源路径</dt>
+            <dd>
+                <label for="picpath_f">正面</label>
+
+                <input type="text" id="picpath_f"/>
+            </dd>
+
+            <dd>
+                <label for="picpath_b">反面</label>
+                <input type="text" id="picpath_b"/>
+            </dd>
+
+            <dd>
+                <input type="button" id="printImg" value="打印"/>
+
+                <div class="selectImg-box">
+                    <label for="prttoimg2">打印到图片</label>
+                    <input type="checkbox" name="prttoimg2" id="prttoimg2"/>
+                </div>
+            </dd>
+        </dl>
+
+        <div class="ouput-box">
+            <h3>信息提示</h3>
+            <textarea name="outputContent" id="outputContent" readonly="readonly"></textarea>
+            <input type="button" value="清除" id="clrbox"/>
+        </div>
+    </div>
+
+</main>
+<!--<script src="../scoket/ImportFunctions.js"></script>
+<script src="../scoket/rtncode.js"></script>
+<script src="../scoket/marco.js"></script>
+<script src="asset/colorpicker.min.js"></script>
+<script src="../scoket/print.js"></script>-->
+
+<!-- 新建画布的容器-->
+<aside class="built-paper-aside">
+
+    <div class="built-paper-wrap">
+
+        <dl>
+            <dt>
+                新建画布
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </dt>
+            <dd>
+                <label for="paper-width">宽度</label>
+                <input type="text" id="paper-width"/>
+                <span>像素</span>
+            </dd>
+            <dd>
+                <label for="paper-width">高度</label>
+                <input type="text" id="paper-height"/>
+                <span>像素</span>
+            </dd>
+
+            <dd class="buts-dd">
+                <button class="confirm-built">确认</button>
+                <button class="cancel-built">取消</button>
+            </dd>
+        </dl>
+    </div>
+
+</aside>
+
+</body>
+</html>

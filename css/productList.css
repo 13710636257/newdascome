@@ -1,0 +1,187 @@
+body{
+    background:#f7f7f7;
+    padding-top: 70px;
+}
+/*@font-face {*/
+    /*font-family: 'iconfont';*/
+    /*src: url('../font/iconfont.eot');*/
+    /*src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),*/
+    /*url('../font/iconfont.woff') format('woff'),*/
+    /*url('../font/iconfont.ttf') format('truetype'),*/
+    /*url('../font/iconfont.svg#iconfont') format('svg');*/
+/*}*/
+
+
+.banner{
+    width:100%;
+    height:374px;
+    background:url("../img/product/banner7f.jpg") no-repeat;
+    background-size:100% 100%;
+    text-align: center;
+    overflow: hidden;
+    margin:0 auto;
+    position:relative;
+}
+
+
+/*搜索*/
+.search{
+    position:relative;
+    float:right;
+    height:80px;
+    line-height: 80px;
+    font-size:0;
+}
+.search .search_input{
+    width:500px;
+    height:40px;
+    padding-left:50px;
+    text-indent: 10px;
+    font-size:18px;
+    border-radius: 4px;
+    border:none;
+    border:1px solid #ccc;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.search .search_icon:before{
+    position:absolute;
+    left:0;
+    content:"\e601";
+    font-family: iconfont;
+    width:50px;
+    height:40px;
+    top:50%;
+    margin-top:-20px;
+    text-align: center;
+    line-height: 40px;
+    font-size:24px;
+    color:#6d6565;
+}
+.search .search_btn{
+    position:absolute;
+    right:0;
+    width:83px;
+    height:42px;
+    top:50%;
+    margin-top:-21px;
+    line-height: 42px;
+    font-size:16px;
+    font-weight: 600;
+    background: #0097de;
+    text-align: center;
+    color:#fff;
+    /*border:none;*/
+}
+/*搜索支持*/
+.product_content{
+    width:1200px;
+    margin:10px auto;
+    padding-bottom: 30px;
+}
+.product_content .product_top{
+    border-bottom: 1px solid gainsboro;
+}
+.product_content .product_title{
+    width:100%;
+    height:80px;
+    line-height: 80px;
+    margin:10px 0;
+    font-size:28px;
+    color: #0097de;
+}
+
+
+
+/*--产品--*/
+
+.product_content ul li{
+    float:left;
+    width:245px;
+    height:235px;
+    margin-right:17px;
+    background: #fff;
+    text-align: center;
+    padding:30px 20px;
+    margin-top:20px;
+    border: 1px solid gainsboro;
+
+
+}
+.product_content ul li:hover{
+    transform: translateY(-4px);
+    -webkit-transform: translateY(-4px);
+    -moz-transform: translateY(-4px);
+    /*box-shadow: 0 26px 40px -24px rgba(0, 36, 100, .5);*/
+    box-shadow:0 0 16px 2px #ccc;
+    -webkit-box-shadow:0 0 16px 2px #ccc;
+    -moz-box-shadow: 0 0 16px 2px #ccc;
+    /*-webkit-box-shadow: 0 26px 40px -24px rgba(0, 36, 100, .5);*/
+    /*-moz-box-shadow: 0 26px 40px -24px rgba(0, 36, 100, .5);*/
+}
+
+.product_content ul li:nth-child(4n){
+    margin-right:0;
+}
+
+.product_content ul li img{
+    width:110px;
+    height:110px;
+}
+
+.product_content ul li h3{
+    border:none;
+    font-size:18px;
+    height:20px;
+    line-height:20px;
+    margin:30px 0 0 0;
+}
+
+
+.product_content ul li a{
+    display: inline-block;
+    margin-top:20px;
+    background: #0097de;
+    color: white;
+    padding: 8px 14px;
+    text-align: center;
+}
+.product_content ul li:hover h3{
+    color:#42ABDD;
+}
+
+
+/*页数*/
+.page{
+    width: 95%;
+    height: 45px;
+    margin-left: 30px;
+    margin-top: 30px;
+    text-align: right;
+}
+.page span{
+    display: inline-block;
+    width: 65px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background: gainsboro;
+}
+
+.pageNum{
+    display: inline-block;
+}
+
+.pageNum a {
+    display: inline-block;
+    line-height:28px;
+    width: 40px;
+    text-align: center;
+    border: #CCC solid 1px;
+    font: 18px/35px Verdana;
+    text-decoration: none;
+    margin-left: 5px;
+    background: #FFF
+}
+

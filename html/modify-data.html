@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="description" content="得实客户支持">
+    <title>得实客户支持</title>
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/public-style.css" />
+    <link rel="stylesheet" href="../css/modify-data.css"/>
+    <script src="../js/asset/jquery-3.1.1.js" type="text/javascript" charset="utf-8"></script>
+    <!--  Internet Explorer 8 需要 Respond.js 配合才能实现对媒体查询（media query）的支持-->
+    <!--[if lt IE 9]>
+    <script src="../js/asset/html5shiv.min.js"></script>
+    <script src="../js/asset/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+
+<div class="personal-header">
+    <div class="head-maddle clearfix">
+        <div class="head-left">
+            <p>设置个人账号</p>
+        </div>
+        <div class="head-right">
+            <ul>
+                <li><a href="">首页</a></li>
+                <li><a href="">个人中心</a></li>
+                <li><a href="">清宁路的蔷薇</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="user-center">
+    <!---------------个人资料--------------->
+    <div class="user-right  personal-data" style="display:block;">
+        <h3 class="user-profile">编辑个人信息</h3>
+        <ul class="profileUl">
+            <li>
+                <span>用户名</span>
+                <em>*</em>
+                <input type="text" name="" class="inp" value="stella" />
+            </li>
+
+
+            <li>
+                <span>姓别</span>
+                <em>&nbsp;</em>
+                <select name="gender" id="gender" class="ps" tabindex="1">
+                    <option value="">性别</option><option value="1">男</option><option value="2">女</option> <option value="">保密</option>
+                </select>
+            </li>
+
+            <li>
+                <span>手机号码</span>
+                <em>*</em>
+                <input type="text" name="" class="inp" value="" />
+            </li>
+            <li>
+                <span>邮箱</span>
+                <em>*</em>
+                <input type="text" name="" class="inp" value="" />
+            </li>
+
+            <li>
+                <span>个人简介</span>
+                <em>&nbsp;</em>
+                <textarea class="personsignature"></textarea>
+            </li>
+            <!--<li>-->
+                <!--<span></span>-->
+                <!--<input type="submit" name="" class="btn submit" value="提交" />-->
+            <!--</li>-->
+        </ul>
+
+    </div>
+
+    <!---------------修改头像----------------->
+    <div class="user-right change-headimg">
+        <h3 class="user-profile">修改头像</h3>
+        <h2 class="xs2">当前我的头像</h2>
+        <p>如果您还没有设置自己的头像，系统会显示为默认头像，您需要自己上传一张新照片来作为自己的个人头像 </p>
+        <div class="default-pic">
+            <img src="../img/forumf/head2.png"/>
+            <p>120x120</p>
+        </div>
+        <h2 class="xs2" style="margin-top: 20px;">设置我的新头像</h2>
+        <p class="choice-tip">
+            请选择一个新照片进行上传编辑。
+            </br></br>头像保存后，您可能需要刷新一下本页面(按F5键)，才能查看最新的头像效果
+        </p>
+        <div class="choice-img">
+	        	<span id="addPic" style="" class=""><span>选择图片</span>
+	        	<br /><br /><input id="upload-img-btn" title="点此上传图片" multiple="" type="file" name="Filedata">
+	        	</span>
+        </div>
+        <div class="picture"></div>
+        <div class="sub">
+            <input type="submit" name="upload_thumbnail" value="上传头像" id="save_thumb">
+        </div>
+
+    </div>
+</div>
+
+
+
+</body>
+<script src="../js/userProfile.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+
+
+
+
+    $('#upload-img-btn').on('change',function(){
+        var files = this.files;
+        if(files.length<1) return;
+
+        readerFile(files[0])
+
+    });
+
+    function readerFile(file){
+
+        var reader = new FileReader();//想要创建一个FileReader对象
+
+
+        reader.onloadstart = function(e){
+
+            console.log(e)
+        }
+
+        reader.onprogress = function(e){
+
+            console.log(e)
+        }
+
+        reader.onload = function(e){
+            console.log(e);
+
+
+            $('.picture').css({
+                backgroundImage:'url('+e.target.result+')'
+            })
+
+
+        }
+
+        reader.readAsDataURL(file);//把文件读取的类型 base64
+    }
+
+</script>
+
+</html>

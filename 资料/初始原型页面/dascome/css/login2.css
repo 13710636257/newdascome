@@ -1,0 +1,105 @@
+header{
+    width:100%;
+    padding:8px 0;
+
+}
+
+header .logo{
+    width:1000px;
+    margin:0 auto;
+}
+
+header .logo img{
+    width:220px;
+    height:66px;
+}
+
+.login{
+    width:100%;
+    height:475px;
+    background:url("../img/loginbackground.png") no-repeat;
+    background-size:100% 100%;
+}
+
+.login .login_form{
+    width:1000px;
+    margin:0 auto;
+    overflow: hidden;
+}
+
+.login_form .lg_left{
+    position:relative;
+    float:right;
+    width:400px;
+    height:400px;
+    margin-top:40px;
+    background:#ffeceb;
+    opacity:.6;
+    padding:20px;
+    box-sizing: border-box;
+}
+
+.login_form .lg_left h3{
+    padding:15px 0;
+    font-size:20px;
+    font-weight:bold;
+    border-bottom:2px solid #ccc;
+}
+
+.login_form .lg_left .error_tip{
+    display: block;
+    margin:0 auto;
+    margin-top:20px;
+    height:30px;
+    line-height: 30px;
+    width:314px;
+    border:1px solid #ffd797;
+    color:#ff1877;
+    text-indent: 28px;
+}
+
+.login_form .lg_left .error_tip:before{
+    position:absolute;
+    content:"";
+    width:30px;
+    height:30px;
+    line-height: 30px;
+    background:url("../img/login2.png") no-repeat 4px 6px;
+    left:42px;
+}
+
+.login_form .lg_left form{
+    margin-top:10px;
+    width:314px;
+    margin:0 auto;
+}
+
+.login_form .lg_left form input{
+    width:100%;
+    margin-top:10px;
+    height:30px;
+}
+
+.login_form .lg_left form .submit{
+    width:318px;
+    height:36px;
+    margin-top:24px;
+    background:#ff5777;
+    color:#fff;
+    font-size:18px;
+    font-weight: bold;
+    border:none;
+    outline: none;
+    border-radius: 8px;
+}
+
+.login_form .lg_left .lg_reg{
+    margin-top:20px;
+    text-align: right;
+}
+
+.login_form .lg_left .lg_reg a{
+    display: inline-block;
+    padding:8px;
+   color:#877e7e;
+}

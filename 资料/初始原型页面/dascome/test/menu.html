@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta name="description" content="得实客户支持">
+    <title>得实客户支持-产品</title>
+    <link rel="stylesheet" href="../css/base.css"/>
+    <link rel="stylesheet" href="../css/menu.css"/>
+    <!--[if lt IE 9]>
+    <script>alert("请使用ie8及以上版本的浏览器")</script>
+    <![endif]-->
+    <script src="../asset/lib/jquery-3.1.1.js"></script>
+
+</head>
+<body>
+<!--导航-->
+<nav>
+    <ul class="clearfix">
+        <li><a href="../html/home.html" class="current taba">支持主页</a></li>
+        <li><a href="../html/product.html" class="taba">产品</a></li>
+        <li><a href="javascipt:;" class="taba">应用与解决方案</a></li>
+        <li><a href="javascipt:;" class="taba">社区论坛</a></li>
+        <li><a href="javascipt:;" class="taba">联系得实</a></li>
+    </ul>
+    <a href="javascript:;" class="login_account">登录我的账户</a>
+</nav>
+<!--搜索-->
+<div class="search">
+    <select name="search">
+        <option value="1">搜索所有支持</option>
+        <option value="2">软件、驱动、固件</option>
+        <option value="3">疑难排除</option>
+        <option value="4">使用方法和技巧</option>
+        <option value="5">用户指南</option>
+        <option value="6">产品信息</option>
+    </select>
+    <input type="text" id="pname" name="pname" placeholder="输入您的产品序列号或者关键字" class="search_text"/>
+    <input type="submit" class="submit_btn" value=""/>
+</div>
+<span class="search_result"></span>
+</body>
+<script>
+    $(function(){
+         var searchText=$(".search_text");
+         var submitBtn=$(".submit_btn");
+         var searchResult=$(".search_result");
+
+        submitBtn.click(function(event){
+            event.preventDefault();
+            if(searchText.val().length==0){
+                alert("输入内容不能为空");
+            }else{
+                $.ajax({
+                    type:"get",
+                    url:"menu.json",
+                    data:{},
+                    success:function(data){
+                        var result=data[0].message;
+                        searchResult.text(result);
+                    }
+
+                })
+            }
+        })
+    })
+</script>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=8,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="description" content="得实客户支持">
+    <title>云空间</title>
+    <link rel="icon" href="../img/common/favicon.ico"  type="image/x-icon">
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/cloud-space.css"/>
+    <link rel="stylesheet" href="../font/font-awesome-4.7.0/css/font-awesome.css"/>
+    <script data-main="../js/cloud-space.js" src="../js/asset/requirejs/require.js" defer async></script>
+    <!--  Internet Explorer 8 需要 Respond.js 配合才能实现对媒体查询（media query）的支持-->
+    <!--[if lt IE 9]>
+    <script src="../js/asset/html5shiv.min.js"></script>
+    <script src="../js/asset/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body style="padding: 0px">
+<!-- 头部-->
+<header class="public-header"></header>
+<!-- /头部-->
+<main class="cloud-space-main">
+    <div class="cloud_space_container">
+
+        <div class="clouds_wrap">
+
+            <div class="search_wrap clearfix">
+                <h3>云空间</h3>
+                <label for="tpl_search_input">搜索</label>
+                <input type="text" id="tpl_search_input" placeholder="请输入搜索的内容"/>
+                <i class="fa fa-search"></i>
+            </div>
+
+            <div class="clouds_main">
+                <div class="tpl_box clearfix">
+
+                    <div class="tpl_item tpl_active">
+                        <div class="img_box">
+                            <img src="../img/clouds/bg_11_back.png" alt=""/>
+                            <i class="fa fa-check-square"></i>
+                        </div>
+
+                        <div class="tpl_info">
+                            <div class="upload_tpl_time">
+                                <span>上传时间:</span>
+                                <span>2017-7-20 09:48:45</span>
+                            </div>
+                            <div class="upload_tpl_name">
+                                <span>模板名称:</span>
+                                <span class="tpl_name">社保卡的模板正面</span>
+                            </div>
+
+                            <div class="del_tplBtn_box">
+                                <i class="fa fa-trash-o"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tpl_item">
+                        <div class="img_box">
+                            <img src="../img/clouds/bg_11_back.png" alt=""/>
+                            <i class="fa fa-check-square"></i>
+                        </div>
+
+                        <div class="tpl_info">
+                            <div class="upload_tpl_time">
+                                <span>上传时间:</span>
+                                <span>2017-7-20 09:48:45</span>
+                            </div>
+                            <div class="upload_tpl_name">
+                                <span>模板名称:</span>
+                                <span class="tpl_name">社保卡的模板反面</span>
+                            </div>
+
+                            <div class="del_tplBtn_box">
+                                <i class="fa fa-trash-o"></i>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="machine_type_wrap" style="display: none">
+
+        <div class="machine_type">
+
+            <div class="machine_type_caption">
+                <h2>打印机信息列表</h2>
+                <a href="javascript:void(0);" class="add_machine_btn">添加打印机</a>
+            </div>
+
+            <dl class="machine_type_list">
+                <dt class="machine_type_list_title">
+               <span> <input type="checkbox" id="select_all_btn">
+                <label for="select_all_btn" class="select_all_btn">全选</label>
+               </span>
+
+                    <span class="add_machine_type">型号</span>
+                    <span class="add_machine_number">序列号</span>
+                    <span class="add_machine_time">添加时间</span>
+                    <span class="add_machine_rename">自定义信息</span>
+                    <span class="add_machine_handler">操作</span>
+                </dt>
+
+                <dd class="machine_type_item">
+                    <span><input type="checkbox" id="select__btn"></span>
+                    <span class="add_machine_type">型号</span>
+                    <span class="add_machine_number">序列号</span>
+                    <span class="add_machine_time">添加时间</span>
+                    <span class="add_machine_rename">自定义信息</span>
+                    <div class="add_machine_handler">
+                        <a href="javascript:void(0);" class="edit_machine_btn">编辑</a>
+                        <a href="javascript:void(0);" class="del_machine_btn">删除</a>
+                    </div>
+                </dd>
+            </dl>
+
+        </div>
+
+    </div>
+</main>
+<!--尾部-->
+<footer class="public-footer"></footer>
+<!--/尾部-->
+</body>
+</html>

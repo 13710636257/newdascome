@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9,chrome=1">
+    <title>在线客服</title>
+
+    <link rel="stylesheet" href="../css/base.css"/>
+    <link rel="stylesheet" href="../css/public-style.css"/>
+    <link rel="stylesheet" href="../css/chatModal.css"/>
+    <script src="../js/asset/jquery-3.1.1.js"></script>
+
+
+</head>
+<body>
+<div class="chatModal_mask"></div>
+<div class="chatModal_container clearfix">
+
+    <div class="charModal_left">
+
+        <div class="charModal_left_box clearfix">
+            <div class="charModal_left_top">
+
+                <div class="chatModal_title">
+                    <h2 class="title">得实咚咚</h2>
+                </div>
+
+                <div class="user_info_box">
+                    <div class="user_info_logo radius">
+                        <img src="../img/chatModal/user_logo.png" alt="头像">
+                    </div>
+
+                    <div class="user_detail">
+                        <p class="user_info_name">小晴歆壶龙</p>
+
+                        <div class="user_info_level">
+                            <a href="javascript:void(0);" class="user_badge badge_lv"></a>
+                            <a href="javascript:void(0);" class="user_badge badge_rank"></a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="search_box">
+                    <input type="text" class="search_user" placeholder="搜索最近联系人">
+                    <i class="icon_search"></i>
+                </div>
+            </div>
+
+
+            <div class="charModal_left_bottom">
+
+                <div class="user_list_box">
+
+                    <ul class="user_list">
+
+                        <li class="user_item chat_current">
+                            <a href="javascript:void(0);" class="user_item_link">
+
+                                <div class="user_item_logo">
+                                    <img src="../img/chatModal/user_logo.png" alt="头像">
+                                    <i class="icon_nature icon_nature_capacity">智能</i>
+                                </div>
+
+                                <div class="user_item_detail">
+                                    <h3 class="user_item_name">智能机器人</h3>
+                                    <span class="chat_msg_last">贴心为你服务</span>
+                                </div>
+
+                                <div class="user_item_tip">
+                                    <span class="msg_tip">
+                                    </span>
+                                    <span class="time_tip">9:08</span>
+                                </div>
+
+                            </a>
+                        </li>
+
+                        <li class="user_item">
+                            <a href="javascript:void(0);" class="user_item_link">
+
+                                <div class="user_item_logo">
+                                    <img src="../img/chatModal/user_logo.png" alt="头像">
+                                    <i class="icon_nature icon_nature_marketing">营销</i>
+                                </div>
+
+                                <div class="user_item_detail">
+                                    <h3 class="user_item_name">营销咨询客服</h3>
+                                    <span class="chat_msg_last">我们这边有丰富的资源能提供</span>
+                                </div>
+
+                                <div class="user_item_tip">
+                                    <span class="msg_tip">
+                                        <strong class="msg_count">10</strong>
+                                    </span>
+                                    <span class="time_tip">8:38</span>
+                                </div>
+
+                            </a>
+                        </li>
+
+                        <li class="user_item">
+                            <a href="javascript:void(0);" class="user_item_link">
+
+                                <div class="user_item_logo">
+                                    <img src="../img/chatModal/user_logo.png" alt="头像">
+                                    <i class="icon_nature icon_nature_preSale">售前</i>
+                                </div>
+
+                                <div class="user_item_detail">
+                                    <h3 class="user_item_name">售前客服</h3>
+                                    <span class="chat_msg_last">我们这边有丰富的资源能提供</span>
+                                </div>
+
+                                <div class="user_item_tip">
+                                    <span class="msg_tip">
+                                        <strong class="msg_count">6</strong>
+                                    </span>
+                                    <span class="time_tip">昨天</span>
+                                </div>
+
+                            </a>
+                        </li>
+
+                        <li class="user_item">
+                            <a href="javascript:void(0);" class="user_item_link">
+
+                                <div class="user_item_logo">
+                                    <img src="../img/chatModal/user_logo.png" alt="头像">
+                                    <i class="icon_nature icon_nature_technology">技术</i>
+                                </div>
+
+                                <div class="user_item_detail">
+                                    <h3 class="user_item_name">技术部客服</h3>
+                                    <span class="chat_msg_last">我们这边有丰富的资源能提供</span>
+                                </div>
+
+                                <div class="user_item_tip">
+                                    <span class="msg_tip">
+                                    </span>
+                                    <span class="time_tip">5-29</span>
+                                </div>
+
+                            </a>
+                        </li>
+
+
+                        <li class="user_item">
+                            <a href="javascript:void(0);" class="user_item_link">
+
+                                <div class="user_item_logo">
+                                    <img src="../img/chatModal/user_logo.png" alt="头像">
+                                    <i class="icon_nature icon_nature_afterSale">售后</i>
+                                </div>
+
+                                <div class="user_item_detail">
+                                    <h3 class="user_item_name">售后客服</h3>
+                                    <span class="chat_msg_last">打印机专卖</span>
+                                </div>
+
+                                <div class="user_item_tip">
+                                    <span class="msg_tip">
+                                    </span>
+                                    <span class="time_tip">05-28</span>
+                                </div>
+
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <!-- <div class="slider_bar">
+                     <div class="scrollBar"></div>
+                 </div>-->
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="charModal_right">
+
+        <div class="charModal_right_box">
+
+            <div class="charModal_right_top">
+
+                <div class="right_top_box">
+                    <i class="icon_nature icon_nature_capacity">智能</i>
+
+                    <h2 class="nature_name">智能机器人<i class="icon_state radius"></i></h2>
+                </div>
+
+            </div>
+            <!-- 聊天记录-->
+            <div class="charModal_right_middle">
+
+                <div class="right_middle_box">
+                    <div class="none_chatMsg_tip">没有聊天你记录了</div>
+
+
+
+                    <div class="manual_service">
+                        <p class="chatMsg_time">2016-6-27 09:26:02</p>
+                        <span class="manual_service_tip">如果过还有问题没有解决，可以联系
+                            <a href="javascript:void(0);" class="manual_service_btn">人工服务</a>
+                        </span>
+
+                    </div>
+
+              <!--      <p class="chatMsg_time">9:57</p>
+                    <span class="serve_name user_name">技术部客服</span>
+
+                    <p class="serve_content">
+                        <span class="serve_content_txt">欢迎在线咨询，本次由"技术部客服"为您解答，感谢您的支持！</span>
+                    </p>
+
+                    <p class="serve_tip">
+                        <span class="serve_content_tip">
+                        <i class="icon_success_sever"></i>
+                        您好！<strong class="server">技术部客服</strong>很高兴为您服务！
+                         </span>
+                    </p>
+
+
+                    <p class="chatMsg_time">9:58</p>
+                    <span class="user_name customer_name">小晴歆壶龙</span>
+                    <span class="chatMsg_customer_txt">这台打印机的参数详情？</span>
+
+                    <span class="serve_name user_name">技术部客服</span>
+
+                    <p class="serve_content">
+                        <span class="serve_content_txt">这台打印机的参数详情？ </span>
+                    </p>
+
+
+                    <span class="user_name customer_name">小晴歆壶龙</span>
+                    <span class="chatMsg_customer_txt">欢迎在线咨询</span>-->
+
+
+                    <div class="msg_agent">
+                        <div class="base">
+                            <strong class="name">佳佳</strong>
+                            <span class="sentTime">2017-6-13 13:29:25</span>
+                        </div>
+
+                        <div class="bubble">
+                            <span class="arrow"></span>
+                            <div class="msgTxt">
+                                您好，我是智能客服机器人佳佳
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="msg_client">
+                        <div class="base">
+                            <strong class="name">我</strong>
+                            <span class="sentTime">2017-6-13 13:29:35</span>
+                        </div>
+
+
+                        <div class="bubble">
+                            <span class="arrow"></span>
+                            <div class="msgTxt">
+                                不是的！！
+                            </div>
+                        </div>
+                    </div>
+                    <div class="msg_client">
+                        <div class="base">
+                            <strong class="name">我</strong>
+                            <span class="sentTime">2017-6-13 13:29:35</span>
+                        </div>
+
+
+                        <div class="bubble">
+                            <span class="arrow"></span>
+                            <div class="msgTxt">
+                                写了一个很简单的JavaScript基类来处理location.hash从而保存页面状态
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="msg_agent">
+                        <div class="base">
+                            <strong class="name">佳佳</strong>
+                            <span class="sentTime">2017-6-13 13:29:25</span>
+                        </div>
+
+                        <div class="bubble">
+                            <span class="arrow"></span>
+                            <div class="msgTxt">
+                                您好，我是智能客服机器人佳佳
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="msg_agent">
+                        <div class="base">
+                            <strong class="name">佳佳</strong>
+                            <span class="sentTime">2017-6-13 13:29:25</span>
+                        </div>
+
+                        <div class="bubble">
+                            <span class="arrow"></span>
+                            <div class="msgTxt">
+                                您好，我是智能客服机器人佳佳
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="msg_agent">
+                        <div class="base">
+                            <strong class="name">佳佳</strong>
+                            <span class="sentTime">2017-6-13 13:29:25</span>
+                        </div>
+
+                        <div class="bubble">
+                            <span class="arrow"></span>
+                            <div class="msgTxt">
+                                您好，我是智能客服机器人佳佳
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="msg_agent">
+                        <div class="base">
+                            <strong class="name">佳佳</strong>
+                            <span class="sentTime">2017-6-13 13:29:25</span>
+                        </div>
+
+                        <div class="bubble">
+                            <span class="arrow"></span>
+                            <div class="msgTxt">
+                                您好，我是智能客服机器人佳佳
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="msg_agent">
+                        <div class="base">
+                            <strong class="name">佳佳</strong>
+                            <span class="sentTime">2017-6-13 13:29:25</span>
+                        </div>
+
+                        <div class="bubble">
+                            <span class="arrow"></span>
+                            <div class="msgTxt">
+                                您好，我是智能客服机器人佳佳
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="msg_agent">
+                        <div class="base">
+                            <strong class="name">佳佳</strong>
+                            <span class="sentTime">2017-6-13 13:29:25</span>
+                        </div>
+
+                        <div class="bubble">
+                            <span class="arrow"></span>
+                            <div class="msgTxt">
+                                您好，我是智能客服机器人佳佳
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chat_slider_bar">
+                    <div class="chat_bar"></div>
+                </div>
+
+            </div>
+
+            <div class="charModal_right_bottom">
+
+                <div class="right_bottom_hd">
+
+                    <div class="chat_toolkitBox clearfix">
+                        <a href="javascript:void (0);" class="js_emotion_btn icon_btn"></a>
+                        <a href="javascript:void (0);" class="js_sentImg_btn icon_btn"></a>
+                        <a href="javascript:void (0);" class="js_evaluate_btn">
+                            <i class="icon_btn"></i>
+                            <span class="serve_evaluate">满意度评价</span>
+                        </a>
+                    </div>
+
+                    <div class="chat_toolkit_panels">
+
+                        <div class="emotion_panel panel">
+                            <ul class="emotion_list">
+                                <!--<li class="emotion_item"><img src="./icon_serve.png" alt="表情" class="face"></li>-->
+                            </ul>
+                            <i class="icon_emotion arrow_triangle"></i>
+                        </div>
+
+                        <div class="sentImg_panel panel">
+                            <input class="upload_image" type="file" multiple>
+                        </div>
+
+                        <div class="evaluate_panel panel">
+                            <p class="evaluate_tip">
+                                <i class="icon_evaluate_tip icon"></i>
+                                <span class="evaluate_tip_txt">聊完记得给客服MM一个评价呦！</span>
+                                <i class="icon_evaluate_close icon"></i>
+                            </p>
+                            <i class="icon_evaluate arrow_triangle"></i>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <div class="right_bottom_content">
+
+                    <textarea id="chatMsg_area" placeholder="请输入内容" maxlength="200"></textarea>
+                </div>
+
+                <div class="right_bottom_ft">
+
+                    <div class="show_sent_screenshot">
+                        <i class="icon_screen"></i>
+                        <span class="show_tip">怎么发截图？</span>
+                    </div>
+
+                    <div class="chatModal_sentMsg_box">
+                        <a href="javascript:void(0);" class="chatModal_sentMsg_btn">发送</a>
+                        <i class="icon_triangle"></i>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="aside">
+
+
+</div>
+<script src="../js/chatModal.js"></script>
+
+</body>
+</html>

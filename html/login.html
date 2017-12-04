@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=8,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="description" content="得实客户支持">
+    <title>登录得实账号</title>
+    <link rel="icon" href="../img/common/favicon.ico"  type="image/x-icon">
+    <link rel="stylesheet" href="../css/base.css"/>
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/login.css"/>
+    <link rel="stylesheet" href="../font/font-awesome-4.7.0/css/font-awesome.css"/>
+  
+    <script src="../js/asset/script.js/src/script.js"></script>
+    <script>
+       $script(['../js/asset/jquery-1.9.1.min.js',
+                    '../js/public.js'
+                ],
+                function () {
+                    $script('../js/common.js', function () {
+                        console.log('依赖异步加载！')
+                    })
+                })
+    </script>
+
+    <!--  Internet Explorer 8 需要 Respond.js 配合才能实现对媒体查询（media query）的支持-->
+    <!--[if lt IE 9]>
+    <script src="../js/asset/html5shiv.min.js"></script>
+    <script src="../js/asset/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body style="padding: 0">
+<header class="login-header">
+    <div class="headbox">
+        <img src="../img/home/ds-log3.png" alt="div">
+        <!--<span>登录得实账号</span>-->
+        <h1><a href="home.html" class="return">返回首页</a></h1>
+    </div>
+
+</header>
+<main class="login-main">
+    <!--登陆框-->
+    <div class="login-modal-container">
+        <form class="login-form">
+            <dl>
+                <dt>得实账号登陆</dt>
+                <dd>
+                    <label for="login_user">账号</label>
+                    <input type="text" id="login_user" class="login-input" placeholder="请输入用户名" required/>
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </dd>
+
+                <dd>
+                    <label for="login_pwd">密码</label>
+                    <input type="password" id="login_pwd" class="login-input" placeholder="请输入用密码" required/>
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </dd>
+
+                <dd class="login-item">
+                    <input type="button" id="login_btn" value="登录"/>
+
+                    <div class="note-text">密码错误或是密码错误，请重新输入</div>
+                </dd>
+
+                <dd class="register-item">
+                    <a href="register.html">立即注册</a>
+                </dd>
+            </dl>
+        </form>
+    </div>
+</main>
+
+
+</body>
+</html>

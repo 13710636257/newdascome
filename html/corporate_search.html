@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+
+	<head lang="en">
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="renderer" content="webkit">
+		<meta name="description" content="得实客户支持">
+		<meta name="shop" content="查看门店">
+		<title>公司信息</title>
+		<link rel="stylesheet" href="../css/base.css" />
+		<link rel="stylesheet" href="../css/public-style.css" />
+		<link rel="stylesheet" href="../css/corporate_search.css" />
+		<script src="../js/asset/jquery-1.9.1.min.js"></script>
+	</head>
+
+	<body>
+		<div class="head">
+			<p>得实合作伙伴</p>
+		</div>
+		<div class="new_partner">
+			<h2 class="page_title">公司信息</h2>
+			<div class="information">
+				<span>1</span><label>用户信息 ></label><span>2</span><label>公司信息 ></label><span>3</span><label>合作伙伴管理</label>
+			</div>
+			<hr noshade="noshade" class="width_100">
+
+			<div class="corporate_search">
+				<p class="user"><span>公司搜索</span></p>
+				<p class="prompt">请至少输入"定位器ID" "税务ID" 或"公司名称"之一以筛选搜索结果</p>
+				<ul class="information_list">
+					<li class="user_information">
+						<label>定位器ID<span></span></label>
+						<input type="text" />
+					</li>
+					<li class="user_information">
+						<label>VAT ID<span></span></label>
+						<input type="text" />
+					</li>
+					<li class="user_information">
+						<label>公司名称<span>*</span></label>
+						<input type="text" />
+					</li>
+					<li class="user_information">
+						<label>国家/地区<span>*</span></label>
+						<select style="margin-top: 0px; width: 320px;height: 35px;">
+							<option selected="selected" value="">Select</option>
+							<option value="11763">请选择</option>
+							<option value="9518">中国</option>
+							<option value="">美国</option>
+							<option value="">日本</option>
+							<option value="">韩国</option>
+							<option value="">新加坡</option>
+							<option value="">法国</option>
+							<option value="">马来西亚</option>
+							<option value="">德国</option>
+							<option value="">泰国</option>
+						</select>
+					</li>
+					<li class="user_information">
+						<label>州/省<span></span></label>
+						<select id="Province_select" class="ProvinceSelect">
+							<option selected="selected" value="">Select</option>
+							<option value="11763">请选择</option>
+							<option value="9518">北京</option>
+							<option value="">上海</option>
+							<option value="">杭州</option>
+							<option value="">西安</option>
+							<option value="">福建</option>
+							<option value="">沈阳</option>
+							<option value="">广州</option>
+							<option value="">深圳</option>
+						</select>
+					</li>
+
+					<li class="user_information">
+						<label>邮政编码<span>*</span></label>
+						<input type="text" />
+					</li>
+
+				</ul>
+				<!-----安全检查------>
+				<div class="safe_inspection">
+					<div class="safe_left">
+						<label>安全检查<span>*</span></label>
+					</div>
+					<div class="safe_right">
+						<div class="code_top">
+							<div class="code_pic">
+								<img src="../img/cooperativePartner/registration2.png" />
+							</div>
+							<input type="button" name="" class="tab" value="点击切换" />
+						</div>
+						<div class="nub">
+							<label>(必需的)输入验证码</label>
+							<input type="text" style="width: 165px;" />
+							<input type="button" class="seach_btn" value="搜索" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr noshade="noshade" class="width_100">
+		</div>
+	<!-------------公司搜索--------------->
+		<div class="company_information">
+			<p class="title"><span>公司搜索</span></p>
+			<div class="warning">
+				<p><img src="../img/cooperativePartner/waring.png"/><span>您的搜索条件未返回任何结果。请更改搜索条件，如果贵公司尚成为得实的合作伙伴，则请填写以下表格</span></p>
+			</div>
+			<div class="xin">
+		 			<span class="requriedField">*</span>标有星号的字段是必填字段
+		 	</div>
+			
+			<ul class="information_content">
+				<li class="user_information ">
+						<label>公司名称<span>*</span></label>
+						<input type="text" />
+				</li>
+				<li  class="user_information  second">
+						<label>电话号码<span>*</span></label>
+						<input type="text" />
+				</li>
+				<li class="user_information ">
+						<label>公司法定名称<span>*</span></label>
+						<input type="text" />
+				</li>
+				<li  class="user_information  second">
+						<label>传真号码</label>
+						<input type="text" />
+				</li>
+				<li class="user_information">
+						<label>国家/地区<span>*</span></label>
+						<select style="margin-top: 0px; width: 320px;height: 35px;">
+							<option selected="selected" value="">Select</option>
+							<option value="11763">请选择</option>
+							<option value="9518">中国</option>
+							<option value="">美国</option>
+							<option value="">日本</option>
+							<option value="">韩国</option>
+							<option value="">新加坡</option>
+							<option value="">法国</option>
+							<option value="">马来西亚</option>
+							<option value="">德国</option>
+							<option value="">泰国</option>
+						</select>
+				</li>
+				<li  class="user_information  second">
+						<label>公司邮箱<span>*</span></label>
+						<input type="text" />
+				</li>
+				<li  class="user_information">
+						<label>税号<span>*</span></label>
+						<input type="text" />
+				</li>
+				<li  class="user_information  second">
+						<label>公司URL<span>*</span></label>
+						<input type="text" />
+				</li>
+				<li class="user_information ">
+						<label style="color: black; font-weight: 600;">公司地址</label>
+						<input type="text" />
+				</li>
+				<li  class="user_information  second">
+						<span style="color: black; font-weight: 600;">邮寄地址</span>
+						<input type="radio" style="width: 25px;"/>与公司地址相同
+				</li>
+				
+				<li class="user_information">
+						<label>国家/地区<span>*</span></label>
+						<select style="margin-top: 0px; width: 320px;height: 35px;">
+							<option selected="selected" value="">Select</option>
+							<option value="11763">请选择</option>
+							<option value="9518">中国</option>
+							<option value="">美国</option>
+							<option value="">日本</option>
+							<option value="">韩国</option>
+							<option value="">新加坡</option>
+							<option value="">法国</option>
+							<option value="">马来西亚</option>
+							<option value="">德国</option>
+							<option value="">泰国</option>
+						</select>
+				</li>
+				<li  class="user_information  second">
+					<label>邮寄国家/地区<span>*</span></label>
+						<select style="margin-top: 0px; width: 320px;height: 35px;">
+							<option selected="selected" value="">Select</option>
+							<option value="11763">请选择</option>
+							<option value="9518">中国</option>
+							<option value="">美国</option>
+							<option value="">日本</option>
+							<option value="">韩国</option>
+							<option value="">新加坡</option>
+							<option value="">法国</option>
+							<option value="">马来西亚</option>
+							<option value="">德国</option>
+							<option value="">泰国</option>
+						</select>
+				</li>
+				
+				<li  class="user_information">
+						<label>街道地址<span>*</span></label>
+						<input type="text" />
+				</li>
+				<li  class="user_information second">
+						<label>邮寄街道地址</label>
+						<input type="text" />
+				</li>
+				<li  class="user_information">
+						<label>地址2</label>
+						<input type="text" />
+				</li>
+				<li  class="user_information second">
+						<label>邮寄地址2</label>
+						<input type="text" />
+				</li>
+				
+				<li class="user_information">
+						<label>城市/区县<span></span></label>
+						<select class="ProvinceSelect">
+							<option selected="selected" value="">Select</option>
+							<option value="11763">请选择</option>
+							<option value="9518">北京</option>
+							<option value="">上海</option>
+							<option value="">杭州</option>
+							<option value="">西安</option>
+							<option value="">福建</option>
+							<option value="">沈阳</option>
+							<option value="">广州</option>
+							<option value="">深圳</option>
+						</select>
+				</li>
+				<li  class="user_information second">
+						<label>邮寄市/镇</label>
+						<input type="text" />
+				</li>
+				<li  class="user_information">
+						<label>邮政编码</label>
+						<input type="text" />
+				</li>
+				<li  class="user_information second">
+						<label>邮政编码</label>
+						<input type="text" />
+				</li>
+			</ul>
+		</div>
+		
+		<!-----企业负责人------>
+		<div class="leading_official">
+			<p class="lead_name">企业负责人</p>
+			<table class="information_list">
+				<tr class="firsttr">
+					<th class="name">名字</th>
+					<th class="name">姓氏</th>
+					<th class="name">职务</th>
+					<th class="name">持有比例：%</th>
+					<th lass="delete">删除</th>
+				</tr>
+				<tr class="firsttr" >
+					<td class="name"></td>
+					<td class="name"></td>
+					<td class="name"></td>
+					<td class="name"></td>
+					<td class="delete"></td>
+				</tr>
+			</table>
+			
+			<p class="add">添加更多企业负责人</p>
+			<hr noshade="noshade" class="width_100">
+			<div class="representative">
+				<ul class="information_content">
+					<li class="user_information ">
+						<label class="lead_name">法人代表</label>
+							
+					</li>
+					<li  class="user_information  second">
+						<label class="lead_name">总经理</label>
+							
+					</li>
+					<li class="user_information ">
+							<label>名字</label>
+							<input type="text" />
+					</li>
+					<li  class="user_information  second">
+							<label>名字</label>
+							<input type="text" />
+					</li>
+					
+					<li class="user_information ">
+							<label>姓氏</label>
+							<input type="text" />
+					</li>
+					<li  class="user_information  second">
+							<label>姓氏</label>
+							<input type="text" />
+					</li>
+					
+					<li class="user_information ">
+							<label>职务</label>
+							<input type="text" />
+					</li>
+					<li  class="user_information  second">
+							<label>职务</label>
+							<input type="text" />
+					</li>
+					
+					<li class="user_information ">
+							<label>邮箱地址</label>
+							<input type="text" />
+					</li>
+					<li  class="user_information  second">
+							<label>邮箱地址</label>
+							<input type="text" />
+					</li>
+					
+					<li class="user_information ">
+							<label>单位电话号码</label>
+							<input type="text" />
+					</li>
+					<li  class="user_information  second">
+							<label>单位电话号码</label>
+							<input type="text" />
+					</li>
+					
+					<li class="user_information ">
+							<label>单位传真</label>
+							<input type="text" />
+					</li>
+					<li  class="user_information  second">
+							<label>单位传真</label>
+							<input type="text" />
+					</li>
+					
+					<li class="user_information ">
+							<label>手机号码</label>
+							<input type="text" />
+					</li>
+					<li  class="user_information  second">
+							<label>手机号码</label>
+							<input type="text" />
+					</li>
+					<li class="user_information ">
+							<label>法人代表是否为总经理</label>
+							<input type="radio"  name="lead" style="width: 25px;"/>是
+							<input type="radio" name="lead" style="width: 25px;"/>否
+					</li>
+				</ul>
+			</div>
+			<hr noshade="noshade" class="width_100">
+			<div class="next_page">
+			 		<input type="button" name="" class="cancel" value="取消" />
+			 		<input type="submit" name="" class="next" value="下一步" />
+		 	</div>
+			
+		</div>
+		
+		 <footer>
+			<div class="service_info">
+				<div class="info_content clearfix">
+					<div class="footnav">
+						<h3>产品系列</h3>
+						<ul>
+							<li>
+								<a href="javscript:;">家用系列</a>
+							</li>
+							<li>
+								<a href="javscript:;">商用系列</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footnav">
+						<h3>服务支持</h3>
+						<ul>
+							<li>
+								<a href="javscript:;">驱动、固件下载</a>
+							</li>
+							<li>
+								<a href="javscript:;">服务机构查询</a>
+							</li>
+							<li>
+								<a href="javscript:;">常见问题</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footnav">
+						<h3>购买指南</h3>
+						<ul>
+							<li>
+								<a href="javscript:;">经销商查询</a>
+							</li>
+							<li>
+								<a href="javscript:;">专卖店</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footnav">
+						<h3>关于得实</h3>
+						<ul>
+							<li>
+								<a href="javscript:;">公司简介</a>
+							</li>
+							<li>
+								<a href="javscript:;">新闻资讯</a>
+							</li>
+							<li>
+								<a href="javscript:;">中国业务网络</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footnav">
+						<h3>关联网站</h3>
+						<ul>
+							<li>
+								<a href="javscript:;">得实中国合作伙伴门户</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+			<div class="service_copyright">
+				<div class="copyright_content">
+					<div class="aboutus">
+						<a href="javscript:;">网站地图</a>
+						<a href="javscript:;">联系我们</a>
+						<a href="javscript:;">加入我们</a>
+						<a href="javscript:;">使用声明</a>
+						<a href="javscript:;">隐私政策</a>
+					</div>
+					<p>© 2013 版权所有 得实集团 京ICP备10012480号 <span></span>粤公网安备 44070402440764号</p>
+				</div>
+			</div>
+		</footer>
+	
+	</body>
+
+</html>

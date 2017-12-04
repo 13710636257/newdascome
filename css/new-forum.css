@@ -1,0 +1,615 @@
+body{
+    background:white;
+    width:100%;
+    min-width: 1200px;
+}
+@font-face {
+    font-family: 'iconfont';
+    src: url('../font/iconfont.eot');
+    src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../font/iconfont.woff') format('woff'),
+    url('../font/iconfont.ttf') format('truetype'),
+    url('../font/iconfont.svg#iconfont') format('svg');
+}
+a{
+	font-size: 16px;
+}
+a:hover{
+	text-decoration: underline;
+	color: red;
+}
+.header .navUl li:nth-child(4){
+    border-bottom:4px solid #0097de;
+}
+
+.forum-head{
+	width: 1200px;
+	height: 90px;
+	margin: 20px auto;
+	
+}
+.forum-logo{
+	width: 315px;
+	height: 86px;
+	line-height: 86px;
+	text-align: center;
+	font-size: 48px;
+	color: #22c284;
+	float: left;
+}
+
+.forum-search{
+	width: 432px;
+	height: 40px;
+	padding-top: 25px;
+	/*background: paleturquoise;*/
+	float: right;
+}
+
+
+
+
+.search{
+	overflow: hidden;
+}
+
+
+.forum-search .search_input{
+    width:332px;
+    height:22px;
+    padding: 10px 8px 10px 10px;
+    font-size:16px;
+    float: left;
+    border-radius: 6px  0 0 6px;
+    border: 1px solid #6bbe98;
+   
+}
+
+
+
+.forum-search .search_btn{
+    display: inline-block;
+    line-height:42px;
+  	width:60px;
+    font-size:18px;
+    background: #6bbe98;
+    color:#f0f0f0;
+    border:none;
+    float: left;
+    border-radius: 0 6px 6px 0;
+}
+
+.forum-nav{
+	width: 100%;
+	height: 50px;
+	background: #6bbe98;
+}
+
+.forum-middle{
+	width: 1200px;
+	height: 100%;
+	margin:0 auto;
+
+}
+.forum-middle ul li{
+	width:110px;
+	height: 50px;
+
+	margin-left: 10px;
+	text-align: center;
+	line-height: 50px;
+
+	color: white;
+	float: left;
+}
+.forum-middle ul li a{
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+}
+.forum-middle ul li:hover{
+	background:#f3bc16;
+}
+
+/*--------------论坛内容-------*/
+.forum-content{
+	width: 1200px;
+	margin: 20px auto;
+}
+.content-top{
+	width: 1200px;
+	height: 410px;
+	background: white;
+}
+.content-left{
+	width: 364px;
+	height:100%;
+	float: left;
+}
+
+.foot-content{
+	width: 100%;
+	height: 357px;
+	padding-top: 10px;
+}
+.content-image{
+	position: relative;
+	overflow: hidden;
+	width: 770px;
+	height: 410px;
+	background: white;
+	float: right;
+}
+
+
+.content-image{
+	
+}
+.newpic{
+	width: 100%;
+	height:410px;
+}
+.newpic li{
+	width: 100%;
+	height:410px;
+	overflow: hidden;
+	position: relative;
+}
+
+.newpic li img{
+	width: 100%;
+	height:410px;
+}
+
+.newpic li p{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	text-align: left;
+	padding-left: 20px;
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	background:#ccc;
+	opacity: 0.6; 
+}
+ .content-image .small_yuan{  
+	position: absolute; 
+	left: 85%;
+	bottom: 10px;
+	z-index: 999; 
+}
+.small_yuan a{
+	text-decoration: none;
+	font-size: 16px;
+	color: gainsboro;
+	float: left;
+	width:20px;
+	height: 20px;
+	background:plum;
+	border-radius: 50%;
+	text-align: center;
+	line-height:20px;
+	margin-left:2px;
+}
+.small_yuan a:hover{
+	background: yellow;
+}
+
+
+.hot-content{
+	width: 100%;
+	height: 293px;
+	margin-top: 20px;
+	background: white;
+}
+
+.hot-left{
+	width: 370px;
+	height: 283px;
+	float: left;
+}
+.top-title{
+	width: 100%;
+	height: 43px;
+	border-bottom: 1px solid gainsboro;
+}
+.top-title p{
+	width: 148px;
+	height: 42px;
+	line-height: 42px;
+	font-size: 24px;
+	margin-left: 10px;
+	text-align: center;
+	color: #10a66b;
+	border-bottom: 2px solid #f3bc16;
+}
+
+.hot-post{
+	padding-top: 15px;
+	width: 370px;
+
+}
+.hot-post ul{
+	overflow:hidden;
+	
+}
+.hot-post ul li{
+	width: 360px;
+	margin-left: 10px;
+	padding: 10px 0px 10px 0px;
+	overflow: hidden;
+	text-overflow:ellipsis ;
+	white-space: nowrap;
+	
+}
+
+
+.hot-right{
+	width: 770px;
+	height: 283px;
+	float: right;
+}
+.active{
+	width: 100%;
+	height: 190px;
+	padding-top: 20px;
+}
+.active-left{
+	float: left;
+	width: 339px;
+	height: 190px;
+
+}
+.active-left img{
+	width: 339px;
+	height: 190px;
+}
+
+.active-right{
+	float: right;
+	width: 415px;
+	height: 190px;
+	
+}
+.active-right ul li{
+	width: 400px;
+	padding: 10px 0px 10px 0px;
+	list-style: disc;
+	margin-left: 15px;
+	color: black;
+	font-size: 14px;
+	overflow: hidden;
+	text-overflow:ellipsis ;
+	white-space: nowrap;
+}
+
+/*-----帖子部分-----*/
+
+
+.information{
+	width: 100%;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.note_content{
+	width: 1200px;
+	margin-top: 20px;
+	background:white;
+}
+.note_content .note_title{
+	width: 100%;
+	height:50px;
+	background: #e9e9e9;
+	border-bottom: 2px solid gainsboro;
+	position: relative;
+}
+.checkAll2{
+	position: absolute;
+	right: 20px;
+	top: 17px;
+	color: red;
+}
+
+.note_content .note_title li{
+	float: left;
+	width:115px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.show{
+    color:#fff;
+    background: #fa9532;
+    font-size: 22px;
+ }
+
+
+.note_list:nth-of-type(1){
+	display: block;
+}
+.bigNote{
+	width:945px;
+}
+.note_list{
+	width:1200px;
+ 	display: none;
+ 	padding-bottom: 20px;
+ 	
+}
+.note_list .printer-zoner{
+	width: 100%;
+}
+.note_list .printer-zoner li{
+	float: left;
+	width: 576px;
+	height: 180px;
+	padding-top: 10px;
+	margin-left: 15px;
+	margin-top: 10px;
+	border: 1px solid gainsboro;
+}
+.product_icon{
+	width:155px;
+	height:135px;
+	float: left;
+}
+.product_icon img{
+	width:200px;
+	height:167px;
+}
+.product_content{
+	width:335px;
+	height: 135px;
+	float: right;
+	
+}
+
+.title{
+	display: inline-block;
+	width: 100%;
+	height: 28px;
+	line-height: 28px;
+	color: #10a66b;
+	font-weight: 600;
+	font-size: 18px;
+}
+
+.commentTime{
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	font-size: 14px;
+	color:#8a8989;
+}
+
+
+.left-pic{
+	float: left;
+	width: 230px;
+	height: 230px;
+}
+
+.ad-image{
+	width: 100%;
+	background: paleturquoise;
+}
+
+.ad-title{
+	width: 100%;
+	height: 50px;
+	background: #e9e9e9;
+}
+
+
+.solution{
+	float: left;
+	width: 300px;
+	line-height: 25px;
+	background: #f2f2f2;
+	padding: 10px;
+	font-size: 14px;
+	
+}
+.solution img{
+	width: 300px;
+	height: 150px;
+}
+.solution a{
+	font-size: 16px;
+	color: #0095d4;
+	font-weight: 600;
+}
+
+.qudong{
+	width: 300px;
+	height: 150px;
+	float: left;
+}
+
+
+
+
+
+/*-------常见问题部分-----------------*/
+
+
+/*常见问题*/
+.common-problems{
+	width: 1200px;
+	height: 310px;
+	
+}
+
+.problem-title{
+	width: 100%;
+	height: 45px;
+	border-bottom: 2px solid #c6c6c4;
+	margin-bottom:20px;
+}
+
+.problem-title p{
+	width: 145px;
+	height: 45px;
+	margin:0 auto;
+	padding: 0px 8px 0px 8px;
+	text-align: center;
+	line-height: 45px;
+	font-size: 34px;
+	border-bottom: 2px solid #21c283;
+	color: #6bbe98;
+	
+}
+
+
+
+
+.problem-content{
+	width: 100%;
+}
+
+.problem-content .probemlist li{
+	float: left;
+	height: 245px;
+}
+.questions{
+	width: 370px;
+	height: 245px;
+	
+}
+.programme{
+	width: 339px;
+	margin-left: 20px;
+	
+}
+.programme img{
+	width: 339px;
+}
+.programme p{
+	font-size: 18px;
+}
+.ds-guide{
+	padding: 10px 0px 15px 0px;
+}
+.ds-guide a{
+	font-size: 18px;
+}
+
+.questions p{
+	width: 100%;
+	padding: 8px 0 8px 0px;
+}
+
+
+.hot-window{
+	width: 450px;
+	margin-left: 20px;
+	
+}
+.video{
+	width: 100%;
+	height: 65px;
+}
+.download-pic img{
+	display: inline-block;
+	width: 205px;
+	float: left;
+	margin-left: 20px;
+}
+.window{
+	width: 95%;
+	height: 150px;
+	margin-left: 25px;
+	font-size: 14px;
+}
+.hot-technology{
+	width: 143px;
+	line-height: 42px;
+	text-align: center;
+	background: #e9e9e9;
+	color: #fa9532;
+	font-size: 22px;
+	margin-bottom: 5px;
+}
+.window p{
+	padding: 5px 0px 5px 5px;
+}
+
+
+/*-----专家问答区域----*/
+.askexpert{
+	width:100%;
+	height: 468px;
+	/*background:paleturquoise;*/
+	margin-top: 20px;
+}
+.expert-content{
+	width: 100%;
+	height: 400px;
+	
+}
+
+.expert-content .expertul .expertli{
+	float: left;
+	width: 375px;
+	height: 320px;
+	/*background: red;*/
+	margin-left: 20px;
+	/*padding: 10px;*/
+}
+
+.expert-pic{
+	width: 100%;
+	height: 180px;
+	line-height: 180px;
+	text-align: center;
+	background:#e9e9e9;
+	margin-bottom: 10px;
+}
+
+.expert-pic img{
+	width: 168px;
+}
+
+.expert{
+	width: 100%;
+	height: 200px;
+	padding-left: 5px;
+}
+.expert h3{
+	width: 133px;
+	height: 40px;
+	line-height: 40px;
+	background: #e9e9e9;
+    color: #fa9532;
+    text-align: center;
+	font-size: 22px;
+}
+
+
+.expert ul li{
+	width: 95%;
+	padding: 5px 0px;
+	margin-top:2px;
+	text-overflow:ellipsis ;
+	white-space: nowrap;
+	overflow: hidden;
+	
+}
+
+
+
+
+
+
+
+.footpic{
+	margin-top: 15px;
+}
+.footpic img{
+	width: 100%;
+}
+
+

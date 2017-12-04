@@ -1,0 +1,30 @@
+[
+  {
+    "_id": "59bb741cdf2aaf22902fb8ed",
+    "sn": "227116380023",
+    "alias": "",
+    "alive": true,
+    "owner": "",
+    "cloud_prt": false,
+    "alert": {
+      "email": "",
+      "url": ""
+    },
+    "info": {
+      "vendor": "DASCOM",
+      "model": "DC-1300",
+      "width": 1016,
+      "height": 648,
+      "functions": {
+        "minItems": 1,
+        "uniqueItems": true,
+        "items": "BasicPrinting[1.0]"
+      }
+    },
+    "status": {
+      "main": "error",
+      "sub": "缺卡错;卡盒传感器缺卡;1",
+      "newest": "2017-09-18 13:19:41"
+    }
+  }
+]

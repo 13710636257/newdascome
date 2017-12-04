@@ -1,0 +1,569 @@
+/*
+统一样式
+*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/*
+1、直接中文；
+2、英文形式；
+3、unicode码；
+Windows
+* 宋体SimSun\5B8B\4F53
+* 黑体SimHei\9ED1\4F53
+* 微软雅黑Microsoft YaHei\5FAE\8F6F\96C5\9ED1
+   微软正黑体Microsoft JhengHei\5FAE\x8F6F\6B63\9ED1\4F53
+   新宋体NSimSun\65B0\5B8B\4F53
+   新细明体PMingLiU\65B0\7EC6\660E\4F53
+   细明体MingLiU\7EC6\660E\4F53
+   标楷体DFKai-SB\6807\6977\4F53
+   仿宋FangSong\4EFF\5B8B
+   楷体KaiTi\6977\4F53
+   仿宋_GB2312FangSong_GB2312\4EFF\5B8B_GB2312
+   楷体_GB2312KaiTi_GB2312\6977\4F53_GB2312
+
+
+Mac OS
+* 华文细黑STHeiti Light [STXihei]\534E\6587\7EC6\9ED1
+* 华文黑体STHeiti\534E\6587\9ED1\4F53
+   华文楷体STKaiti\534E\6587\6977\4F53
+   华文宋体STSong\534E\6587\5B8B\4F53
+   华文仿宋STFangsong\534E\6587\4EFF\5B8B
+   丽黑 ProLiHei Pro Medium\4E3D\9ED1 Pro
+   丽宋 ProLiSong Pro Light\4E3D\5B8B Pro
+   标楷体BiauKai\6807\6977\4F53
+   苹果丽中黑Apple LiGothic Medium\82F9\679C\4E3D\4E2D\9ED1
+   苹果丽细宋Apple LiSung Light\82F9\679C\4E3D\7EC6\5B8B*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /*font-size:100%;*/
+    font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section {
+    display: block;
+}
+
+input, button, select, textarea {
+    outline: none
+}
+
+body {
+    line-height: 1;
+    font-family: Helvetica, Arial, Microsoft YaHei, Microsoft JhengHei, DFKai-SB,sans-serif;
+    width: 100%;
+    min-width: 1200px;
+    -webkit-text-size-adjust: none;
+    padding-top: 70px;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.clearfix:after, .clearfix:before {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    background-color: transparent;
+}
+
+a, a:focus {
+    outline: none;
+}
+
+ul {
+    list-style: none
+}
+
+input, textarea {
+    border: none;
+    resize: none;
+    outline: none;
+    /*-webkit-appearance: none*/
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0
+}
+
+img {
+    vertical-align: middle;
+    outline: none
+}
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('../font/iconfont.eot');
+    src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../font/iconfont.woff') format('woff'),
+    url('../font/iconfont.ttf') format('truetype'),
+    url('../font/iconfont.svg#iconfont') format('svg');
+}
+
+
+/* 字体图标*/
+[class="icon-*"] {
+    font-family: 'iconfont';
+    font-size: 22px;
+}
+
+/*------头部-----*/
+header {
+    background: #333;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.header {
+    width: 1230px;
+    margin: 0 auto;
+    height: 70px;
+    position: relative;
+}
+
+.head_logo {
+    width: 175px;
+    height: 52px;
+    float: left;
+    padding-top: 12px;
+
+}
+
+.head_logo img {
+    height: 100%;
+    width: 100%;
+}
+
+.nav {
+    position: relative;
+}
+
+.searchAll {
+    width: 30px;
+    height: 34px;
+    line-height: 34px;
+    position: absolute;
+    right: -30px;
+    top: 19px;
+    z-index: 999;
+}
+
+.searchAll:before {
+    content: "\e601";
+    font-family: iconfont;
+    line-height: 28px;
+    display: block;
+    text-align: center;
+
+    font-size: 20px;
+    color: white;
+
+}
+
+.sch {
+    width: 1200px;
+    height: 145px;
+    background: #f1f1f1;
+    position: absolute;
+    top: 70px;
+    right: -30px;
+    text-align: center;
+    line-height: 145px;
+    display: none;
+    z-index: 99;
+    background: rgba(0, 0, 0, .3);
+}
+
+.inputleft {
+    width: 400px;
+    height: 43px;
+    line-height: 43px;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 4px 0 0 4px;
+    margin-left: 370px;
+    margin-top: 46px;
+    border: 1px solid #B7B7B7;
+}
+
+.rightbtn {
+    margin: 0;
+    padding: 0;
+    width: 60px;
+    height: 47px;
+    line-height: 47px;
+    margin-top: 46px;
+    background: #0097de;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    border-radius: 0 4px 4px 0;
+    float: left;
+}
+
+.header .navUl {
+/ / width : 1004 px;
+    margin-left: 25px;
+    height: 70px;
+    float: left;
+}
+
+.header .navUl li {
+    width: 118px;
+    height: 66px;
+    float: left;
+    line-height: 66px;
+    text-align: center;
+    margin-left: 15px;
+    color: white;
+    position: relative;
+}
+
+.header .navUl li:hover {
+    background: #0097de;
+    border-bottom: 4px solid #0097de;
+}
+
+
+.header .navUl li:hover a {
+    text-decoration: none;
+}
+
+.header .navUl li:nth-of-type(3) {
+    width: 160px;
+}
+
+.header .navUl li a {
+    font-size: 16px;
+    color: #fff;
+    display: block;
+}
+
+.menu .list {
+    width:1920px;
+    height: 285px;
+    padding-bottom: 10px;
+    position: absolute;
+    top: 70px;
+  	left:-362px;
+    background: white;
+    z-index: 99;
+    display: none;
+    border: 1px solid #d7d7d7;
+}
+
+.list ul {
+    width: 1250px;
+    height: 245px;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+
+.list .product li {
+    width: 165px;
+    height: 100%;
+    margin-left: 40px;
+    float: left;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.list .product li:hover {
+    background: #f1f1f1;
+}
+
+
+.list .product li img {
+    width: 150px;
+    height: 120px;
+}
+
+.printer_title {
+    font-size: 18px;
+}
+
+.checkmore {
+    display: block;
+    width: 110px;
+    line-height: 30px;
+    border-radius: 14px;
+    margin: 0 auto;
+}
+
+.list .product li:hover .checkmore {
+    background: red;
+}
+
+.list .applicationSolution li {
+    width: 240px;
+    height: 205px;
+    line-height: 35px;
+    float: left;
+    margin-left: 20px;
+    padding: 20px;
+}
+
+.list .applicationSolution li h3 {
+    font-size: 18px;
+    color: red;
+}
+
+.support img {
+    width: 240px;
+}
+
+.list .applicationSolution li:hover {
+    background: #f1f1f1;
+}
+
+.more {
+    display: block;
+    width: 110px;
+    line-height: 30px;
+    border-radius: 14px;
+
+}
+
+.list .applicationSolution li:hover .more {
+    background: red;
+    text-align: center;
+}
+
+.header .login_register {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    color: #fff;
+    height: 70px;
+    line-height: 67px;
+}
+
+.header .login_register a {
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 14px;
+    line-height: 14px;
+    color: #e1e1e1;
+}
+
+.header .login_register a:hover {
+    color: red;
+}
+
+/* 2017-9-11*/
+.login-box {
+    display: none;
+    position: relative;
+}
+
+.account-setting{
+	width: 115px;
+	color:#fff;
+   	background: white;
+	border: 2px solid gainsboro;
+	display: none;
+	position:absolute;
+    top:70px;
+    right:0px;
+   
+}
+.login-box .account-setting dl dd{
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	margin-top: 10px;
+	
+	text-align: center;
+}
+.login-box .account-setting  dd a{
+    font-size: 14px;
+   color: black;
+}
+
+.login-box.login-active {
+    display: block;
+   /*display: none;*/
+}
+
+/* 退出按钮*/
+#quit-btn {
+    border: 0;
+    background-color: transparent;
+    font-size: 14px;
+    line-height: 14px;
+    color: #e1e1e1;
+    padding: 0 20px;
+
+    cursor: pointer;
+}
+
+/* 显示的用户名*/
+.login-username {
+    border-right: 1px solid #fff;
+    font-size: 12px;
+    line-height: 14px;
+    color: #e1e1e1;
+    padding-right: 20px;
+
+    /*  overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;*/
+}
+
+.header .login_register .login {
+    border-right: 1px solid #fff;
+    
+}
+
+/*底部*/
+.public-footer {
+    margin-top: 20px;
+
+}
+
+.public-footer .service_info {
+    background: #ebebeb;
+    padding: 45px 0;
+}
+
+/*服务信息*/
+.public-footer .info_content {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.public-footer .info_content .footnav {
+    float: left;
+    width: 240px;
+}
+
+.info_content .footnav h3 {
+    font-size: 20px;
+    color: #676767;
+    font-weight: bold;
+
+}
+
+.info_content .footnav ul {
+    margin-top: 10px;
+}
+
+.info_content .footnav li {
+    padding: 10px 0;
+
+}
+
+.info_content .footnav li a {
+    display: block;
+    font-size: 16px;
+    color: #676767;
+}
+
+.service_copyright {
+    background: #000;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.service_copyright .copyright_content {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.copyright_content .aboutus {
+    padding: 10px 0;
+}
+
+.copyright_content .aboutus a {
+    color: #fff;
+    padding: 0 20px;
+    border-right: 1px solid #fff;
+
+}
+
+.copyright_content .aboutus a:last-of-type {
+    border-right: none;
+
+}
+
+.copyright_content p span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("../img/home/icon_ba.png") no-repeat;
+}
+
+/* 固定的内容宽度*/
+.public-w-1000 {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}

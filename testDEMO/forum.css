@@ -1,0 +1,440 @@
+body{
+    /*background:#dceffe;*/
+    width:100%;
+    min-width: 1200px;
+}
+@font-face {
+    font-family: 'iconfont';
+    src: url('./test/1/iconfont.eot');
+    src: url('./test/1/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('./test/1/iconfont.woff') format('woff'),
+    url('./test/1/iconfont.ttf') format('truetype'),
+    url('./test/1/iconfont.svg#iconfont') format('svg');
+}
+header{
+    background:#333;
+
+}
+.header{
+    width:1200px;
+    margin:0 auto;
+    height:70px;
+    position:relative;
+}
+
+.header img{
+    position:absolute;
+    height:60px;
+    width:60px;
+    margin-top:5px;
+}
+
+.header ul{
+    padding:0 100px;
+    height:70px;
+}
+
+.header ul li{
+    float:left;
+    height:66px;
+    line-height: 66px;
+    border-bottom:4px solid #333;
+    padding:0 64px;
+
+}
+.header ul li:nth-child(4){
+    border-bottom:4px solid red;
+
+}
+.header ul li a{
+    font-size:18px;
+    color:#fff;
+}
+
+.header  .login_register{
+    position:absolute;
+    top:0;
+    right:0;
+    color:#fff;
+    height:70px;
+    line-height:67px;
+}
+
+.header  .login_register a{
+    display: inline-block;
+    padding:0 20px;
+    font-size:14px;
+    line-height: 14px;
+    color:#fff;
+
+}
+
+.header  .login_register .login{
+    border-right:1px solid #fff;
+}
+
+
+.main_content{
+
+}
+/*banner*/
+.banner{
+    width:100%;
+    background:url("../img/forum/f3.jpg");
+    height:260px;
+    background-size:100% 260px;
+    text-align: center;
+    opacity:0.9;
+    overflow: hidden;
+
+
+}
+.banner .forum_title{
+    font-size:60px;
+    color:#42ABDD;
+    font-weight:bold;
+    margin-top:40px;
+}
+.banner .fsearch{
+    position:relative;
+    /*left:50%;*/
+    /*top:50%;*/
+    font-size:0;
+    /*transform:translate(-50%);*/
+    opacity:1;
+    padding-top:40px;
+}
+.banner .fsearch .search_input{
+    width:440px;
+    height:50px;
+    padding-left:50px;
+    text-indent: 10px;
+    font-size:18px;
+    border-radius: 4px 0 0 4px;
+    border:none;
+}
+
+.banner .fsearch .search_icon:before{
+    position: absolute;
+    content:"\e601";
+    font-family: iconfont;
+    width:50px;
+    height:50px;
+    line-height: 50px;
+    font-size:26px;
+    color:#6d6565;
+    text-align: center;
+}
+.banner .fsearch .search_btn{
+    display: inline-block;
+    width:60px;
+    height:52px;
+    line-height: 52px;
+    font-size:16px;
+    background: #0097de;
+    color:#fff;
+    border-radius: 0 4px 4px 0;
+    vertical-align: top;
+    border:none;
+}
+/*标题*/
+.forum_title{
+    font-size:30px;
+    text-align: center;
+    color:#42ABDD;
+}
+.main_content{
+    box-shadow: 0 0 24px 0  #ccc;
+    width:1000px;
+    margin:0 auto;
+    border:1px solid #ccc;
+    margin-top:20px;
+    border-radius: 4px 4px 0 0;
+}
+/*菜单栏*/
+.forum_content{
+    box-sizing: border-box;
+    background-image:linear-gradient(to bottom,#eeeff3 0,#eaeef1 100%);
+    border-radius: 4px 4px 0 0;
+    overflow: hidden;
+
+}
+.note_classify{
+
+}
+.note_classify a{
+    display: inline-block;
+    padding:30px 22px;
+    font-size:18px;
+    color:#676060;
+
+}
+.forum_content a.current{
+    background:#e0e0e0;
+}
+/*帖子列表*/
+.note_list{
+    position:relative;
+
+}
+.note_list li{
+    border-bottom:1px solid #999;
+    padding:14px 20px;
+    border-top:none;
+}
+.note_list li:hover{
+    background:rgba(45,100,179,0.3);
+}
+.note_list .nltitle{
+    font-size:16px;
+    color:#2d64b3;
+    font-weight:bold;
+}
+.note_list .nltitle:before{
+    content:"\e64b";
+    font-family: iconfont;
+    font-size:24px;
+    color:red;
+    vertical-align:middle;
+    padding-right:10px;
+}
+
+.note_list p:nth-child(2){
+    padding:6px 24px;
+    color:#999;
+}
+.note_list p.nlinfo span{
+    padding:0 10px;
+    border-right:1px solid #999;
+    font-size:14px;
+}
+.note_list p span:last-of-type{
+    border-right:none;
+}
+
+
+.note_list .nlcomment{
+    position:relative;
+    float:right;
+    right:0;
+    bottom:24px;
+    font-size:14px;
+}
+.note_list .nlcomment span{
+    padding:0 20px;
+    color:#999;
+}
+.note_list .nlcomment .nlcomment_btn:before{
+    content:"\e65a";
+    font-family: iconfont;
+    font-size:22px;
+    vertical-align: middle;
+    padding-right:10px;
+}
+.note_list .nlcomment .nlsee_btn:before{
+    content:"\e660";
+    font-family: iconfont;
+    font-size:22px;
+    vertical-align: middle;
+    padding-right:10px;
+}
+
+/*分页*/
+.ppage{
+    padding:30px 0 20px 0;
+}
+ .ppage .ascheme_propagation{
+    text-align: center;
+    /*margin-top:40px;*/
+}
+
+.ppage .ascheme_propagation span{
+    padding:10px 18px;
+    border:1px solid #ccc;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.ppage .ascheme_propagation span.active{
+    color:#ccc;
+}
+
+.ppage .ascheme_propagation .page_change{
+    height:33px;
+    width:42px;
+    text-align: center;
+    font-size:16px;
+    border:1px solid #df5000;
+}
+
+.ppage .ascheme_propagation .change_btn{
+    height:36px;
+    width:58px;
+    text-align: center;
+    background:#42ABDD;
+    color:#fff;
+    font-size:18px;
+    outline: none;
+    border: none;
+    margin-left:10px;
+    border-radius:6px;
+    cursor: pointer;
+}
+
+
+/*发帖*/
+.send_note{
+    width:1000px;
+    margin:0 auto;
+    margin-top:20px;
+    border:1px solid #ccc;
+    padding:20px;
+    box-sizing: border-box;
+}
+.send_note .send_title{
+    margin-bottom:20px;
+}
+.send_note .send_title span{
+    padding:0 20px;
+    border-left:4px solid red;
+    font-size:18px;
+}
+
+.send_note  .select_type{
+    height:30px;
+    width:120px;
+}
+
+.send_note .ntitle{
+    height:24px;
+    width:500px;
+    font-size:12px;
+    vertical-align:middle;
+    text-indent: 10px;
+}
+
+
+input::-webkit-input-placeholder {
+    color: #999;
+}
+input:-moz-placeholder{
+    color: #999;
+}
+input::-moz-placeholder{
+    color: #999;
+}
+input:-ms-input-placeholder{
+    color: #999;
+}
+
+.send_note textarea{
+    margin-top:20px;
+    resize:none;
+    vertical-align: bottom;
+    font-size:16px;
+
+}
+.send_note .cke_1{
+   margin:20px 0;
+}
+
+.send_note .submit{
+    border:none;
+    outline: none;
+    background:#F35B4F;
+    color:#fff;
+    padding:10px 30px;
+    font-size:18px;
+    border-radius: 6px;
+}
+
+/*底部*/
+footer{
+    margin-top:20px;
+}
+
+footer .service_info{
+    background:#ebebeb;
+    padding:20px 0;
+}
+/*服务信息*/
+footer .info_content{
+    width:1200px;
+    margin:0 auto;
+}
+
+footer .info_content .footnav{
+    float:left;
+    width:240px;
+}
+
+.info_content .footnav h3{
+    font-size:20px;
+    color:#676767;
+    font-weight:bold;
+
+}
+.info_content .footnav ul{
+    margin-top:10px;
+}
+.info_content .footnav li{
+    padding:10px 0;
+
+}
+
+.info_content .footnav li a{
+    display: block;
+    font-size:16px;
+    color:#676767;
+}
+
+
+.service_copyright{
+    background:#000;
+    color:#fff;
+    padding:20px 0;
+}
+
+.service_copyright .copyright_content{
+    width:1200px;
+    margin:0 auto;
+    text-align: center;
+}
+.copyright_content .aboutus{
+    padding:10px 0;
+}
+.copyright_content .aboutus a{
+    color:#fff;
+    padding: 0 20px;
+    border-right:1px solid #fff;
+
+}
+.copyright_content .aboutus a:last-of-type{
+    border-right:none;
+
+}
+
+.copyright_content p span{
+    display: inline-block;
+    width:20px;
+    height:20px;
+    background:url("../img/home/icon_ba.png") no-repeat;
+}
+
+
+/* 论坛分页*/
+
+.note_item{
+
+    display: none;
+    
+}
+
+.note_item:nth-of-type(1){
+
+    display: block;
+
+}
+.ppage .ascheme_propagation span.page-current{
+    padding-left: 6px;
+    padding-right: 6px;
+}
